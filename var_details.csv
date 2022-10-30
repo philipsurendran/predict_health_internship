@@ -1,0 +1,2677 @@
+Variable,R2,FstatP,VarType,Sign,Drop,Field Name,Description,Values,Notes,Drop VarName
+FNAME,NA,NA,Other,NA,Yes,First Name,, ,,
+MNAME,9.56E-05,0.27432023,Other,Not Applicable,Yes,Middle Initial,, ,,
+LNAME,NA,NA,Other,NA,Yes,Last Name,, ,,
+FILLER,NA,NA,Other,NA,Yes,FILLER,,Filler,,
+SUFFIX,6.24E-06,0.418338802,categorical,Not Applicable,Yes,Generational Suffix,, ,,
+ADR1,NA,NA,Other,NA,Yes,Address,,,,
+CITY,NA,NA,Other,NA,Yes,City,, ,,
+ST,0.025436429,1.53E-201,categorical,Not Applicable,No,State,Standard USPS 2 character state abbreviation., ,,
+ZIP,0.005918158,3.64E-55,numeric,Negative,Yes,ZIP Code,, ,,
+P4,0.000789104,7.57E-09,numeric,Negative,Yes,ZIP Plus 4,, ,,
+APTF,3.51E-05,0.118211361,categorical,Not Applicable,No,Unit Number Present Flag,A unit number is present at this address.,"Y - Yes
+U - Unknown",Drop U,APTF_U
+CRRT,NA,NA,categorical,NA,No,Carrier Route,,"B = PO Box
+R = Rural Route
+G = General Delivery
+C = Standard Address
+H = Highway Contract",,
+FPST,0.010722509,1.71E-98,numeric,Positive,Yes,Numeric State Code,,See Numeric State Code tab,,
+N2CTY,0.007481834,2.97E-69,numeric,Positive,Yes,Numeric County Code,,See Numeric County Code tab,,
+N2DMA,0.012826449,1.62E-117,numeric,Negative,Yes,Designated Market Area (DMA),,See DMA Codes tab,,
+CBSA,0.000120536,0.014717936,numeric,Positive,Yes,Core Based Statistical Area (CBSA),,See CBSA tab,,
+N2NCY,0.007379976,2.80E-66,categorical,Not Applicable,No,Nielsen County Size,The size classification of counties according to Census household counts and metropolitan proximity.,"A = All counties in the largest metropolitan areas which together account for 40% of U.S. households according to the 2000 Census. 
+B = All counties in the next largest set of metropolitan areas which together account for 30% of U.S. households according to the 2000 Census. No non-metropolitan counties qualify as A or B counties. 
+C = All counties in the next largest set of areas - including both metropolitan areas and non-metropolitan counties - which account for 15% of U.S. households according to the 2000 Census. 
+D = All remaining counties",,
+LAT,0.002421526,1.15E-23,numeric,Positive,No,Latitude,The geometrical location north or south of the equator assigned to the address. The implied decimal is between the third and fourth position., ,,
+LNG,0.008591823,2.92E-79,numeric,Negative,No,Longitude,"The geometrical location east or west of a north-south line, called the prime meridian, assigned to the address. The implied decimal is between the third and fourth position.", ,,
+N2BTN,0.004467917,4.17E-42,numeric,Negative,Yes,Census Basic Tract Number,, ,,
+N2TSC,0.000819648,3.90E-09,numeric,Negative,Yes,Census Basic Tract Sub Code Number,,00-99,,
+N2TBG,-1.85E-05,0.62472205,numeric,Positive,Yes,Census Basic Block Group,,1-9,,
+N2BC,-2.24E-05,0.775408557,numeric,Positive,Yes,Census Block Code,,0000-9999,,
+C210MYS,0.008074359,1.35E-74,categorical,Positive,No,Census 2010 Education Level,An indicator derived from the highest level of education attained by individuals 25 years or older as reported by the Census Bureau.,"0 = Uncoded
+1 = Less than 9th grade
+2 = Less than 12th grade
+3 = High School Diploma
+4 = Some College
+5 = Associate Degree
+6 = Bachelors Degree
+7 = Graduate Degree
+8 = Professional School Degree
+9 = Doctorate Degree",Drop 0,C210MYS_0
+C210MAH,-2.39E-05,0.890086044,numeric,Positive,No,Census 2010 Median Age of Householder,Median age of householders 18 years or older reported by the Census Bureau. , 00 - 99, Drop 00,
+C210PWH,1.54E-05,0.201255179,numeric,Negative,No,Census 2010 Percent White,Percentage of persons with white race reported by the Census Bureau. ,00 - 99,,
+C210PHI,0.00029738,0.000277979,numeric,Negative,No,Census 2010 Percent Hispanic,Percentage of persons with Hispanic or Latino race reported by the Census Bureau. ,00 - 99 ,,
+C210PBL,2.90E-05,0.138863992,numeric,Positive,No,Census 2010 Percent Black,Percentage of persons with black or African American race reported by the Census Bureau. ,00 - 99,,
+C210HMI,0.011996447,5.23E-110,numeric,Positive,No,Census 2010 Median Household Income,The median household income for the household as reported by the Census Bureau. Values are represented in thousands. ,000 - 255 ,,
+C210CIP,0.009510665,1.50E-87,numeric,Positive,No,Census 2010 Income Percentile,The median household income ranked by centile within the state as reported by the Census Bureau. Values of 00 indicate low income.  ,00 - 99,,
+C210POO,0.00054873,1.22E-06,numeric,Positive,No,Census 2010 Percent Homeowner,The percent of the geographic area where persons live in a dwelling they own as reported by the Census Bureau.,00 - 99 ,,
+C210HVA,0.009707697,2.50E-89,numeric,Positive,No,Census 2010 Median Home Value,The median home value as reported by the Census Bureau. Values are represented in thousands. ,000 - 999 ,,
+C210PSU,2.10E-05,0.172336671,numeric,Negative,No,Census 2010 Percent Single Family Dwelling,Percentage of persons living in a single family dwelling reported by the Census Bureau. ,00 - 99 ,,
+C210MOB,0.004885902,7.18E-46,numeric,Negative,No,Census 2010 Percent Mobile Homes,Percentage of persons living in a mobile home reported by the Census Bureau. ,00 - 99 ,,
+C210BLU,0.003487527,2.82E-33,numeric,Negative,No,Census 2010 Percent Blue Collar Employed,"Percent of the population which is employed in a blue collar industry as reported by the Census Bureau. This is defined as an individual who is a member of the working class, performs manual labor, and earns a hourly wage. ",00 - 99,,
+C210WHT,0.005043653,2.73E-47,numeric,Positive,No,Census 2010 Percent White Collar Employed,"Percent of the population which is employed in a white collar industry as reported by the Census Bureau. This is defined as an individual who is a salaried professional or an educated worker who performs semi-professional office, administrative, and sales coordination tasks.  ",00 - 99,,
+C210PMR,0.000719475,3.25E-08,numeric,Positive,No,Census 2010 Percent Married,Percentage of persons married reported by the Census Bureau.,00 - 99 ,,
+C210PWC,-2.23E-05,0.771435497,numeric,Negative,No,Census 2010 Percent Household with Children,Percentage of households with a child present reported by the Census Bureau. ,00 - 99,,
+C210AUTO,-1.96E-05,0.659029063,numeric,Negative,No,Census 2010 Average Number of Automobiles,The average number of automobiles in the household reported by the Census Bureau. Decimal point is implied between the first and second digit. Example: 15 = 1.5 ,00 - 99,Drop 00,
+C210EBI,0.01080306,3.20E-99,numeric,Positive,No,Census 2010 Median HH Effective Buying Income,"The median aftertax or disposable household income as reported by the Census Bureau. Effective Buying Income (EBI) is computed as a derivative of household income, with the correspondence between before-tax and after-tax income being identified for each state based on three-year combinations of Current Population Survey (CPS) data. ",000 - 999,,
+C210PDV,0.002445513,6.99E-24,numeric,Negative,No,Census 2010 Percent Divorced or Separated,Percentage of persons divorced or separated reported by the Census Bureau. ,00 - 99 ,,
+C210PMV,-1.40E-05,0.513561003,numeric,Negative,No,Census 2010 Percent Motor Vehicle Ownership,Percentage of persons who own a motor vehicle reported by the Census Bureau.,00 - 99,,
+C210APVT,0.00572389,2.04E-53,numeric,Positive,No,Census 2010 Percent Above Poverty Level,The percent of families which are above the poverty level reported by the Census Bureau.,00 - 99,,
+C210BPVT,0.005648942,9.67E-53,numeric,Negative,No,Census 2010 Percent Below Poverty Level,The percent of families which are below the poverty level reported by the Census Bureau. ,00 - 99,,
+C210M200,8.21E-05,0.036533706,numeric,Positive,No,Census 2010 Percent Moved Since 2000,Percentage of households which moved into the geographical area in 2000 or later reported by the Census Bureau.,00 - 99,,
+C210B200,0.002175984,1.90E-21,numeric,Negative,No,Census 2010 Percent Built 2000 or Later,Percentage of structures built in 2000 or later reported by the Census Bureau. ,00 - 99 ,,
+C210KSES,0.01381678,1.76E-126,numeric,Positive,No,Census 2010 Socio-Economic Score,"A Socioeconomic Score indicating whether a particular geographic unit (i.e. block group) is higher than or equal to the US norm, which is 100, as reported by the Census Bureau. The scores range from 60-170 and are created by assigning weights to the household income, educational attainment, occupation and home value.",008 - 170,,
+C210PDSC,0.00127599,2.68E-13,numeric,Negative,No,Census 2010 Population Density State Centile,A ranking of the population in a block group against the state population. The centile value of 1 is the most dense and centile value of 99 is the least dense.,00-99,,
+C210PDUC,0.001481951,3.61E-15,numeric,Negative,No,Census 2010 Population Density US Centile,A ranking of the population in a block group against the US population. The centile value of 1 is the most dense and centile value of 99 is the least dense.,00-99,,
+N2ALV,0.000427874,5.62E-05,categorical,Not Applicable,No,Census Coding Level,Indicates the level the census statistics is assigned.,"B = Block Level
+T = Tract Level
+Z = Zip Levl
+0 = Uncoded",Drop 0,N2ALV_0
+OPA,0.001716905,2.69E-17,categorical,Not Applicable,No,One Per Address,"Identifies the household that is the most likely to reside at the given address.  This internal algorithim uses data like verification date, number of sources, age of the individuals within the household and presence of a phone number.","Y = Yes
+U = Uncoded",Drop U,OPA_U
+VFLAG,0.000439078,1.28E-05,categorical,Positive,No,Verification Code,Indicator reporting the household at the address within the last 24 months.,"12 = Verified in last 12 months
+24 = Verified in last 13-24 months
+99 = Verified 25 months or more
+00 = Unknown",Drop 00,VFLAG_0
+PRDM,0.003683671,4.82E-35,categorical,Not Applicable,No,Mailable Record,"Indicates the record has passed quality checks at the individual and address level. These validation edits ensure the record is multi source verified based upon recency, quality of reporting source, contains an actual date of birth or an estimated age, passed USPS standards for Delivery Point Validation (DPV).","Y = Yes Mailable
+U = Not Mailable",,
+HHID,0.01083686,1.59E-99,numeric,Positive,Yes,Household Identification Number,, ,,
+NONO2,0.010719382,1.83E-98,numeric,Positive,Yes,Individual ID Number,,,,
+KLNK,2.34E-05,0.161425801,numeric,Negative,Yes,KnowledgeLINK Number,,,,
+AGE_RANGE,0.019280372,3.15E-165,categorical,Not Applicable,Yes,Age Range,The age of the individual in ranges assigned using calculated age from known dates of birth.,"A - 18-20
+B - 21-25
+C - 26-30
+D - 31-35
+E - 36-40
+F - 41-45
+G - 46-50
+H - 51-55
+I - 56-60
+J - 61-65
+K - 66-70
+L - 71-75
+M - 76+",,
+ESTAGE,0.000831978,7.49E-07,categorical,Not Applicable,Yes,Estimated Age,Estimated age generated from a model to predict the age of an individual when a date of birth or calculated age is not available.,"I1 = Age 18-24 
+I2 = Age 25-34 
+I3 = Age 35-44 
+I4 = Age 45-54 
+I5 = Age 55-64 
+I6 = Age 65-74 
+I7 = Age 75+ 
+I0 = Age Unknown",Drop I0,ESTAGE_I0
+GEND,-3.15E-06,0.350772692,categorical,Not Applicable,No,Gender ,Indicates the gender of the individual based on known data or gender tables.  Gender code is used from the source if available. If the original source does not provide the gender code then the KBM gender code table is used.,"  Blank
+M = Male
+F = Female",,
+FILLER.1,NA,NA,Other,NA,Yes,#N/A,,#N/A,,
+FAMP,0.005495274,1.01E-46,categorical,Not Applicable,No,Family Position Code,Indicator of an individuals position in the household based on age and gender.,"H = Husband
+W = Wife
+M = Male HOH
+F = Female HOH
+G = Grandmother
+P = Grandfather
+C = Child
+O = Other",,
+POEP,0.000471658,6.37E-06,categorical,Not Applicable,No,Presence of Elderly Parent,Indicates the presence of an individual aged 65 or older that is not considered the head of the household.,"Y = Yes
+U = Unknown",Drop U,POEP_U
+ILOR,1.04E-06,0.307177185,numeric,Negative,No,Length of Residence,Compilation of fields indicating the length of time the household has been reported at the address.,"00-15
+00 = less than one year
+99 = unknown",Drop 99,
+HOMSTAT,0.00193054,3.40E-17,categorical,Not Applicable,No,Homeowner Status,Compilation of known and modeled fields indicating the property ownership status of the household.,"P = Probable Homeowner 
+R = Renter 
+T = Probable Renter 
+U = Unknown
+Y = Homeowner 
+",Drop U,HOMSTAT_U
+APT,0.001414606,1.42E-11,categorical,Not Applicable,No,Dwelling Type ,A value assigned at each delivery address indicating the type of structure.,"A = Multi Family Dwelling/Apartment
+B = Business Address
+C = Condominium
+M = Private Mail Box
+N = Nursing Home
+P = PO Box
+S = Single Family
+T = Mobile Home Park
+W = Slip or Marina",,
+ESTINC30,0.011065723,1.38E-91,categorical,Not Applicable,No,Estimated Household Income 3.0,"A demographic based analytical model which predicts the household income.
+","A = Less than $15,000 
+B = $15,000-$19,999 
+C = $20,000-$29,999 
+D = $30,000-$39,999 
+E = $40,000-$49,999 
+F = $50,000-$59,999 
+G = $60,000-$74,999 
+H = $75,000-$99,999 
+I = $100,000-$124,999 
+J = $125,000-$149,999 
+K = $150,000-$199,999 
+L = $200,000-$249,999 
+M = $250,000-$399,999 
+N = $400,000-$499,999 
+O = $500,000+",scale as continuous,
+NETW30,0.012285848,1.52E-103,categorical,Not Applicable,No,Net Worth 3.0,"A demographic based analytical model which predicts the household net worth. Net worth is calculated by households total assets (deposit accounts, investments and home value) minus liabilities (loans, mortgages and credit card debt).
+","A = $0 or Less 
+B = $1 - $4,999 
+C = $5,000 - $24,999 
+D = $25,000 - $49,999 
+E = $50,000 - $74,999 
+F = $75,000 - $99,999 
+G = $100,000 - $149,999 
+H = $150,000 - $249,999 
+I = $250,000 - $374,999 
+J = $375,000 - $499,999 
+K = $500,000 - $749,999 
+L = $750,000 - $999,999 
+M = $1,000,000 +",scale as continuous,
+ZINCDEC,0.002423307,1.11E-23,numeric,Positive,No,ZIP Income Decile,The households estimated income ranked by decile (a statistical series dividing households into 10 groups) within the ZIP code. Value of 9 represents the top 10% of the high income households within the ZIP code with 0 representing the lowest. The income used is the most current version.,0-9,,
+ESTDII30,3.52E-05,0.117764414,numeric,Negative,No,Dual Income Index 3.0,A demographic based analytical model which predicts the household likelihood to have more than one income.,0-9,,
+MR,0.00144719,4.49E-14,categorical,Not Applicable,No,Mail Order Responder,Compilation of fields indicating an individual within the household responded to an offer though the mail.,"Y = Single Time Responder
+M = Multiple Time Responder
+U =  Unknown",Drop U,MR_U
+MOBPLUS,0.003218916,3.73E-29,categorical,Not Applicable,No,Mail Order Buyer,Compilation of modeled and known fields indicating an individual within the household made a purchase offered through the mail.,"  BLANK
+M = Multiple Mail Order Buyer
+P = Probable Mail Order Buyer
+Y = Mail Order Buyer
+U = Unknown",Drop U,MOBPLUS_U
+MARRIED,0.000173318,0.004383678,categorical,Not Applicable,No,Married,A member of the household is coded as husband or wife from family position.,"Y = Yes
+U = Unknown",Drop U,MARRIED_U
+NAH19,8.06E-05,0.037874587,numeric,Negative,No,Number of Adults in Household,Number of Adults age 18 and over in this household.,000-255,Drop 0,
+NPH19,0.00041313,2.25E-05,numeric,Negative,No,Number of Persons in Household,"The number of individuals, adults and children, in the household.",000-255,Drop 0,
+TINS,0.002885028,7.58E-28,numeric,Positive,No,Number of Reporting Sources,Number of sources reporting the individual at this address.,"Blank
+001-026",Drop blank,
+NOC19,0.000781857,8.67E-09,numeric,Negative,No,Number of Children,The number of children in the household.,000-255,Drop 0,
+CA00,0.000155999,0.006499465,categorical,Negative,No,Children Present 00-02 Years of Age,Compilation of fields indicating the presence of a child or children ages 00-02 by gender.,"1 = Male Present
+2 = Female Present
+3 = Male and Female Present
+4 = Unknown Gender Present
+5 = Male and Unknown Gender Present
+6 = Female and Unknown Gender Present
+7 = Male, Female and Unknown Gender Present
+0 = Uncoded",Drop 0,CA00_0
+CA03,7.99E-05,0.038534923,categorical,Negative,No,Children Present 03-05 Years of Age,Compilation of fields indicating the presence of a child or children ages 03-05 by gender.,"1 = Male Present
+2 = Female Present
+3 = Male and Female Present
+4 = Unknown Gender Present
+5 = Male and Unknown Gender Present
+6 = Female and Unknown Gender Present
+7 = Male, Female and Unknown Gender Present
+0 = Uncoded",Drop 0,CA03_0
+CA06,0.000131135,0.011507539,categorical,Negative,No,Children Present 06-10 Years of Age,Compilation of fields indicating the presence of a child or children ages 06-10 by gender.,"1 = Male Present
+2 = Female Present
+3 = Male and Female Present
+4 = Unknown Gender Present
+5 = Male and Unknown Gender Present
+6 = Female and Unknown Gender Present
+7 = Male, Female and Unknown Gender Present
+0 = Uncoded",Drop 0,CA06_0
+CA11,0.000196183,0.002617294,categorical,Negative,No,Children Present 11-15 Years of Age,Compilation of fields indicating the presence of a child or children ages 11-15 by gender.,"1 = Male Present
+2 = Female Present
+3 = Male and Female Present
+4 = Unknown Gender Present
+5 = Male and Unknown Gender Present
+6 = Female and Unknown Gender Present
+7 = Male, Female and Unknown Gender Present
+0 = Uncoded",Drop 0,CA11_0
+CA16,1.33E-06,0.304466484,categorical,Negative,No,Children Present 16-18 Years of Age,Compilation of fields indicating the presence of a child or children ages 16-18 by gender.,"1 = Male Present
+2 = Female Present
+3 = Male and Female Present
+4 = Unknown Gender Present
+5 = Male and Unknown Gender Present
+6 = Female and Unknown Gender Present
+7 = Male, Female and Unknown Gender Present
+0 = Uncoded",Drop 0,CA16_0
+POC19,0.000681515,3.07E-07,categorical,Not Applicable,No,Presence of Children,Compilation of modeled and known fields indicating the presence of children within the household.,"P = Probable
+U = Uncoded
+Y = Yes",Drop U,POC19_U
+TUOC,NA,NA,Other,NA,Yes,Individual Occupation,,See Occupation Tab,,
+TUOCS,NA,NA,Other,NA,Yes,Individual Spouse Occupation ,,See Occupation Tab,,
+SOHOIN,-2.43E-05,0.962748389,categorical,Not Applicable,No,SOHO Indicator Individual,Indicates an individual owns a small business or has a home office at this address.,"Y = Yes
+U = Unknown",Drop U,SOHOIN_U
+SOHOHH,2.17E-05,0.168994117,categorical,Not Applicable,No,SOHO Indicator Household,Indicates an individual within the household owns a small business or has a home office at this address.,"Y = Yes
+U = Unknown",Drop U,SOHOHH_U
+ONLA,0.000315277,0.000187898,categorical,Not Applicable,No,Online Access,Compilation of fields indicating the household has online access.,"Y = Yes
+U = Unknown",Drop U,ONLA_U
+TELE,0.007641991,0.000271949,numeric,Positive,Yes,Telephone Number,, ,,
+CPPD,0.001266604,3.26E-13,numeric,Positive,Yes,Telephone Publication Date,,CCYYMM,,
+DPVS,0.000764228,1.64E-07,categorical,Not Applicable,No,DPV Status,Delivery Point Validation (DPV) confirms that an address on the database or mail list actually exists.  It provides the flexibility to decide whether to drop flagged addresses from mailings. All mailable records are DPV verified.,"Y - DPV Validated
+D - DPV confirmed with primary address (apt # missing)
+S - DPV confirmed with primary address (apt # present but unconfirmed)
+N - Zip+4 coded but not confirmed
+X - Could not apply zip +4",,
+PUBH,0.000791157,7.12E-09,categorical,Not Applicable,No,Public Housing Address,The address is coded as public/government housing.,"Y = Yes
+U = Uncoded",Drop U,PUBH_U
+SSON,0.000236638,0.001060811,categorical,Not Applicable,No,DSF Result - Seasonal,A seasonal address as reported by the United States Postal Service.,"Y = Yes
+U = Uncoded",Drop U,SSON_U
+VAC,2.08E-05,0.173520352,categorical,Not Applicable,No,DSF Result - Vacant,A vacant address as reported by the United States Postal Service.,"Y = Yes
+U = Uncoded",Drop U,VAC_U
+EDUC,-6.67E-06,0.394127049,categorical,Not Applicable,No,Seasonal Education Address,"Addresses identified as dormitories, sorority or fraternity houses, and apartment buildings used primarily by students.  These are not identified by the DSF Seasonal Indicator.","Y = Yes
+U = Unknown",Drop U,EDUC_U
+Z4HMVALU,0.003929692,2.93E-37,numeric,Positive,No,ZIP4 Home Value,The aggregated value of properties in the area coded at the ZIP+4 level.,0000 - 9999,Drop 0 (Not indicated),
+CHNDISPL,2.84E-05,0.141073673,categorical,Not Applicable,No,Channel Indicator - Overall Targeted Display Indicator,"Indicates an individual is available for online display advertising.
+","N = NO
+Y = YES",,
+CHNEMAIL,0.001853289,1.57E-18,categorical,Not Applicable,No,Channel Indicator - Email,"Indicates an individual is available for email advertising.
+","N = NO
+Y = YES ",,
+CALAGE,0.018270477,4.52E-155,numeric,Positive,No,Age,An individuals age calculated using date of birth for each build cycle.,00-99,Drop Blank,
+DOBMM,0.000219138,0.001565781,numeric,Positive,Yes,Date of Birth Month ,The month of birth for this individual.,MM = 00-12,,
+DOBDD,0.000330293,0.000135392,numeric,Positive,Yes,Date of Birth Day,The day of birth for this individual.,DD = 00-31,,
+DOBCCYY,0.000684508,6.81E-08,numeric,Positive,Yes,Date of Birth Year,The year of birth for this individual.,CCYY,,
+CNBC,0.002399504,1.82E-23,numeric,Positive,Yes,Bank Card New Issue Date,,CCYYMM,,
+BC,0.002879899,7.07E-27,categorical,Not Applicable,No,Bank Card,Compilation of fields indicating the individual received a credit card issued by a bank.,"Y = Single Bank Card
+M = Multiple Bank Card
+U = Unknown",Drop U,BC_U
+RC,0.003585811,3.42E-33,categorical,Not Applicable,No,Retail Card,Compilation of fields indicating an individual within the household received a retail card issued by a specific retailer.,"Y = Single Retail Card
+M = Multiple Retail Card
+U = Unknown",Drop U,RC_U
+PRESCA,0.00362922,1.49E-34,categorical,Not Applicable,No,Credit Active,An individual within the household has been reported as having a credit relationship with a store or financial institution.,"Y = Yes
+U = Uncoded",Drop U,PRESCA_U
+SRET,0.003796094,4.68E-36,categorical,Not Applicable,No,Credit Active - Standard Retail,An individual within the household has been reported to have a open credit relationship with a standard retail store usually found in a mall.,"Y = Yes
+U = Unknown",Drop U,SRET_U
+LOWD,0.001395046,2.22E-14,categorical,Not Applicable,No,Credit Active - Low End Dept Stores,An individual within the household has been reported to have a open credit relationship with a high volume low end standalone department store.,"Y = Yes
+U = Unknown",Drop U,LOWD_U
+MSR,0.000601717,3.96E-07,categorical,Not Applicable,No,Credit Active - Main Street Retail,An individual within the household has been reported to have a open credit relationship with a main street retail store usually found within a  town (i.e. pharmacy).,"Y = Yes
+U = Unknown",Drop U,MSR_U
+HIR,0.001291956,1.92E-13,categorical,Not Applicable,No,Credit Active - High End Retail,An individual within the household has been reported to have a open credit relationship with a high-end retail department store.,"Y = Yes
+U = Unknown",Drop U,HIR_U
+TRVL,0.001531321,1.29E-15,categorical,Not Applicable,No,Credit Active - Travel/Personal Services,"An individual within the household has been reported to have a open credit relationship with a travel or personal services affiliate (i.e. airlines, car rental, and gym).","Y = Yes
+U = Unknown",Drop U,TRVL_U
+SPEC,0.000961372,1.97E-10,categorical,Not Applicable,No,Credit Active - Specialty,"An individual within the household has been reported to have a open credit relationship with a specialty store that sells something specific  (i.e. auto stores, toy stores, jewelry stores, etc.).","Y = Yes
+U = Unknown",Drop U,SPEC_U
+SPEA,0.000839365,2.57E-09,categorical,Not Applicable,No,Credit Active - Specialty Apparel,An individual within the household has been reported to have a open credit relationship with a mall specialty apparel store.,"Y = Yes
+U = Unknown",Drop U,SPEA_U
+FINB,0.004290633,1.65E-40,categorical,Not Applicable,No,Credit Active - Financial Services Banking,An individual within the household has been reported by a variety of banks to have a open credit relationship with a bank.,"Y = Yes
+U = Unknown",Drop U,FINB_U
+FINI,9.30E-06,0.239803653,categorical,Not Applicable,No,Credit Active - Financial Services Insurance,An individual within the household has been reported to have a open credit relationship indicated by a variety of insurance companies.,"Y = Yes
+U = Unknown",Drop U,FINI_U
+FINC,0.001416422,1.42E-14,categorical,Not Applicable,No,Credit Active - Financial Services Credit,An individual within the household has been reported to have a open credit relationship indicated by a variety of  financial or loan companies.,"Y = Yes
+U = Unknown",Drop U,FINC_U
+CSR,3.41E-05,0.121189046,categorical,Not Applicable,No,Credit Active - Catalog Showroom Retail,An individual within the household has been reported to have a open credit relationship with a store that sells items that can either be purchased in the standalone store and its corresponding catalog.,"Y = Yes
+U = Unknown",Drop U,CSR_U
+CE,0.000663132,1.07E-07,categorical,Not Applicable,No,Credit Active - Computer Electronics,An individual within the household has been reported to have currently purchased from both a small or large retail store that carry computers and electronics using a credit card.,"Y = Yes
+U = Unknown",Drop U,CE_U
+FURN,4.95E-05,0.081522419,categorical,Not Applicable,No,Credit Active - Furniture,An individual within the household has been reported to have a open credit relationship with a furniture store.,"Y = Yes
+U = Unknown",Drop U,FURN_U
+HOMO,0.000810073,4.78E-09,categorical,Not Applicable,No,Credit Active - Home/Office Supplies,An individual within the household has been reported to have a open credit relationship with a home/office supply store.,"Y = Yes
+U = Unknown",Drop U,HOMO_U
+HOMI,0.000275781,0.000446676,categorical,Not Applicable,No,Credit Active - Home Improvement,An individual within the household has been reported to have a open credit relationship with a home improvement store.,"Y = Yes
+U = Unknown",Drop U,HOMI_U
+MEMW,0.000677897,7.84E-08,categorical,Not Applicable,No,Credit Active - Membership Warehouse,An individual within the household has been reported to have a open credit relationship with a warehouse membership store.,"Y = Yes
+U = Unknown",Drop U,MEMW_U
+SPGD,0.000379073,4.69E-05,categorical,Not Applicable,No,Credit Active - Sporting Goods,An individual within the household have been reported to have a open credit relationship with a purchased from a sporting goods store.,"Y = Yes
+U = Unknown",Drop U,SPGD_U
+TVMA,0.00024233,0.000934973,categorical,Not Applicable,No,Credit Active - TV/Mail Order Purchases,An individual within the household has been reported to have a open credit relationship with a TV/mail order company.,"Y = Yes
+U = Unknown",Drop U,TVMA_U
+GROC,NA,NA,categorical,NA,No,Credit Active - Groceries,An individual within the household has been reported to have a open credit relationship with a grocery store.,"Y = Yes
+U = Unknown",Drop U,GROC_U
+OILC,0.002155265,2.92E-21,categorical,Not Applicable,No,Credit Active - Oil Companies,An individual within the household has been reported to have open credit relationship with an oil company.,"Y = Yes
+U = Unknown",Drop U,OILC_U
+MISC,0.000352595,8.33E-05,categorical,Not Applicable,No,Credit Active - Miscellaneous,An individual within the household has been reported to have a open credit relationship with a miscellaneous source.,"Y = Yes
+U = Unknown",Drop U,MISC_U
+CACD,0.003427393,9.81E-33,date,Positive,no,Credit Activity Last Posted Date,The most current credit activity date reported for an individual within this household.  Format is: CCYYMM,CCYYMM,Recode into days since,
+TRAD,0.000267329,0.004396658,numeric,Positive,No,Credit Active - Trade Lines,The number of credit lines last reported for this household.,"  Uncoded
+0 - 0 Unknown
+1 - 1 Tradeline
+2 - 2 Tradelines
+3 - 3 Tradelines
+4 - 4 Tradelines
+5 - 5 Tradelines
+6 - 6 Tradelines
+7 - 7 Tradelines
+8 - 8 Tradelines
+9 - 9 Tradelines",Drop 0,
+CDB1,0.000289526,0.000330227,numeric,Negative,No,Child 1 Date of Birth,Date of birth of a child in the household populated in the first child DOB field.  Format: CCYYMM,"CCYYMM
+000000 = Uncoded","Recode To Age, Drop 00000",
+CGN1,3.74E-05,0.170689331,categorical,Not Applicable,No,Child 1 Gender,Gender associated with the field Child 1 Date of Birth.,"M = Male
+F = Female
+blank = Uncoded",Drop blank,
+CDB2,0.000188886,0.003084108,date,Negative,no,Child 2 Date of Birth,Date of birth of a child in the household populated in the second child DOB field.  Format: CCYYMM,"CCYYMM
+000000 = Uncoded","Recode To Age, Drop 00000",
+CGN2,2.00E-05,0.24395495,categorical,Not Applicable,No,Child 2 Gender,Gender associated with the field Child 2 Date of Birth.,"M = Male
+F = Female
+blank = Uncoded",Drop blank,
+CDB3,0.000295761,0.000288017,date,Negative,No,Child 3 Date of Birth,Date of birth of a child in the household populated in the third child DOB field.  Format: CCYYMM,"CCYYMM
+000000 = Uncoded","Recode To Age, Drop 00000",
+CGN3,8.41E-05,0.065403285,categorical,Not Applicable,No,Child 3 Gender,Gender associated with the field Child 3 Date of Birth.,"M = Male
+F = Female
+blank = Uncoded",Drop blank,
+CDB4,0.000183957,0.003446512,date,Negative,No,Child 4 Date of Birth,Date of birth of a child in the household populated in the fourth child DOB field.  Format: CCYYMM,"CCYYMM
+000000 = Uncoded","Recode To Age, Drop 00000",
+CGN4,7.62E-05,0.076984684,categorical,Not Applicable,No,Child 4 Gender,Gender associated with the field Child 4 Date of Birth.,"M = Male
+F = Female
+blank = Uncoded",Drop blank,
+CO,-2.39E-05,0.894495522,categorical,Not Applicable,No,Presence of Computer Owner,Compilation of fields indicating the household owns a computer.,"Y = Yes
+U = Uncoded",Drop U,CO_U
+EMDM,0.00039142,3.59E-05,categorical,Not Applicable,No,Email Access,Indicates the household has access to email.,"  Blank
+Y = Yes
+U = Unknown",Drop U,EMDM_U
+PART,0.00308962,5.24E-28,categorical,Not Applicable,No,Registered Voter Party,"When the individual registered to vote, this was their choice of political party.  This is a combination of historic and recent registrations.","  Uncoded
+D - Democrat
+I - Independent
+R - Republican",,
+VOTE,0.000741284,2.05E-08,categorical,Not Applicable,No,Registered Voter Indicator,Indicates an individual has registered to vote.  This is a combination of historic and recent registrations.,"Y = Yes
+U = Unknown",Drop U,VOTE_U
+CD,2.72E-05,0.145846147,numeric,Positive,Yes,Congressional District,," BLANK
+00 - UNKNOWN
+01-53 - VALID VALUES
+95 - AT LARGE
+99 - NOT APPLICABLE",,
+HTFH,3.58E-06,0.284140914,categorical,Not Applicable,No,Hunting and Fishing,Indicates an individual has a hunting and/or fishing license.,"  BLANK
+Y  Yes
+U  Unknown",Drop U,HTFH_U
+BOAT,-2.32E-05,0.824590671,categorical,Not Applicable,No,Boating,Indicates an individual within the household has registered a boat.,"  BLANK
+Y  Yes
+U  Unknown",Drop U,BOAT_U
+DNRINDX,0.000107358,0.040586522,categorical,Not Applicable,No,Presence of Donor,Compilation of known and modeled fields indicating the presence of a donor to a charitable organization within the household.,"Y = Donor
+P = Probable Donor
+U = Unknown
+",Drop U,DNRINDX_U
+DIANIMAL,0.000157706,0.01443398,categorical,Not Applicable,No,Presence of Donor - Animal,Compilation of known and modeled fields indicating the presence of a donor to a charitable organization for animals within the household.,"Y = Donor
+P = Probable Donor
+U = Unknown",Drop U,DIANIMAL_U
+DIARTS,-1.80E-05,0.532021585,categorical,Not Applicable,No,Presence of Donor - Arts,Compilation of known and modeled fields indicating the presence of a donor to a charitable organization for the arts within the household.,"Y = Donor
+P = Probable Donor
+U = Unknown",Drop U,DIARTS_U
+DICHLD,0.000127911,0.026613345,categorical,Not Applicable,No,Presence of Donor - Children,Compilation of known and modeled fields indicating the presence of a donor to a charitable organization for children within the household.,"Y = Donor
+P = Probable Donor
+U = Unknown",Drop U,DICHLD_U
+DICNSRV,-3.86E-05,0.812174463,categorical,Not Applicable,No,Presence of Donor - Conservative,Compilation of known and modeled fields indicating the presence of a donor to a charitable organization for political conservatives within the household.,"Y = Donor
+P = Probable Donor
+U = Unknown",Drop U,DICNSRV_U
+DIENV,0.00023911,0.00271261,categorical,Not Applicable,No,Presence of Donor - Environment,Compilation of known and modeled fields indicating the presence of a donor to a charitable organization related to the environment within the household.,"Y = Donor
+P = Probable Donor
+U = Unknown",Drop U,DIENV_U
+DIHLTH,0.000107127,0.040779931,categorical,Not Applicable,No,Presence of Donor - Health,Compilation of known and modeled fields indicating the presence of a donor to a charitable organization related to health within the household.,"Y = Donor
+P = Probable Donor
+U = Unknown",Drop U,DIHLTH_U
+DIHUMN,-2.22E-05,0.580193688,categorical,Not Applicable,No,Presence of Donor - Humanitarian,Compilation of known and modeled fields indicating the presence of a donor to a charitable organization related to humanitarian efforts within the household.,"Y = Donor
+P = Probable Donor
+U = Unknown",Drop U,DIHUMN_U
+DILIB,-2.50E-05,0.614838114,categorical,Not Applicable,No,Presence of Donor - Liberal,Compilation of known and modeled fields indicating the presence of a donor to a charitable organization for political liberals within the household.,"Y = Donor
+P = Probable Donor
+U = Unknown",Drop U,DILIB_U
+DIREL,-2.46E-05,0.609937057,categorical,Not Applicable,No,Presence of Donor - Religious,Compilation of known and modeled fields indicating the presence of a donor to a charitable organization related to religion within the household.,"Y = Donor
+P = Probable Donor
+U = Unknown",Drop U,DIREL_U
+DIVET,-3.21E-05,0.711088474,categorical,Not Applicable,No,Presence of Donor - Veterans,Compilation of known and modeled fields indicating the presence of a donor to a charitable organization related to veterans within the household.,"Y = Donor
+P = Probable Donor
+U = Unknown",Drop U,DIVET_U
+VETERAN,0.000122728,0.013985921,categorical,Not Applicable,No,Presence of Veteran,Compilation of fields indicting an individual within the household has served or is serving in the armed forces.,"Y = Yes
+U = Unknown",Drop U,VETERAN_U
+COLLEGE,-2.38E-05,0.876716896,categorical,Not Applicable,No,Presence of College Graduate,Compilation of fields indicating an individual within the household is a college graduate.,"  BLANK
+Y  Yes
+U  Unknown",Drop U,COLLEGE_U
+AIRCRAFT,-1.81E-05,0.611790555,categorical,Not Applicable,No,US Aircraft,Indicates the individual owns an aircraft registered in the United States.,"Y = Yes
+U = Unknown",Drop U,AIRCRAFT_U
+PILOTS,-2.44E-05,0.99584117,categorical,Not Applicable,No,Pilots,Indicates the individual is a licensed pilot.,"Y = Yes
+U = Unknown",Drop U,PILOTS_U
+ATV,-2.42E-05,0.93862902,categorical,Not Applicable,No,All Terrain Vehicles,Indicates an individual within the household has a registered all terrain vehicle.,"Y = Yes
+U = Unknown",Drop U,ATV_U
+SNOW,-1.51E-05,0.53762391,categorical,Not Applicable,No,Snowmobiles,Indicates an individual within the household has a registered snowmobile.,"Y = Yes
+U = Unknown",Drop U,SNOW_U
+CCW,-2.35E-05,0.855734965,categorical,Not Applicable,No,Concealed Weapons,Indicates the individual has a concealed weapon permit or license.,"Y = Yes
+U = Unknown",Drop U,CCW_U
+HMVLADD,0.002106728,8.01E-21,numeric,Positive,No,Home Value Address Level,"An estimated assessed value of the property at the address level.
+","0001-9999 (in thousands)
+",Drop 0 (Not indicated),
+LNVLRTIO,0.000138928,0.009613005,numeric,Negative,No,Loan to Value Ratio,The percentage of the mortgage amount borrowed to the appraised home value.  Data mask is xx.xx, 0000-0199,,
+ESTDIS30,0.002301813,1.39E-22,numeric,Positive,No,Estimated Discretionary Income Percent,A demographic based analytical model which predicts the household discretionary income as a percentage of their estimated annual income. ,00-99,,
+ESTDEB30,0.002703012,5.00E-22,categorical,Not Applicable,No,Estimated Household Debt Level,A demographic based analytical model which predicts the household annual level of financial debt. ,"A = $0
+B = $1 - $1,499
+C = $1,500 - $3,499
+D = $3,500 - $7,499
+E = $7,500 - $14,999
+F = $15,000 - $24,999
+G = $25,000 - $39,999
+H = $40,000 - $74,999
+I = $75,000+",scale,
+ESTINV30,0.011998854,5.82E-103,categorical,Not Applicable,No,Estimated Household Investable Assets,A demographic based analytical model which predicts the household annual amount of investable assets.,"A = Less than $5,000
+B = $5,000 - $24,999
+C = $25,000 - $49,999
+D = $50,000 - $74,999
+E = $75,000 - $99,999
+F = $100,000 - $249.999
+G = $250,000 - $499,999
+H = $500,000 - $749,999
+I = $750,000 - $999,999
+J = $1,000,000+",scale,
+HHCOMP,0.005699752,6.70E-46,categorical,Not Applicable,No,Household Composition,Indicator of the household composition based on family position and presence of children.,"A = Married (husband and wife present) with children present. 
+B = Married (husband & wife present) with no children present. 
+C = Two persons, one male and one female - marital status unknown - with children present. 
+D = Two persons, one male and one female - marital status unknown with no children present. 
+E = Male householder with one or more other persons of any gender with children present. 
+F = Male householder with one or more persons of any gender with no children present. 
+G = Female householder with one or more other persons of any gender with children present. 
+H = Female householder with one or more other persons of any gender with no children present. 
+I = One person (male householder) with children present. 
+J = One person (male householder) with no children present. 
+K = One person (female householder) with children present. 
+L = One person (female householder) with no children present. 
+U = Composition unknown ",Drop U,HHCOMP_U
+N65P,0.000374398,5.19E-05,categorical,Not Applicable,No,Family Member 65+,Indicates an individual 65 and older resides in the household.,"Y = Yes
+U = Unknown",Drop U,N65P_U
+N6064,0.000184987,0.00336735,categorical,Not Applicable,No,Family Member 60-64,Indicates an individual between the ages of 60-64 reside in the household.,"Y = Yes
+U = Unknown",Drop U,N6064_U
+N5059,0.000567943,8.12E-07,categorical,Not Applicable,No,Family Member 50-59,Indicates an individual between the ages of 50-59 reside in the household.,"Y = Yes
+U = Unknown",Drop U,N5059_U
+N4049,0.00016657,0.00510886,categorical,Not Applicable,No,Family Member 40-49,Indicates an individual between the ages of 40-49 reside in the household.,"Y = Yes
+U = Unknown",Drop U,N4049_U
+N3039,0.00055075,1.17E-06,categorical,Not Applicable,No,Family Member 30-39,Indicates an individual between the ages of 30-39 reside in the household.,"Y = Yes
+U = Unknown",Drop U,N3039_U
+N2029,0.000255058,0.000705429,categorical,Not Applicable,No,Family Member 20-29,Indicates an individual between the ages of 20-29 reside in the household.,"Y = Yes
+U = Unknown",Drop U,N2029_U
+N1819,0.000131549,0.011398035,categorical,Not Applicable,No,Family Member 18-19,Indicates an individual between the ages of 18-19 reside in the household.,"Y = Yes
+U = Unknown",Drop U,N1819_U
+U18,NA,NA,categorical,NA,No,Family Member Under 18,Indicates an individual under the age of 18 resides in the household.,"Y = Yes
+U = Unknown",Drop U,U18_U
+STLAPP,0.000117149,0.015927924,categorical,Not Applicable,No,Short Term Loan Applicants,Indicates an individual within the household applied for a short term loan.,"  BLANK
+Y  Yes
+U  Unknown",Drop U,STLAPP_U
+STLINDEX,0.003079093,1.35E-29,numeric,Positive,No,Short Term Loan Index,A demographic based analytical model which predicts the likelihood someone in the household has applied for a short term loan.,"0 - Most Likely
+1 
+2 
+3 
+4 
+5 
+6 
+7 
+8 
+9 - Least Likely",,
+BDOC,0.000541577,1.43E-06,date,Negative,No,Bankruptcy Docket Date,Date the bankruptcy was filed with the court.  Format is CCYYMM.,CCYYMM,"Recode, Drop 0",
+BANK,0.000541315,1.43E-06,categorical,Not Applicable,No,Bankruptcy Household Indicator,Indicates an individual within the household has filed for bankruptcy.,"Y = Yes
+U = Uncoded",Drop U,BANK_U
+BNKI,0.000680769,7.37E-08,categorical,Not Applicable,No,Bankruptcy Individual Indicator,Indicates an individual has filed for bankruptcy.,"Y = Yes
+U = Uncoded",Drop U,BNKI_U
+PRESSURV,0.000648442,1.46E-07,categorical,Not Applicable,No,Presence of Survey Data,Indicates the presence of an individual within the household completing a survey.,"Y = Yes
+U = Unknown",Drop U,PRESSURV_U
+IOR,0.00035401,8.08E-05,categorical,Negative,No,Survey - Own/Rent,An individual within the household completed a survey indicating they own or rent the current dwelling structure.,"1 = Own Apt/Condo
+2 = Own other type of dwelling unit
+3 = Own House/Single Family Dwelling
+4 = Rent Apt/Condo
+5 = Rent other type of dwelling unit
+6 = Rent House/Single Family
+0 = Unknown",Drop 0,IOR_0
+IHH,0.000876328,1.18E-09,categorical,Not Applicable,No,Survey - Household Level Match,An individual within the household completed an offline survey.,"Y = Yes
+U = Unknown",Drop U,IHH_U
+IIND,0.000864019,1.53E-09,categorical,Not Applicable,No,Survey - Individual Level Match,The individual completed an offline survey.,"Y = Yes
+U = Unknown",Drop U,IIND_U
+QHH,-8.54E-06,0.420410004,categorical,Not Applicable,No,Survey - Household Level Match - Online,An individual within the household completed an online survey.,"Y = Yes
+U = Unknown
+
+",Drop U,QHH_U
+QIND,3.49E-05,0.118681045,categorical,Not Applicable,No,Survey - Individual Level Match - Online,An individual completed an online survey.,"Y = Yes
+U = Unknown
+",Drop U,QIND_U
+ICAT,0.00042531,1.73E-05,categorical,Not Applicable,No,Survey - Own A Cat,An individual within the household completed a survey indicating they own a cat.,"Y = Yes
+U = Unknown",Drop U,ICAT_U
+IDOG,0.001313613,1.22E-13,categorical,Not Applicable,No,Survey - Own A Dog,An individual within the household completed a survey indicating they own a dog.,"Y = Yes
+U = Unknown",Drop U,IDOG_U
+IOCD,0.000121285,0.014463667,categorical,Not Applicable,No,Survey - Own a CD/DVD Player,An individual within the household completed a survey indicating they own a CD/DVD player.,"Y = Yes
+U = Unknown",Drop U,IOCD_U
+IOCE,2.88E-05,0.139449946,categorical,Not Applicable,No,Survey - Own a Cellular Phone,An individual within the household completed a survey indicating they own a cellular phone.,"Y = Yes
+U = Unknown",Drop U,IOCE_U
+IOMO,0.000374995,5.12E-05,categorical,Not Applicable,No,Survey - Own a Motorcycle,An individual within the household completed a survey indicating they own a motorcycle.,"Y = Yes
+U = Unknown",Drop U,IOMO_U
+IORV,0.000227454,0.001301021,categorical,Not Applicable,No,Survey - Own An RV,An individual within the household completed a survey indicating they own a recreational vehicle (RV).,"Y = Yes
+U = Unknown",Drop U,IORV_U
+IOSW,0.000376782,4.93E-05,categorical,Not Applicable,No,Survey - Own a Swimming Pool,An individual within the household completed a survey indicating they own a swimming pool.,"Y = Yes
+U = Unknown",Drop U,IOSW_U
+IHORSE,7.50E-05,0.043439776,categorical,Not Applicable,No,Survey - Own A Horse,An individual within the household completed a survey indicating they own a horse.,"Y = Yes
+U = Unknown",Drop U,IHORSE_U
+IODIGITL,-2.44E-05,0.99505712,categorical,Not Applicable,No,Survey - Own A Digital/Video Camera,An individual within the household completed a survey indicating they own a digital or video camera.,"Y = Yes
+U = Unknown",Drop U,IODIGITL_U
+IOSMART,-8.19E-07,0.325594311,categorical,Not Applicable,No,Survey - Own a Smart Phone,An individual within the household completed a survey indicating they own a smart phone.,"Y = Yes
+U = Unknown",Drop U,IOSMART_U
+IOATV,-2.09E-05,0.707864386,categorical,Not Applicable,No,Survey - Own an All Terrain Vehicle,An individual within the household completed a survey indicating they own an all terrain vehicle.,"Y = Yes
+U = Unknown",Drop U,IOATV_U
+IC,0.0004567,8.79E-06,categorical,Not Applicable,No,Survey - Collectibles,An individual within the household completed a survey indicating they enjoy collectibles.,"Y = Yes
+U = Unknown",Drop U,IC_U
+ICCO,2.09E-05,0.172674159,categorical,Not Applicable,No,Survey - Collectibles - Coins - Obsolete,An individual within the household completed a survey indicating they collect coins.,"Y = Yes
+U = Unknown",Drop U,ICCO_U
+ICDO,5.54E-05,0.070390535,categorical,Not Applicable,No,Survey - Collectibles - Dolls,An individual within the household completed a survey indicating they collect dolls.,"Y = Yes
+U = Unknown",Drop U,ICDO_U
+ICFI,1.33E-05,0.213721643,categorical,Not Applicable,No,Survey - Collectibles - Figurines,An individual within the household completed a survey indicating they collect figurines.,"Y = Yes
+U = Unknown",Drop U,ICFI_U
+ICOT,0.000324075,0.000155057,categorical,Not Applicable,No,Survey - Collectibles - Other Types of Items,An individual within the household completed a survey indicating they collect non-specific items.,"Y = Yes
+U = Unknown",Drop U,ICOT_U
+ICPL,-2.18E-05,0.747764983,categorical,Not Applicable,No,Survey - Collectibles - Plates,An individual within the household completed a survey indicating they collect collectible plates.,"Y = Yes
+U = Unknown",Drop U,ICPL_U
+ICSP,3.81E-05,0.109172495,categorical,Not Applicable,No,Survey - Collectibles - Sports Memorabilia,An individual within the household completed a survey indicating they collect sports memorabilia.,"Y = Yes
+U = Unknown",Drop U,ICSP_U
+ICST,-7.83E-06,0.410132622,categorical,Not Applicable,No,Survey - Collectibles - Stamps - Obsolete,An individual within the household completed a survey indicating they collect stamps.,"Y = Yes
+U = Unknown",Drop U,ICST_U
+ICFA,-2.39E-05,0.886708882,categorical,Not Applicable,No,Survey - Collectibles - Fine Arts,An individual within the household completed a survey indicating they collect fine arts.,"Y = Yes
+U = Unknown",Drop U,ICFA_U
+IPAE,0.000487728,4.52E-06,categorical,Not Applicable,No,Survey - Credit Cards - Premium AMEX,An individual within the household completed a survey indicating they use a premium American Express card.,"Y = Yes
+U = Unknown",Drop U,IPAE_U
+IPDI,0.000199253,0.002442996,categorical,Not Applicable,No,Survey - Credit Cards - Premium Discover,An individual within the household completed a survey indicating they use a premium Discover card.,"Y = Yes
+U = Unknown",Drop U,IPDI_U
+IPOT,-2.38E-05,0.884673472,categorical,Not Applicable,No,Survey - Credit Cards - Premium Other,An individual within the household completed a survey indicating they use a premium credit card.,"Y = Yes
+U = Unknown",Drop U,IPOT_U
+IPSR,8.30E-05,0.035739232,categorical,Not Applicable,No,Survey - Credit Cards - Premium Store or Retail,An individual within the household completed a survey indicating they use a premium store or retail credit card.,"Y = Yes
+U = Unknown",Drop U,IPSR_U
+IPVM,-2.21E-05,0.758901102,categorical,Not Applicable,No,Survey - Credit Cards - Premium Visa or MasterCard,An individual within the household completed a survey indicating they use a premium Visa or MasterCard.,"Y = Yes
+U = Unknown",Drop U,IPVM_U
+IRAE,-4.65E-06,0.368361899,categorical,Not Applicable,No,Survey - Credit Cards - Regular AMEX,An individual within the household completed a survey indicating they use a regular American Express card.,"Y = Yes
+U = Unknown",Drop U,IRAE_U
+IRDI,-2.25E-05,0.783753417,categorical,Not Applicable,No,Survey - Credit Cards - Regular Discover,An individual within the household completed a survey indicating they use a regular Discover card.,"Y = Yes
+U = Unknown",Drop U,IRDI_U
+IROT,4.94E-05,0.081899323,categorical,Not Applicable,No,Survey - Credit Cards - Regular Other,An individual within the household completed a survey indicating they use a regular credit card.,"Y = Yes
+U = Unknown",Drop U,IROT_U
+IRSR,-2.39E-05,0.892823093,categorical,Not Applicable,No,Survey - Credit Cards - Regular Store or Retail,An individual within the household completed a survey indicating they use a regular store or retail credit card.,"Y = Yes
+U = Unknown",Drop U,IRSR_U
+IRVM,0.000301816,0.000252231,categorical,Not Applicable,No,Survey - Credit Cards - Regular Visa or MasterCard,An individual within the household completed a survey indicating they use a regular Visa or MasterCard.,"Y = Yes
+U = Unknown",Drop U,IRVM_U
+IRDEBIT,-6.82E-06,0.396175127,categorical,Not Applicable,No,Survey - Credit Cards - ATM/Debit,An individual within the household completed a survey indicating they use an ATM or debit card.,"Y = Yes
+U = Unknown",Drop U,IRDEBIT_U
+IDC,0.000352157,8.41E-05,categorical,Not Applicable,No,Survey - Diet Concerns,An individual within the household completed a survey indicating diet concerns.,"Y = Yes
+U = Unknown",Drop U,IDC_U
+IDWGHT,0.000412128,2.30E-05,categorical,Not Applicable,No,Survey - Diet Concerns - Lose Weight,An individual within the household completed a survey with a diet concern to lose weight.,"Y = Yes
+U = Unknown",Drop U,IDWGHT_U
+IDNAT,0.00019567,0.002647636,categorical,Not Applicable,No,Survey - Diet Concerns - Eat Natural/Herbal/Organic,An individual within the household completed a survey with a diet concern to eat more natural/herbal/herbal/organic foods.,"Y = Yes
+U = Unknown",Drop U,IDNAT_U
+IDVIT,0.000479353,5.40E-06,categorical,Not Applicable,No,Survey - Diet Concerns - Vitamin Supplements - Obsolete,An individual within the household completed a survey with a diet concern to include vitamin supplements.,"Y = Yes
+U = Unknown",Drop U,IDVIT_U
+IDLOW,-2.41E-05,0.921544263,categorical,Not Applicable,No,Survey - Diet Concerns - Low-Fat/Healthy Foods,An individual within the household completed a survey with a diet concern to eat low fat and healthy foods.,"Y = Yes
+U = Unknown",Drop U,IDLOW_U
+IGC,0.00038918,3.77E-05,categorical,Not Applicable,No,Survey - Grandchildren,An individual within the household completed a survey indicating they have grandchildren.,"Y = Yes
+U = Unknown",Drop U,IGC_U
+PRESHI,0.000636046,1.91E-07,categorical,Not Applicable,No,Survey - Hobby,An individual within the household completed a survey indicating they enjoy hobbies.,"Y = Yes
+U = Unknown",Drop U,PRESHI_U
+IHBA,0.00051578,2.48E-06,categorical,Not Applicable,No,Survey - Hobby - Baking,An individual within the household completed a survey indicating a hobby or interest in baking.,"Y = Yes
+U = Unknown",Drop U,IHBA_U
+IHBI,0.000220197,0.001529253,categorical,Not Applicable,No,Survey - Hobby - Bird Watching/Feeding,An individual within the household completed a survey indicating a hobby or interest in bird watching or feeding.,"Y = Yes
+U = Unknown",Drop U,IHBI_U
+IHCR,0.000411756,2.31E-05,categorical,Not Applicable,No,Survey - Hobby - Cars or Car Repair,An individual within the household completed a survey indicating a hobby or interest in cars or car repair.,"Y = Yes
+U = Unknown",Drop U,IHCR_U
+IHCI,1.01E-05,0.234489257,categorical,Not Applicable,No,Survey - Hobby - Cigar Smoking,An individual within the household completed a survey indicating a hobby or interest in cigar smoking.,"Y = Yes
+U = Unknown",Drop U,IHCI_U
+IHCG,-4.91E-06,0.371531057,categorical,Not Applicable,No,Survey - Hobby - Gourmet Cooking,An individual within the household completed a survey indicating a hobby or interest in gourmet cooking.,"Y = Yes
+U = Unknown",Drop U,IHCG_U
+IHCO,0.000485024,4.78E-06,categorical,Not Applicable,No,Survey - Hobby - Cooking,An individual within the household completed a survey indicating a hobby or interest in cooking.,"Y = Yes
+U = Unknown",Drop U,IHCO_U
+IHCF,0.000299975,0.00026261,categorical,Not Applicable,No,Survey - Hobby - Crafts,An individual within the household completed a survey indicating a hobby or interest in crafts.,"Y = Yes
+U = Unknown",Drop U,IHCF_U
+IHCA,-4.77E-06,0.369835714,categorical,Not Applicable,No,Survey - Hobby - Casino Gambling - Obsolete,An individual within the household completed a survey indicating a hobby or interest in casino gambling.,"Y = Yes
+U = Unknown",Drop U,IHCA_U
+IHGA,6.23E-05,0.059177678,categorical,Not Applicable,No,Survey - Hobby - Gardening,An individual within the household completed a survey indicating a hobby or interest in gardening.,"Y = Yes
+U = Unknown",Drop U,IHGA_U
+IHGF,0.000103333,0.022029802,categorical,Not Applicable,No,Survey - Hobby - Gardening - Flowers,An individual within the household completed a survey indicating a hobby or interest in gardening flowers.,"Y = Yes
+U = Unknown",Drop U,IHGF_U
+IHGO,0.000126942,0.012681718,categorical,Not Applicable,No,Survey - Hobby - Gardening - Organic,An individual within the household completed a survey indicating a hobby or interest in gardening organic.,"Y = Yes
+U = Unknown",Drop U,IHGO_U
+IHGV,-1.63E-05,0.565527928,categorical,Not Applicable,No,Survey - Hobby - Gardening - Vegetables,An individual within the household completed a survey indicating a hobby or interest in gardening vegetables.,"Y = Yes
+U = Unknown",Drop U,IHGV_U
+IHHI,0.000124969,0.013276031,categorical,Not Applicable,No,Survey - Hobby - Home Improvement or Repair,An individual within the household completed a survey indicating a hobby or interest in home improvement or repair.,"Y = Yes
+U = Unknown",Drop U,IHHI_U
+IHHS,0.000122424,0.014085056,categorical,Not Applicable,No,Survey - Hobby - Home Study Courses,An individual within the household completed a survey indicating a hobby or interest in home study courses.,"Y = Yes
+U = Unknown",Drop U,IHHS_U
+IHKN,8.63E-05,0.033075401,categorical,Not Applicable,No,Survey - Hobby - Knitting or Needlework,An individual within the household completed a survey indicating a hobby or interest in knitting or needlework.,"Y = Yes
+U = Unknown",Drop U,IHKN_U
+IHLO,0.000197702,0.002529497,categorical,Not Applicable,No,Survey - Hobby - Lotteries or Sweepstakes - Obsolete,An individual within the household completed a survey indicating a hobby or interest in lotteries or sweepstakes.,"Y = Yes
+U = Unknown",Drop U,IHLO_U
+IHQU,3.96E-05,0.105041597,categorical,Not Applicable,No,Survey - Hobby - Quilting,An individual within the household completed a survey indicating a hobby or interest in quilting.,"Y = Yes
+U = Unknown",Drop U,IHQU_U
+IHSE,0.000286183,0.000355374,categorical,Not Applicable,No,Survey - Hobby - Self-Improvement Courses,An individual within the household completed a survey indicating a hobby or interest in self-improvement courses.,"Y = Yes
+U = Unknown",Drop U,IHSE_U
+IHSW,-2.22E-05,0.768114143,categorical,Not Applicable,No,Survey - Hobby - Sewing,An individual within the household completed a survey indicating a hobby or interest in sewing.,"Y = Yes
+U = Unknown",Drop U,IHSW_U
+IHTH,0.000115277,0.016640169,categorical,Not Applicable,No,Survey - Hobby - Theater or Performing Arts,An individual within the household completed a survey indicating a hobby or interest in theater or performing arts.,"Y = Yes
+U = Unknown",Drop U,IHTH_U
+IHWO,0.000217851,0.001611404,categorical,Not Applicable,No,Survey - Hobby - Wood Working,An individual within the household completed a survey indicating a hobby or interest in wood working.,"Y = Yes
+U = Unknown",Drop U,IHWO_U
+IHWI,-2.29E-05,0.805491108,categorical,Not Applicable,No,Survey - Hobby - Wine Appreciation,An individual within the household completed a survey indicating a hobby or interest in wine appreciation.,"Y = Yes
+U = Unknown",Drop U,IHWI_U
+IHPH,3.01E-05,0.134701007,categorical,Not Applicable,No,Survey - Hobby - Photography,An individual within the household completed a survey indicating a hobby or interest in photography.,"Y = Yes
+U = Unknown",Drop U,IHPH_U
+IHEX,-2.42E-05,0.932714347,categorical,Not Applicable,No,Survey - Hobby - Exercise 3 or more times per week,An individual within the household completed a survey indicating a hobby or interest in exercising 3 or more times per week.,"Y = Yes
+U = Unknown",Drop U,IHEX_U
+IHSCRAP,0.000155913,0.006512232,categorical,Not Applicable,No,Survey - Hobby - Scrap Booking,An individual within the household completed a survey indicating a hobby or interest in scrap booking.,"Y = Yes
+U = Unknown",Drop U,IHSCRAP_U
+IHCLF,0.000286629,0.000351909,categorical,Not Applicable,No,Survey - Hobby - Cooking-low fat,An individual within the household completed a survey indicating a hobby or interest in low fat cooking.,"Y = Yes
+U = Unknown",Drop U,IHCLF_U
+IHCAC,7.22E-05,0.046407205,categorical,Not Applicable,No,Survey - Hobby - Career advancement courses,An individual within the household completed a survey indicating a hobby or interest in career advancement courses.,"Y = Yes
+U = Unknown",Drop U,IHCAC_U
+IHBEAD,-1.36E-05,0.50724242,categorical,Not Applicable,No,Survey - Hobby - Beading/Jewelry Making,An individual within the household completed a survey indicating a hobby or interest in beading or jewelry making.,"Y = Yes
+U = Unknown",Drop U,IHBEAD_U
+IHDIY,-1.67E-05,0.574655006,categorical,Not Applicable,No,Survey - Hobby - Do-it-yourself,An individual within the household completed a survey indicating a hobby or interest in do it yourself projects.,"Y = Yes
+U = Unknown",Drop U,IHDIY_U
+IHGREEN,0.000147835,0.00783388,categorical,Not Applicable,No,Survey - Hobby - Green,An individual within the household completed a survey indicating a hobby or interest in issues concerning the environment.,"Y = Yes
+U = Unknown",Drop U,IHGREEN_U
+IHNETWRK,-2.37E-05,0.874065255,categorical,Not Applicable,No,Survey - Hobby - Social Networking,An individual within the household completed a survey indicating a hobby or interest in online social networking.,"Y = Yes
+U = Unknown",Drop U,IHNETWRK_U
+IHSPTWEL,-2.35E-05,0.850968355,categorical,Not Applicable,No,Survey - Hobby - Spirituality & Wellness,An individual within the household completed a survey indicating a hobby or interest in spirituality and wellness.,"Y = Yes
+U = Unknown",Drop U,IHSPTWEL_U
+IOLP,0.000349405,8.93E-05,categorical,Not Applicable,No,Survey - Online Purchaser,An individual within the household completed a survey indicating the purchase of items online.,"Y = Yes
+U = Unknown",Drop U,IOLP_U
+IMBO,4.69E-05,0.087153981,categorical,Not Applicable,No,Survey - Mail Order - Books,An individual within the household completed a survey indicating the purchase of books through the mail.,"Y = Yes
+U = Unknown",Drop U,IMBO_U
+IMBM,2.21E-06,0.296343791,categorical,Not Applicable,No,Survey - Mail Order - Books/Magazines,An individual within the household completed a survey indicating the purchase of books or magazines through the mail.,"Y = Yes
+U = Unknown",Drop U,IMBM_U
+IMCH,0.000143489,0.008655494,categorical,Not Applicable,No,Survey - Mail Order - Childrens Products,An individual within the household completed a survey indicating the purchase of childrens products through the mail.,"Y = Yes
+U = Unknown",Drop U,IMCH_U
+IMCL,0.000177454,0.003991871,categorical,Not Applicable,No,Survey - Mail Order - Clothing,An individual within the household completed a survey indicating the purchase of clothing through the mail.,"Y = Yes
+U = Unknown",Drop U,IMCL_U
+IMCO,0.000344745,9.88E-05,categorical,Not Applicable,No,Survey - Mail Order - Cosmetics,An individual within the household completed a survey indicating the purchase of cosmetics through the mail.,"Y = Yes
+U = Unknown",Drop U,IMCO_U
+IMFO,8.14E-05,0.037144585,categorical,Not Applicable,No,Survey - Mail Order - Food Products,An individual within the household completed a survey indicating the purchase of food products through the mail.,"Y = Yes
+U = Unknown",Drop U,IMFO_U
+IMGI,0.000135582,0.01038387,categorical,Not Applicable,No,Survey - Mail Order - Gifts,An individual within the household completed a survey indicating the purchase of gifts through the mail.,"Y = Yes
+U = Unknown",Drop U,IMGI_U
+IMHO,1.08E-05,0.229780247,categorical,Not Applicable,No,Survey - Mail Order - Home Furnishings,An individual within the household completed a survey indicating the purchase of home furnishings through the mail.,"Y = Yes
+U = Unknown",Drop U,IMHO_U
+IMMA,1.28E-06,0.30489427,categorical,Not Applicable,No,Survey - Mail Order - Magazines,An individual within the household completed a survey indicating the purchase of magazines through the mail.,"Y = Yes
+U = Unknown",Drop U,IMMA_U
+IMOT,0.000222659,0.001447595,categorical,Not Applicable,No,Survey - Mail Order - Other,An individual within the household completed a survey indicating the purchase of miscellaneous items through the mail.,"Y = Yes
+U = Unknown",Drop U,IMOT_U
+IMJE,4.44E-05,0.092917299,categorical,Not Applicable,No,Survey - Mail Order - Jewelry,An individual within the household completed a survey indicating they purchase jewelry through the mail.,"Y = Yes
+U = Unknown",Drop U,IMJE_U
+IMPS,0.000256727,0.000679885,categorical,Not Applicable,No,Survey - Mail Order - Plus Size Clothing,An individual within the household completed a survey indicating the purchase of plus size clothing through the mail.,"Y = Yes
+U = Unknown",Drop U,IMPS_U
+IMDV,0.000166519,0.005114776,categorical,Not Applicable,No,Survey - Mail Order - DVD,An individual within the household completed a survey indicating the purchase of DVDs through the mail.,"Y = Yes
+U = Unknown",Drop U,IMDV_U
+INVE,2.42E-05,0.157878005,categorical,Not Applicable,No,Survey - Investments,An individual within the household completed a survey indicating an investment.,"Y = Yes
+U = Unknown",Drop U,INVE_U
+INOT,-1.92E-05,0.64533777,categorical,Not Applicable,No,Survey - Investments - Other,An individual within the household completed a survey indicating other types of investments.,"Y = Yes
+U = Unknown",Drop U,INOT_U
+INLI,4.44E-05,0.09280105,categorical,Not Applicable,No,Survey - Investments - Life Insurance,An individual within the household completed a survey indicating an investment in life insurance.,"Y = Yes
+U = Unknown",Drop U,INLI_U
+INMU,0.000237925,0.001030941,categorical,Not Applicable,No,Survey - Investments - Mutual Funds,An individual within the household completed a survey indicating an investment in mutual funds.,"Y = Yes
+U = Unknown",Drop U,INMU_U
+INSB,4.80E-05,0.084744989,categorical,Not Applicable,No,Survey - Investments - Stocks or Bonds,An individual within the household completed a survey indicating an investment in stocks or bonds.,"Y = Yes
+U = Unknown",Drop U,INSB_U
+INRE,-2.43E-06,0.342772832,categorical,Not Applicable,No,Survey - Investments - Real Estate,An individual within the household completed a survey indicating investments of real estate.,"Y = Yes
+U = Unknown",Drop U,INRE_U
+INMEDI,3.22E-06,0.287262875,categorical,Not Applicable,No,Survey - Investments - Medicare Coverage,An individual within the household completed a survey indicating investment in Medicare coverage.,"Y = Yes
+U = Unknown",Drop U,INMEDI_U
+IN401K,-2.28E-05,0.798998343,categorical,Not Applicable,No,Survey - Investments - 401K,An individual within the household completed a survey indicating an investment in a 401K plan.,"Y = Yes
+U = Unknown",Drop U,IN401K_U
+INCD,-6.82E-06,0.396211739,categorical,Not Applicable,No,Survey - Investments - CD,An individual within the household completed a survey indicating an investment in a certificate of deposit.,"Y = Yes
+U = Unknown",Drop U,INCD_U
+INIRA,-1.23E-05,0.481387839,categorical,Not Applicable,No,Survey - Investments - IRA,An individual within the household completed a survey indicating an investment in a individual retirement account.,"Y = Yes
+U = Unknown",Drop U,INIRA_U
+INTSTMED,-1.68E-05,0.577286105,categorical,Not Applicable,No,Survey - Investments - Interested in Medicare Coverage,An individual within the household completed a survey indicating an interest in Medicare coverage insurance. ,"Y = Yes
+U = Unknown",Drop U,INTSTMED_U
+INNOMEDI,-7.18E-06,0.401033112,categorical,Not Applicable,No,Survey - Investments - No Medicare Coverage,An individual within the household completed a survey indicating they do not have Medicare coverage insurance. ,"Y = Yes
+U = Unknown",Drop U,INNOMEDI_U
+PRESMI,0.00051948,2.29E-06,categorical,Not Applicable,No,Survey - Music,An individual within the household completed a survey indicating they enjoy music.,"Y = Yes
+U = Unknown",Drop U,PRESMI_U
+IMGO,0.0001753,0.004191223,categorical,Not Applicable,No,Survey - Music - Christian or Gospel,An individual within the household completed a survey indicating they like christian or gospel music.,"Y = Yes
+U = Unknown",Drop U,IMGO_U
+IMCS,3.47E-06,0.285163695,categorical,Not Applicable,No,Survey - Music - Classical,An individual within the household completed a survey indicating they like classical music.,"Y = Yes
+U = Unknown",Drop U,IMCS_U
+IMCU,0.00039107,3.62E-05,categorical,Not Applicable,No,Survey - Music - Country,An individual within the household completed a survey indicating they like country music.,"Y = Yes
+U = Unknown",Drop U,IMCU_U
+IMJA,-1.46E-05,0.526986245,categorical,Not Applicable,No,Survey - Music - Jazz,An individual within the household completed a survey indicating they like jazz music.,"Y = Yes
+U = Unknown",Drop U,IMJA_U
+IMOR,-5.62E-06,0.380404813,categorical,Not Applicable,No,Survey - Music - Other,An individual within the household completed a survey indicating they like other kinds of music.,"Y = Yes
+U = Unknown",Drop U,IMOR_U
+IMRH,0.00021046,0.001900643,categorical,Not Applicable,No,Survey - Music - Rhythm and Blues,An individual within the household completed a survey indicating they like rhythm and blues music.,"Y = Yes
+U = Unknown",Drop U,IMRH_U
+IMRO,0.000699996,4.90E-08,categorical,Not Applicable,No,Survey - Music - Rock n Roll,An individual within the household completed a survey indicating they like rock n roll music.,"Y = Yes
+U = Unknown",Drop U,IMRO_U
+IMSO,9.15E-06,0.240829905,categorical,Not Applicable,No,Survey - Music - Soft Rock,An individual within the household completed a survey indicating they like soft rock music.,"Y = Yes
+U = Unknown",Drop U,IMSO_U
+IMBBND,0.000151012,0.007284236,categorical,Not Applicable,No,Survey - Music - Big band or swing,An individual within the household completed a survey indicating they like big band or swing music.,"Y = Yes
+U = Unknown",Drop U,IMBBND_U
+IMALT,3.16E-05,0.129405544,categorical,Not Applicable,No,Survey - Music - Alternative,An individual within the household completed a survey indicating they like alternative music.,"Y = Yes
+U = Unknown",Drop U,IMALT_U
+IVET,4.64E-06,0.275232758,categorical,Not Applicable,No,Survey - Veteran in Household,An individual within the household completed a survey indicating the presence of a veteran.,"Y = Yes
+U = Unknown",Drop U,IVET_U
+IHIGHSCL,4.11E-05,0.101249224,categorical,Not Applicable,No,Survey - High School Graduate,An individual within the household completed a survey indicating they are a high school graduate.,"Y = Yes
+U = Unknown",Drop U,IHIGHSCL_U
+IOHO,7.60E-05,0.042318699,categorical,Not Applicable,No,Survey - Occupation - Homemaker,An individual within the household completed a survey indicating an occupation of homemaker.,"Y = Yes
+U = Unknown",Drop U,IOHO_U
+IOMA,4.70E-05,0.086862391,categorical,Not Applicable,No,Survey - Occupation - Management,An individual within the household completed a survey indicating a management occupation.,"Y = Yes
+U = Unknown",Drop U,IOMA_U
+IOSA,4.15E-05,0.100091259,categorical,Not Applicable,No,Survey - Occupation - Sales or Marketing,An individual within the household completed a survey indicating a sales or marketing occupation.,"Y = Yes
+U = Unknown",Drop U,IOSA_U
+IOTR,0.0003112,0.000205409,categorical,Not Applicable,No,Survey - Occupation - Tradesman or Laborer,An individual within the household completed a survey indicating a tradesman or laborer occupation.,"Y = Yes
+U = Unknown",Drop U,IOTR_U
+IOPT,2.41E-05,0.158253778,categorical,Not Applicable,No,Survey - Occupation - Professional or Technical,An individual within the household completed a survey indicating a professional or technical occupation.,"Y = Yes
+U = Unknown",Drop U,IOPT_U
+IORE,-2.38E-05,0.884980546,categorical,Not Applicable,No,Survey - Occupation - Retired,An individual within the household completed a survey indicating someone is retired.,"Y = Yes
+U = Unknown",Drop U,IORE_U
+IOSE,7.45E-05,0.043895114,categorical,Not Applicable,No,Survey - Occupation - Self Employed,An individual within the household completed a survey indicating an occupation of self employed.,"Y = Yes
+U = Unknown",Drop U,IOSE_U
+IOOW,1.66E-05,0.194855767,categorical,Not Applicable,No,Survey - Occupation - Operate Business From Home,An individual within the household completed a survey indicating they operate a business from home.,"Y = Yes
+U = Unknown",Drop U,IOOW_U
+IOST,2.43E-05,0.157493168,categorical,Not Applicable,No,Survey - Occupation - Student,An individual within the household completed a survey indicating they are a student.,"Y = Yes
+U = Unknown",Drop U,IOST_U
+IOMG,-6.72E-06,0.394800043,categorical,Not Applicable,No,Survey - Occupation - Military/Government,An individual within the household completed a survey indicating an occupation in the military or government.,"Y = Yes
+U = Unknown",Drop U,IOMG_U
+IODOCTOR,2.36E-05,0.160617736,categorical,Not Applicable,No,Survey - Occupation - Doctor,An individual within the household completed a survey indicating an occupation of doctor.,"Y = Yes
+U = Unknown",Drop U,IODOCTOR_U
+IOFULL,-2.43E-05,0.963677587,categorical,Not Applicable,No,Survey - Occupation - Full Time,An individual within the household completed a survey indicating they are employed full time.,"Y = Yes
+U = Unknown",Drop U,IOFULL_U
+IONURSE,-2.42E-05,0.93758685,categorical,Not Applicable,No,Survey - Occupation - Nurse,An individual within the household completed a survey indicating an occupation of nurse.,"Y = Yes
+U = Unknown",Drop U,IONURSE_U
+IOPART,-1.54E-05,0.54500749,categorical,Not Applicable,No,Survey - Occupation - Part Time,An individual within the household completed a survey indicating they are employed part time.,"Y = Yes
+U = Unknown",Drop U,IOPART_U
+IOTEACHR,1.72E-06,0.300776972,categorical,Not Applicable,No,Survey - Occupation - Teacher,An individual within the household completed a survey indicating an occupation of teacher.,"Y = Yes
+U = Unknown",Drop U,IOTEACHR_U
+IREA,0.000289826,0.00032806,categorical,Not Applicable,No,Survey - Likes To Read,An individual within the household completed a survey indicating they like to read.,"Y = Yes
+U = Unknown",Drop U,IREA_U
+IRAS,0.000176956,0.004037094,categorical,Not Applicable,No,Survey - Reading - Astrology,An individual within the household completed a survey indicating they read about astrology.,"Y = Yes
+U = Unknown",Drop U,IRAS_U
+IRBI,0.000108095,0.019692006,categorical,Not Applicable,No,Survey - Reading - Bible or Devotional,An individual within the household completed a survey indicating they read bible or devotional books.,"Y = Yes
+U = Unknown",Drop U,IRBI_U
+IRBF,4.39E-05,0.094151725,categorical,Not Applicable,No,Survey - Reading - Best Selling Fiction,An individual within the household completed a survey indicating they read best selling fiction.,"Y = Yes
+U = Unknown",Drop U,IRBF_U
+IRBT,8.75E-05,0.032120113,categorical,Not Applicable,No,Survey - Reading - Books on Tape,An individual within the household completed a survey indicating they enjoy books on tape.,"Y = Yes
+U = Unknown",Drop U,IRBT_U
+IRCH,0.000247844,0.000827471,categorical,Not Applicable,No,Survey - Reading - Childrens,An individual within the household completed a survey indicating they read childrens books.,"Y = Yes
+U = Unknown",Drop U,IRCH_U
+IRCK,2.11E-05,0.171710941,categorical,Not Applicable,No,Survey - Reading - Cooking or Culinary,An individual within the household completed a survey indicating they read about cooking or culinary.,"Y = Yes
+U = Unknown",Drop U,IRCK_U
+IRCO,0.000114629,0.016894512,categorical,Not Applicable,No,Survey - Reading - Computer,An individual within the household completed a survey indicating they read about computers.,"Y = Yes
+U = Unknown",Drop U,IRCO_U
+IRCL,-7.05E-06,0.399259618,categorical,Not Applicable,No,Survey - Reading - Country Lifestyle,An individual within the household completed a survey indicating they read about a country lifestyle.,"Y = Yes
+U = Unknown",Drop U,IRCL_U
+IRFA,-2.29E-05,0.808946514,categorical,Not Applicable,No,Survey - Reading - Fashion,An individual within the household completed a survey indicating they read about fashion.,"Y = Yes
+U = Unknown",Drop U,IRFA_U
+IRHI,-2.42E-05,0.942998333,categorical,Not Applicable,No,Survey - Reading - History,An individual within the household completed a survey indicating they read about history.,"Y = Yes
+U = Unknown",Drop U,IRHI_U
+IRIN,-1.92E-05,0.645560113,categorical,Not Applicable,No,Survey - Reading - Interior Decorating,An individual within the household completed a survey indicating they read about interior decorating.,"Y = Yes
+U = Unknown",Drop U,IRIN_U
+IRME,-2.15E-05,0.731716107,categorical,Not Applicable,No,Survey - Reading - Medical or Health,An individual within the household completed a survey indicating they read medicine or health.,"Y = Yes
+U = Unknown",Drop U,IRME_U
+IRMI,1.17E-05,0.223504371,categorical,Not Applicable,No,Survey - Reading - Military,An individual within the household completed a survey indicating they read about the military.,"Y = Yes
+U = Unknown",Drop U,IRMI_U
+IRMY,-1.69E-05,0.581009574,categorical,Not Applicable,No,Survey - Reading - Mystery,An individual within the household completed a survey indicating they read mysteries.,"Y = Yes
+U = Unknown",Drop U,IRMY_U
+IRNA,4.52E-05,0.0910478,categorical,Not Applicable,No,Survey - Reading - Natural Health Remedies,An individual within the household completed a survey indicating they read about natural health remedies.,"Y = Yes
+U = Unknown",Drop U,IRNA_U
+IRPE,2.04E-05,0.175034518,categorical,Not Applicable,No,Survey - Reading - People or Entertainment,An individual within the household completed a survey indicating they read about people or entertainment.,"Y = Yes
+U = Unknown",Drop U,IRPE_U
+IRRO,-1.52E-05,0.540807428,categorical,Not Applicable,No,Survey - Reading - Romance,An individual within the household completed a survey indicating they read romance.,"Y = Yes
+U = Unknown",Drop U,IRRO_U
+IRSF,-1.45E-05,0.525176259,categorical,Not Applicable,No,Survey - Reading - Science Fiction,An individual within the household completed a survey indicating they read science fiction.,"Y = Yes
+U = Unknown",Drop U,IRSF_U
+IRST,-2.43E-05,0.97686495,categorical,Not Applicable,No,Survey - Reading - Science or Technology,An individual within the household completed a survey indicating they read about science or technology.,"Y = Yes
+U = Unknown",Drop U,IRST_U
+IRSP,-2.28E-05,0.800423207,categorical,Not Applicable,No,Survey - Reading - Sports,An individual within the household completed a survey indicating they read about sports.,"Y = Yes
+U = Unknown",Drop U,IRSP_U
+IRWO,5.56E-05,0.070048817,categorical,Not Applicable,No,Survey - Reading - World News or Politics,An individual within the household completed a survey indicating they read about world news or politics.,"Y = Yes
+U = Unknown",Drop U,IRWO_U
+IRTHRLL,-2.23E-05,0.773811828,categorical,Not Applicable,No,Survey - Reading - Thriller or Suspense,An individual within the household completed a survey indicating they read about thrillers or suspense.,"Y = Yes
+U = Unknown",Drop U,IRTHRLL_U
+IRBEST,-2.98E-06,0.348881247,categorical,Not Applicable,No,Survey - Reading - Best Sellers,An individual within the household completed a survey indicating they read best sellers.,"Y = Yes
+U = Unknown",Drop U,IRBEST_U
+IRBKCLUB,9.62E-06,0.237562489,categorical,Not Applicable,No,Survey - Reading - Book Club,An individual within the household completed a survey indicating they belong to a book club.,"Y = Yes
+U = Unknown",Drop U,IRBKCLUB_U
+IRCOMICS,-2.07E-05,0.698187468,categorical,Not Applicable,No,Survey - Reading - Comics,An individual within the household completed a survey indicating they read comic books.,"Y = Yes
+U = Unknown",Drop U,IRCOMICS_U
+IRFINAN,-1.88E-05,0.63154175,categorical,Not Applicable,No,Survey - Reading - Financial,An individual within the household completed a survey indicating they read financial books or magazines.,"Y = Yes
+U = Unknown",Drop U,IRFINAN_U
+IRHMGRDN,-1.25E-05,0.484893597,categorical,Not Applicable,No,Survey - Reading - Home & Garden,An individual within the household completed a survey indicating they read home and garden books or magazines.,"Y = Yes
+U = Unknown",Drop U,IRHMGRDN_U
+IRSELF,-1.76E-05,0.597596164,categorical,Not Applicable,No,Survey - Reading - Self-Improvement,An individual within the household completed a survey indicating they read self-improvement books or magazines.,"Y = Yes
+U = Unknown",Drop U,IRSELF_U
+IRTRLENT,-1.60E-05,0.558827465,categorical,Not Applicable,No,Survey - Reading - Travel & Entertainment,An individual within the household completed a survey indicating they read travel and entertainment books or magazines.,"Y = Yes
+U = Unknown",Drop U,IRTRLENT_U
+IRMAGAZN,-1.94E-05,0.651201389,categorical,Not Applicable,No,Survey - Reading - Magazines,An individual within the household completed a survey indicating they read magazines. ,"Y = Yes
+U = Unknown",Drop U,IRMAGAZN_U
+IDAN,0.000113056,0.017527994,categorical,Not Applicable,No,Survey - Donor - Animal,An individual within the household completed a survey indicating they donate to animal causes.,"Y = Yes
+U = Unknown",Drop U,IDAN_U
+IDAC,-2.34E-05,0.841619219,categorical,Not Applicable,No,Survey - Donor - Arts/Cultural,An individual within the household completed a survey indicating they donate to arts/cultural causes.,"Y = Yes
+U = Unknown",Drop U,IDAC_U
+IDCH,0.000100861,0.023355071,categorical,Not Applicable,No,Survey - Donor - Children,An individual within the household completed a survey indicating they donate to children causes.,"Y = Yes
+U = Unknown",Drop U,IDCH_U
+IDEN,0.000253795,0.000725393,categorical,Not Applicable,No,Survey - Donor - Environment or Wildlife,An individual within the household completed a survey indicating they donate to environment or wildlife causes.,"Y = Yes
+U = Unknown",Drop U,IDEN_U
+IDHE,8.87E-05,0.031180464,categorical,Not Applicable,No,Survey - Donor - Health,An individual within the household completed a survey indicating they donate to health causes.,"Y = Yes
+U = Unknown",Drop U,IDHE_U
+IDOT,-1.90E-05,0.639045905,categorical,Not Applicable,No,Survey - Donor - Other,An individual within the household completed a survey indicating they donate to non-specific causes.,"Y = Yes
+U = Unknown",Drop U,IDOT_U
+IDPC,-1.43E-05,0.519772505,categorical,Not Applicable,No,Survey - Donor - Political/Conservative,An individual within the household completed a survey indicating they donate to political/conservative causes.,"Y = Yes
+U = Unknown",Drop U,IDPC_U
+IDPL,-2.38E-05,0.875332631,categorical,Not Applicable,No,Survey - Donor - Political/Liberal,An individual within the household completed a survey indicating they donate to political/liberal causes.,"Y = Yes
+U = Unknown",Drop U,IDPL_U
+IDRE,-6.59E-06,0.393075972,categorical,Not Applicable,No,Survey - Donor - Religious,An individual within the household completed a survey indicating they donate to religious causes.,"Y = Yes
+U = Unknown",Drop U,IDRE_U
+IDVE,-8.45E-06,0.419025138,categorical,Not Applicable,No,Survey - Donor - Veterans,An individual within the household completed a survey indicating they donate to veterans causes.,"Y = Yes
+U = Unknown",Drop U,IDVE_U
+ISHUM,-7.24E-06,0.401944322,categorical,Not Applicable,No,Survey - Donor - Humanitarian or World Relief,An individual within the household completed a survey indicating they donate to humanitarian or world relief causes.,"Y = Yes
+U = Unknown",Drop U,ISHUM_U
+ISOT,2.33E-07,0.315016106,categorical,Not Applicable,No,Survey - Sporting - Other,An individual within the household completed a survey indicating they regularly watch or participate in other sport activities.,"Y = Yes
+U = Unknown",Drop U,ISOT_U
+ISCA,0.000674457,8.43E-08,categorical,Not Applicable,No,Survey - Sporting - Camping or Hiking,An individual within the household completed a survey indicating they regularly watch or participate in camping or hiking.,"Y = Yes
+U = Unknown",Drop U,ISCA_U
+ISBB,2.98E-06,0.289388987,categorical,Not Applicable,No,Survey - Sporting - Baseball,An individual within the household completed a survey indicating they regularly watch or participate in baseball.,"Y = Yes
+U = Unknown",Drop U,ISBB_U
+ISBO,-2.11E-05,0.71657117,categorical,Not Applicable,No,Survey - Sporting - Boating or Sailing,An individual within the household completed a survey indicating they regularly watch or participate in boating or sailing.,"Y = Yes
+U = Unknown",Drop U,ISBO_U
+ISBK,0.000245426,0.000872992,categorical,Not Applicable,No,Survey - Sporting - Basketball,An individual within the household completed a survey indicating they regularly watch or participate in basketball.,"Y = Yes
+U = Unknown",Drop U,ISBK_U
+ISFS,0.000456497,8.83E-06,categorical,Not Applicable,No,Survey - Sporting - Fishing,An individual within the household completed a survey indicating they regularly watch or participate in fishing.,"Y = Yes
+U = Unknown",Drop U,ISFS_U
+ISFO,0.000128962,0.012101455,categorical,Not Applicable,No,Survey - Sporting - Football,An individual within the household completed a survey indicating they regularly watch or participate in football.,"Y = Yes
+U = Unknown",Drop U,ISFO_U
+ISFI,-1.83E-05,0.618966071,categorical,Not Applicable,No,Survey - Sporting - Fitness,An individual within the household completed a survey indicating they regularly watch or participate in fitness activities.,"Y = Yes
+U = Unknown",Drop U,ISFI_U
+ISGO,-1.24E-05,0.483941978,categorical,Not Applicable,No,Survey - Sporting - Golf,An individual within the household completed a survey indicating they regularly watch or participate in golf.,"Y = Yes
+U = Unknown",Drop U,ISGO_U
+ISHO,-2.04E-05,0.688915029,categorical,Not Applicable,No,Survey - Sporting - Hockey,An individual within the household completed a survey indicating they regularly watch or participate in hockey.,"Y = Yes
+U = Unknown",Drop U,ISHO_U
+ISHU,0.000445003,1.13E-05,categorical,Not Applicable,No,Survey - Sporting - Hunting,An individual within the household completed a survey indicating they regularly watch or participate in hunting.,"Y = Yes
+U = Unknown",Drop U,ISHU_U
+ISNA,0.000350503,8.72E-05,categorical,Not Applicable,No,Survey - Sporting - NASCAR,An individual within the household completed a survey indicating they regularly watch or participate in NASCAR.,"Y = Yes
+U = Unknown",Drop U,ISNA_U
+ISSN,-8.14E-06,0.414573771,categorical,Not Applicable,No,Survey - Sporting - Snow Skiing,An individual within the household completed a survey indicating they regularly watch or participate in snow skiing.,"Y = Yes
+U = Unknown",Drop U,ISSN_U
+ISWA,-1.13E-05,0.464549161,categorical,Not Applicable,No,Survey - Sporting - Walking,An individual within the household completed a survey indicating they regularly watch or participate in walking.,"Y = Yes
+U = Unknown",Drop U,ISWA_U
+ISRU,7.43E-05,0.044112274,categorical,Not Applicable,No,Survey - Sporting - Running,An individual within the household completed a survey indicating they regularly watch or participate in running.,"Y = Yes
+U = Unknown",Drop U,ISRU_U
+ISSC,-2.00E-05,0.672667198,categorical,Not Applicable,No,Survey - Sporting - Scuba,An individual within the household completed a survey indicating they regularly watch or participate in scuba diving.,"Y = Yes
+U = Unknown",Drop U,ISSC_U
+ISTE,0.000173552,0.004360525,categorical,Not Applicable,No,Survey - Sporting - Tennis,An individual within the household completed a survey indicating they regularly watch or participate in tennis.,"Y = Yes
+U = Unknown",Drop U,ISTE_U
+ISWL,-2.21E-05,0.763551708,categorical,Not Applicable,No,Survey - Sporting - Weight Lifting,An individual within the household completed a survey indicating they regularly watch or participate in weight lifting.,"Y = Yes
+U = Unknown",Drop U,ISWL_U
+ISBY,3.07E-05,0.132528054,categorical,Not Applicable,No,Survey - Sporting - Biking,An individual within the household completed a survey indicating they regularly watch or participate in biking.,"Y = Yes
+U = Unknown",Drop U,ISBY_U
+ISEXTREM,-2.61E-06,0.344754299,categorical,Not Applicable,No,Survey - Sporting - Extreme Sports,An individual within the household completed a survey indicating they participate in extreme sports.,"Y = Yes
+U = Unknown",Drop U,ISEXTREM_U
+ISMTRCRS,0.000117778,0.015695782,categorical,Not Applicable,No,Survey - Sporting - Motocross,An individual within the household completed a survey indicating they participate in motocross.,"Y = Yes
+U = Unknown",Drop U,ISMTRCRS_U
+ISSKATE,-2.37E-05,0.865992992,categorical,Not Applicable,No,Survey - Sporting - Skateboarding,An individual within the household completed a survey indicating they participate in skateboarding.,"Y = Yes
+U = Unknown",Drop U,ISSKATE_U
+ISSNWBRD,-2.38E-05,0.880277932,categorical,Not Applicable,No,Survey - Sporting - Snowboarding,An individual within the household completed a survey indicating they participate in snowboarding.,"Y = Yes
+U = Unknown",Drop U,ISSNWBRD_U
+ISROLLER,-1.85E-05,0.623025132,categorical,Not Applicable,No,Survey - Sporting - Rollerblading,An individual within the household completed a survey indicating they participate in rollerblading.,"Y = Yes
+U = Unknown",Drop U,ISROLLER_U
+ISPO,0.000257723,0.000665095,categorical,Not Applicable,No,Survey - Sporting Interests,An individual within the household completed a survey indicating they regularly watch or participate in sporting activities.,"Y = Yes
+U = Unknown",Drop U,ISPO_U
+PRESTI,0.0002766,0.000438699,categorical,Not Applicable,No,Survey - Travel,An individual within the household completed a survey indicating they travel.,"Y = Yes
+U = Unknown",Drop U,PRESTI_U
+ITBU,5.02E-06,0.27209125,categorical,Not Applicable,No,Survey - Travel - Business USA,An individual within the household completed a survey indicating business travel within the USA.,"Y = Yes
+U = Unknown",Drop U,ITBU_U
+ITBI,8.92E-05,0.030785494,categorical,Not Applicable,No,Survey - Travel - Business International,An individual within the household completed a survey indicating international business travel.,"Y = Yes
+U = Unknown",Drop U,ITBI_U
+ITPU,0.00013446,0.010656316,categorical,Not Applicable,No,Survey - Travel - Personal USA,An individual within the household completed a survey indicating personal travel within the USA.,"Y = Yes
+U = Unknown",Drop U,ITPU_U
+ITPI,0.000126615,0.012778339,categorical,Not Applicable,No,Survey - Travel - Personal International,An individual within the household completed a survey indicating international personal travel.,"Y = Yes
+U = Unknown",Drop U,ITPI_U
+ITCV,0.0002243,0.001395651,categorical,Not Applicable,No,Survey - Travel - Casino Vacations - Obsolete,An individual within the household completed a survey indicating they take casino vacations.,"Y = Yes
+U = Unknown",Drop U,ITCV_U
+ITFV,2.65E-05,0.148588521,categorical,Not Applicable,No,Survey - Travel - Family Vacations,An individual within the household completed a survey indicating they take family vacations.,"Y = Yes
+U = Unknown",Drop U,ITFV_U
+ITFF,-2.20E-05,0.755270077,categorical,Not Applicable,No,Survey - Travel - Frequent Flyers,An individual within the household completed a survey indicating they are frequent flyers.,"Y = Yes
+U = Unknown",Drop U,ITFF_U
+ITTIME,1.47E-05,0.205132439,categorical,Not Applicable,No,Survey - Travel - Timeshare,An individual within the household completed a survey indicating timeshare vacations.,"Y = Yes
+U = Unknown",Drop U,ITTIME_U
+IVCR,-9.43E-06,0.433697312,categorical,Not Applicable,No,Survey - Travel - Vacation Cruises,An individual within the household completed a survey indicating they take cruise vacations.,"Y = Yes
+U = Unknown",Drop U,IVCR_U
+IVPARKS,9.81E-06,0.236275547,categorical,Not Applicable,No,Survey - Travel - Attractions/Theme Parks,An individual within the household completed a survey indicating vacations to attractions or theme parks.,"Y = Yes
+U = Unknown",Drop U,IVPARKS_U
+ITRV,-2.14E-05,0.728696675,categorical,Not Applicable,No,Survey - Travel - RV,An individual within the household completed a survey indicating recreational vehicle vacations. ,"Y = Yes
+U = Unknown",Drop U,ITRV_U
+PRESRI,0.000112961,0.01756725,categorical,Not Applicable,No,Survey - Religious,An individual within the household completed a survey indicating they participate in religious activities.,"Y = Yes
+U = Unknown",Drop U,PRESRI_U
+IOAPPLE,-2.39E-05,0.890256389,categorical,Not Applicable,No,Survey - Electronics - Apple Device,An individual within the household completed a survey indicating they own an Apple device.,"Y = Yes
+U = Unknown",Drop U,IOAPPLE_U
+IOCABLE,-2.39E-05,0.893860986,categorical,Not Applicable,No,Survey - Electronics - Cable TV,An individual within the household completed a survey indicating they have a cable connection for their television.,"Y = Yes
+U = Unknown",Drop U,IOCABLE_U
+IOHISPED,-2.38E-05,0.882502854,categorical,Not Applicable,No,Survey - Electronics - High Speed Internet,An individual within the household completed a survey indicating they have a digital subscriber line.,"Y = Yes
+U = Unknown",Drop U,IOHISPED_U
+IODVR,-1.06E-05,0.45243082,categorical,Not Applicable,No,Survey - Electronics - DVR,An individual within the household completed a survey indicating they own a digital video recorder.,"Y = Yes
+U = Unknown",Drop U,IODVR_U
+IOGPS,1.03E-05,0.233139424,categorical,Not Applicable,No,Survey - Electronics - GPS,An individual within the household completed a survey indicating they own a global positioning system.,"Y = Yes
+U = Unknown",Drop U,IOGPS_U
+IODVDPLR,1.95E-05,0.179716791,categorical,Not Applicable,No,Survey - Electronics - HD DVD Player,An individual within the household completed a survey indicating they own a high definition digital video disk player.,"Y = Yes
+U = Unknown",Drop U,IODVDPLR_U
+IOHDTV,-1.14E-05,0.465687481,categorical,Not Applicable,No,Survey - Electronics - HDTV,An individual within the household completed a survey indicating they own a high definition television.,"Y = Yes
+U = Unknown",Drop U,IOHDTV_U
+IOHMTHR,3.71E-05,0.112292323,categorical,Not Applicable,No,Survey - Electronics - Home Theater System,An individual within the household completed a survey indicating they own a home theater system.,"Y = Yes
+U = Unknown",Drop U,IOHMTHR_U
+IOSATRAD,-2.24E-05,0.778258087,categorical,Not Applicable,No,Survey - Electronics - Satellite Radio,An individual within the household completed a survey indicating they have satellite radio.,"Y = Yes
+U = Unknown",Drop U,IOSATRAD_U
+IOSATELL,5.44E-05,0.072055083,categorical,Not Applicable,No,Survey - Electronics - Satellite TV,An individual within the household completed a survey indicating they have satellite television.,"Y = Yes
+U = Unknown",Drop U,IOSATELL_U
+IOVIDGAM,-2.42E-05,0.935322963,categorical,Not Applicable,No,Survey - Electronics - Video Game Systems,An individual within the household completed a survey indicating they own a video game system.,"Y = Yes
+U = Unknown",Drop U,IOVIDGAM_U
+IOELEOT,-1.05E-05,0.450319182,categorical,Not Applicable,No,Survey - Electronics Other,An individual within the household completed a survey indicating they own other types of electronics.,"Y = Yes
+U = Unknown",Drop U,IOELEOT_U
+IPDECOR,-1.56E-05,0.549687438,categorical,Not Applicable,No,Survey - Purchase - Home Decorating,An individual within the household completed a survey indicating purchasing items to decorate or furnish the home. ,"Y = Yes
+U = Unknown",Drop U,IPDECOR_U
+IPBEAUTY,-2.13E-05,0.72130751,categorical,Not Applicable,No,Survey - Purchase - Beauty Products,An individual within the household completed a survey indicating purchasing beauty products. ,"Y = Yes
+U = Unknown",Drop U,IPBEAUTY_U
+IPCLUB,6.49E-06,0.260424105,categorical,Not Applicable,No,Survey - Purchase - Club Stores,An individual within the household completed a survey indicating purchasing items from a club store. ,"Y = Yes
+U = Unknown",Drop U,IPCLUB_U
+IPFFOOD,-2.07E-05,0.698451318,categorical,Not Applicable,No,Survey - Purchase - Fast Foods,An individual within the household completed a survey indicating purchasing items from fast food restaurants. ,"Y = Yes
+U = Unknown",Drop U,IPFFOOD_U
+IPSPCBTY,-2.42E-05,0.943392272,categorical,Not Applicable,No,Survey - Purchase - Specialty Beauty Products,An individual within the household completed a survey indicating purchasing specialty beauty products. ,"Y = Yes
+U = Unknown",Drop U,IPSPCBTY_U
+IPCOUPON,9.63E-07,0.307928844,categorical,Not Applicable,No,Survey - Purchase - Uses Coupons,An individual within the household completed a survey indicating using coupons for purchases. ,"Y = Yes
+U = Unknown",Drop U,IPCOUPON_U
+ISDT,0.000894958,7.97E-10,date,Negative,Yes,Survey Date,Indicates the recency of the offline consumer survey.  Format: CCYYMM,CCYYMM,"Recode, Drop 0",
+ISDATEON,-8.51E-06,0.419945667,date,Negative,Yes,Survey Date - Online,Indicates the recency of the online consumer survey.,"CCYYMM
+","Recode, Drop 0",
+SGDI,0.000342679,0.000103378,categorical,Not Applicable,No,Survey Group - Do It Yourself,"An individual within the household completed a survey selecting at least one of the following codes indicating a lifestyle of do it yourself: Hobbies of Cars or Car Repair, Home Improvement or Repair, Home Study Courses, and Woodworking, Occupation of Tradesman or Laborer, Reading of Interior Decorating.","Y = Yes
+U = Unknown",Drop U,SGDI_U
+SGFA,1.61E-06,0.301834674,categorical,Not Applicable,No,Survey Group - Fine Arts,"An individual within the household completed a survey selecting at least one of the following codes indicating a lifestyle of fine arts.: Collectibles of Fine Arts, Donor to Arts/Cultural, Hobby of Theater or Performing Arts, Music listed as Classical.","Y = Yes
+U = Unknown",Drop U,SGFA_U
+SGHL,0.000624496,2.44E-07,categorical,Not Applicable,No,Survey Group - Home Life,"An individual within the household completed a survey selecting at least one of the following codes indicating a lifestyle of home life: Hobbies of Baking, Cooking, Crafts, Gardening, Knitting or Needlework, Quilting, or Sewing, Occupation of Full-time Homemaker, Reading of Cooking or Culinary, or Interior Decorating, Travel is Family Vacations.","Y = Yes
+U = Unknown",Drop U,SGHL_U
+SGLL,7.78E-05,0.040532756,categorical,Not Applicable,No,Survey Group - Luxury Life,"An individual within the household completed a survey selecting at least one of the following codes indicating a lifestyle of luxury life:  Collectibles of Fine Arts, Hobby of Cigar Smoking, Cooking Gourmet, or Wine Appreciation, Personal International Travel, or Cruises.","Y = Yes
+U = Unknown",Drop U,SGLL_U
+SGOE,0.000537457,1.56E-06,categorical,Not Applicable,No,Survey Group - Outdoor Enthusiasts,"An individual within the household completed a survey selecting at least one of the following codes indicating a lifestyle of outdoor enthusiasts: Sporting Interest of Scuba, Boating or Sailing, Camping or Hiking, Fishing, Hunting, or Snow Skiing, Hobby of Bird Watching and Own an RV.","Y = Yes
+U = Unknown",Drop U,SGOE_U
+SGPA,-2.65E-06,0.34514899,categorical,Not Applicable,No,Survey Group - Physically Active,"An individual within the household completed a survey selecting at least one of the following codes indicating a lifestyle of physically active: Sporting Interest of Running, Weight lifting, Fitness, or Walking","Y = Yes
+U = Unknown",Drop U,SGPA_U
+SGSE,8.28E-05,0.035905513,categorical,Not Applicable,No,Survey Group - Sports Enthusiasts,"An individual within the household completed a survey selecting at least one of the following codes indicating a lifestyle of sports enthusiasts: Collectibles of Sports Memorabilia, Reading of Sports, Sporting Interest of NASCAR, Tennis, Baseball, Basketball, Football, Golf, Hockey, or Other.","Y = Yes
+U = Unknown",Drop U,SGSE_U
+SGTC,0.000541936,1.42E-06,categorical,Not Applicable,No,Survey Group - Techies,"An individual within the household completed a survey selecting at least one of the following codes indicating a lifestyle of technical: Own a Home Computer, Purchase Products Online, Has Online Access, Own a CD or DVD Player, Own a Cellular Phone, Reading of Science or Technology, or Computers.","Y = Yes
+U = Unknown",Drop U,SGTC_U
+SGUP,9.84E-06,0.236057085,categorical,Not Applicable,No,Survey Group - Up Town,"An individual within the household completed a survey selecting at least one of the following codes indicating a lifestyle of up town: Credit Card is Premium AMEX, Donor to Political-Conservative, or Political-Liberal, Investments in Own Mutual Funds, Own Stocks or Bonds, Own Other Investments, or Real Estate and Reading of World New or Politics.","Y = Yes
+U = Unknown",Drop U,SGUP_U
+BLSTORDR,4.30E-05,0.096198901,date,Negative,No,Buyer - Catalog - Last Order Date,Last date an individual within the household made a purchase from offline or online catalogs. Format is: YYMM.,YYMM,"Recode, Drop 0",
+BLONORDR,-1.31E-05,0.495839446,date,Positive,No,Buyer - Catalog - Last Online Order Date,Last date an individual within the household made a purchase from an online catalog. Format is: YYMM.,YYMM,"Recode, Drop 0",
+BLOFORDR,1.99E-05,0.177488483,date,Negative,No,Buyer - Catalog - Last Offline Order Date,Last date an individual within the household made a purchase from an offline catalog. Format is: YYMM.,YYMM,"Recode, Drop 0",
+BTOTLORD,-2.13E-05,0.721757807,numeric,Positive,No,Buyer - Catalog - Total Orders,Total number of orders placed by an individual within the household from offline or online catalogs.,00-99,Drop 0,
+BTOTLDOL,-1.95E-05,0.654136114,numeric,Positive,No,Buyer - Catalog - Total Dollars,Total dollars spent by an individual within the household from offline or online catalogs represented in thousands.,"$0-$9,999",Drop 0,
+BONORDER,-2.18E-05,0.745572265,numeric,Positive,No,Buyer - Catalog - Online Orders,Total number of orders placed by an individual within the household from online catalogs.,00-99,Drop 0,
+BONDOLLR,-1.72E-05,0.586963531,numeric,Negative,No,Buyer - Catalog - Online Dollars,Total dollars spent by an individual within the household from online catalogs represented in thousands.,"$0-$9,999",Drop 0,
+BOFORDER,-2.12E-05,0.720655176,numeric,Positive,No,Buyer - Catalog - Offline Orders,Total number of orders placed by an individual within the household from offline catalogs.,00-99,Drop 0,
+BOFDOLLR,-1.02E-05,0.445395412,numeric,Positive,No,Buyer - Catalog - Offline Dollars,Total dollars spent by an individual within the household from offline catalogs represented in thousands.,"$0-$9,999",Drop 0,
+BAVGDOLL,7.39E-06,0.253602182,numeric,Negative,No,Buyer - Catalog - Average Order Dollars,Average dollars spent by an individual within the household from offline or online catalogs represented in thousands.,"$0-$9,999",Drop 0,
+BAVGONDL,-2.41E-05,0.92548034,numeric,Negative,No,Buyer - Catalog - Average Online Dollars,Average dollars spent by an individual within the household from online catalogs represented in thousands.,"$0-$9,999",Drop 0,
+BAVGOFDL,-1.07E-05,0.453795841,numeric,Negative,No,Buyer - Catalog - Average Offline Dollars,Average dollars spent by an individual within the household from offline catalogs represented in thousands.,"$0-$9,999",Drop 0,
+INSHOP,-1.17E-05,0.470918787,categorical,Not Applicable,No,Buyer - Catalog - Online Shopper,An individual within the household has made purchases through an online catalog.,"Y = Yes
+U = Unknown",Drop U,INSHOP_U
+CONSHOP,0.000463139,7.65E-06,categorical,Not Applicable,No,Buyer - Catalog - Continuity Shopper,"An individual within the household enrolled in a monthly club from online or offline catalogs.  Products are received on a weekly/monthly basis (i.e. music clubs, book clubs, wine clubs, etc.).","Y = Yes
+U = Unknown",Drop U,CONSHOP_U
+OAGEN,-1.88E-05,0.632914019,categorical,Not Applicable,No,Buyer - Catalog - Apparel - General,An individual within the household purchased general apparel from online or offline catalogs.,"Y = Yes
+U = Unknown",Drop U,OAGEN_U
+OABIGTLL,-1.34E-05,0.50323414,categorical,Not Applicable,No,Buyer - Catalog - Apparel - Mens Big & Tall,An individual within the household purchased mens big & tall apparel from online or offline catalogs.,"Y = Yes
+U = Unknown",Drop U,OABIGTLL_U
+OACHILD,-1.05E-05,0.451479229,categorical,Not Applicable,No,Buyer - Catalog - Apparel - Children,An individual within the household purchased childrens apparel from online or offline catalogs.,"Y = Yes
+U = Unknown",Drop U,OACHILD_U
+OATEEN,-1.40E-05,0.514265671,categorical,Not Applicable,No,Buyer - Catalog - Apparel - Teenagers,An individual within the household purchased teenagers apparel from online or offline catalogs.,"Y = Yes
+U = Unknown",Drop U,OATEEN_U
+OAMEN,-1.63E-05,0.566180491,categorical,Not Applicable,No,Buyer - Catalog - Apparel - Men,An individual within the household purchased mens apparel from online or offline catalogs.,"Y = Yes
+U = Unknown",Drop U,OAMEN_U
+OAPETITE,-7.62E-06,0.407193969,categorical,Not Applicable,No,Buyer - Catalog - Apparel - Womens Petite Sizes,An individual within the household purchased womens petite sized apparel from online or offline catalogs.,"Y = Yes
+U = Unknown",Drop U,OAPETITE_U
+OAPLUS,-2.43E-05,0.985173097,categorical,Not Applicable,No,Buyer - Catalog - Apparel - Womens Plus Sizes,An individual within the household purchased womens plus sized apparel from online or offline catalogs.,"Y = Yes
+U = Unknown",Drop U,OAPLUS_U
+OAWOMEN,-5.26E-06,0.375925155,categorical,Not Applicable,No,Buyer - Catalog - Apparel - Women,An individual within the household purchased womens apparel from online or offline catalogs.,"Y = Yes
+U = Unknown",Drop U,OAWOMEN_U
+OANOGEN,1.51E-05,0.203109668,categorical,Not Applicable,No,Buyer - Catalog - Apparel - Non-gender Specific,An individual within the household purchased non-gender specific apparel from online or offline catalogs.,"Y = Yes
+U = Unknown",Drop U,OANOGEN_U
+OARTS,-1.30E-05,0.495699787,categorical,Not Applicable,No,Buyer - Catalog - Arts & Antiques,An individual within the household purchased arts & antiques from online or offline catalogs.,"Y = Yes
+U = Unknown",Drop U,OARTS_U
+OCOLLECT,8.01E-05,0.038376519,categorical,Not Applicable,No,Buyer - Catalog - Collectibles,An individual within the household purchased collectibles from online or offline catalogs.,"Y = Yes
+U = Unknown",Drop U,OCOLLECT_U
+ONOVEL,6.16E-05,0.060249679,categorical,Not Applicable,No,Buyer - Catalog - Novelty,An individual within the household purchased novelty items from online or offline catalogs.,"Y = Yes
+U = Unknown",Drop U,ONOVEL_U
+OAUTO,-2.15E-05,0.732658108,categorical,Not Applicable,No,Buyer - Catalog - Automotive,An individual within the household purchased automotive products from online or offline catalogs.,"Y = Yes
+U = Unknown",Drop U,OAUTO_U
+OBOOKS,0.000162391,0.005618133,categorical,Not Applicable,No,Buyer - Catalog - Books,An individual within the household purchased books from online or offline catalogs.,"Y = Yes
+U = Unknown",Drop U,OBOOKS_U
+OCHILDPR,7.87E-05,0.039700482,categorical,Not Applicable,No,Buyer - Catalog - Childrens Products,An individual within the household purchased childrens products from online or offline catalogs.,"Y = Yes
+U = Unknown",Drop U,OCHILDPR_U
+OCOMPHMO,-2.40E-05,0.903780534,categorical,Not Applicable,No,Buyer - Catalog - Computing/Home Office,An individual within the household purchased computing/home office products from online or offline catalogs.,"Y = Yes
+U = Unknown",Drop U,OCOMPHMO_U
+OCRAFTS,-2.16E-05,0.734500476,categorical,Not Applicable,No,Buyer - Catalog - Crafts/Hobbies,An individual within the household purchased craft/hobby products from online or offline catalogs.,"Y = Yes
+U = Unknown",Drop U,OCRAFTS_U
+OFOOD,5.62E-05,0.069005884,categorical,Not Applicable,No,Buyer - Catalog - Food/Beverages,An individual within the household purchased food/beverages from online or offline catalogs.,"Y = Yes
+U = Unknown",Drop U,OFOOD_U
+OGEN,0.000111044,0.018374607,categorical,Not Applicable,No,Buyer - Catalog - General Merchandise,An individual within the household purchased general merchandise from online or offline catalogs.,"Y = Yes
+U = Unknown",Drop U,OGEN_U
+OGIFT,-2.02E-05,0.680668825,categorical,Not Applicable,No,Buyer - Catalog - Gift,An individual within the household purchased gifts from online or offline catalogs.,"Y = Yes
+U = Unknown",Drop U,OGIFT_U
+OSPECFD,6.71E-05,0.052572262,categorical,Not Applicable,No,Buyer - Catalog - Specialty Food,An individual within the household purchased specialty food from online or offline catalogs.,"Y = Yes
+U = Unknown",Drop U,OSPECFD_U
+OHOLIDAY,-2.42E-05,0.927989766,categorical,Not Applicable,No,Buyer - Catalog - Holiday Items,An individual within the household purchased holiday items from online or offline catalogs.,"Y = Yes
+U = Unknown",Drop U,OHOLIDAY_U
+OSPECGFT,-1.13E-05,0.463963924,categorical,Not Applicable,No,Buyer - Catalog - Specialty Gifts,An individual within the household purchased specialty gifts from online or offline catalogs.,"Y = Yes
+U = Unknown",Drop U,OSPECGFT_U
+OSTATION,-1.26E-05,0.48662542,categorical,Not Applicable,No,Buyer - Catalog - Stationery,An individual within the household purchased stationary from online or offline catalogs.,"Y = Yes
+U = Unknown",Drop U,OSTATION_U
+OBEAUTY,1.01E-07,0.316314901,categorical,Not Applicable,No,Buyer - Catalog - Beauty,An individual within the household purchased beauty products from online or offline catalogs.,"Y = Yes
+U = Unknown",Drop U,OBEAUTY_U
+OHEALTH,6.61E-05,0.053984507,categorical,Not Applicable,No,Buyer - Catalog - Health,An individual within the household purchased health products from online or offline catalogs.,"Y = Yes
+U = Unknown",Drop U,OHEALTH_U
+OPERCARE,0.000127674,0.012468204,categorical,Not Applicable,No,Buyer - Catalog - Personal Care,An individual within the household purchased personal care products from online or offline catalogs.,"Y = Yes
+U = Unknown",Drop U,OPERCARE_U
+OELECTNC,0.000184436,0.003409492,categorical,Not Applicable,No,Buyer - Catalog - Electronics,An individual within the household purchased electronics from online or offline catalogs.,"Y = Yes
+U = Unknown",Drop U,OELECTNC_U
+OHMFURN,9.28E-06,0.239938355,categorical,Not Applicable,No,Buyer - Catalog - Home Furnishings,An individual within the household purchased home furnishings from online or offline catalogs.,"Y = Yes
+U = Unknown",Drop U,OHMFURN_U
+OFURNITR,0.000144249,0.008505675,categorical,Not Applicable,No,Buyer - Catalog - Furniture,An individual within the household purchased furniture from online or offline catalogs.,"Y = Yes
+U = Unknown",Drop U,OFURNITR_U
+OHSWARE,8.73E-06,0.243835707,categorical,Not Applicable,No,Buyer - Catalog - Housewares,An individual within the household purchased housewares from online or offline catalogs.,"Y = Yes
+U = Unknown",Drop U,OHSWARE_U
+OLINENS,0.000309139,0.000214883,categorical,Not Applicable,No,Buyer - Catalog - Linens,An individual within the household purchased linens from online or offline catalogs.,"Y = Yes
+U = Unknown",Drop U,OLINENS_U
+OHMCARE,0.000157695,0.006252672,categorical,Not Applicable,No,Buyer - Catalog - Home Care,An individual within the household purchased home care products from online or offline catalogs.,"Y = Yes
+U = Unknown",Drop U,OHMCARE_U
+OGARDEN,-2.43E-05,0.987235395,categorical,Not Applicable,No,Buyer - Catalog - Garden,An individual within the household purchased garden products from online or offline catalogs.,"Y = Yes
+U = Unknown",Drop U,OGARDEN_U
+OJEWELRY,0.000142655,0.008823067,categorical,Not Applicable,No,Buyer - Catalog - Jewelry,An individual within the household purchased jewelry from online or offline catalogs.,"Y = Yes
+U = Unknown",Drop U,OJEWELRY_U
+OMUSIC,-1.76E-05,0.598780468,categorical,Not Applicable,No,Buyer - Catalog - Music,An individual within the household purchased music from online or offline catalogs.,"Y = Yes
+U = Unknown",Drop U,OMUSIC_U
+OOTHER,0.000184617,0.003395562,categorical,Not Applicable,No,Buyer - Catalog - Other Merch/Services,An individual within the household purchased other merchandise/services from online or offline catalogs.,"Y = Yes
+U = Unknown",Drop U,OOTHER_U
+OPETS,-8.92E-06,0.426051387,categorical,Not Applicable,No,Buyer - Catalog - Pets,An individual within the household purchased pets or pet products from online or offline catalogs.,"Y = Yes
+U = Unknown",Drop U,OPETS_U
+OPHOTO,3.59E-05,0.11584186,categorical,Not Applicable,No,Buyer - Catalog - Photo & Video Equipment,An individual within the household purchased photo & video equipment from online or offline catalogs.,"Y = Yes
+U = Unknown",Drop U,OPHOTO_U
+OSPORTS,-2.43E-05,0.979715248,categorical,Not Applicable,No,Buyer - Catalog - Sports & Leisure,An individual within the household purchased sports & leisure products from online or offline catalogs.,"Y = Yes
+U = Unknown",Drop U,OSPORTS_U
+OTRAVEL,2.35E-05,0.16088882,categorical,Not Applicable,No,Buyer - Catalog - Travel,An individual within the household purchased travel from online or offline catalogs.,"Y = Yes
+U = Unknown",Drop U,OTRAVEL_U
+OVIDDVD,2.73E-05,0.145401032,categorical,Not Applicable,No,Buyer - Catalog - Videos/DVDs,An individual within the household purchased videos/DVDs from online or offline catalogs.,"Y = Yes
+U = Unknown",Drop U,OVIDDVD_U
+BPAMEX,0.000273447,0.000470223,categorical,Not Applicable,No,Buyer - Catalog - Payment AMEX,An individual within the household made a purchase from online or offline catalogs using American Express.,"Y = Yes
+U = Unknown",Drop U,BPAMEX_U
+BPCREDIT,-2.28E-05,0.800194206,categorical,Not Applicable,No,Buyer - Catalog - Payment Credit Card,An individual within the household made a purchase from online or offline catalogs using a credit card.,"Y = Yes
+U = Unknown",Drop U,BPCREDIT_U
+BPDISCVR,-3.06E-06,0.34976727,categorical,Not Applicable,No,Buyer - Catalog - Payment Discover,An individual within the household made a purchase from online or offline catalogs using Discover.,"Y = Yes
+U = Unknown",Drop U,BPDISCVR_U
+BPHOUSE,0.00097264,1.55E-10,categorical,Not Applicable,No,Buyer - Catalog - Payment House Charge,An individual within the household made a purchase from online or offline catalogs using a house charge.,"Y = Yes
+U = Unknown",Drop U,BPHOUSE_U
+BPMASTER,-1.29E-05,0.49322589,categorical,Not Applicable,No,Buyer - Catalog - Payment MasterCard,An individual within the household made a purchase from online or offline catalogs using MasterCard.,"Y = Yes
+U = Unknown",Drop U,BPMASTER_U
+BPRETAIL,-1.61E-05,0.561246666,categorical,Not Applicable,No,Buyer - Catalog - Payment Retail Card,An individual within the household made a purchase from online or offline catalogs using a retail card.,"Y = Yes
+U = Unknown",Drop U,BPRETAIL_U
+BPVISA,-2.43E-05,0.989962351,categorical,Not Applicable,No,Buyer - Catalog - Payment Visa,An individual within the household made a purchase from online or offline catalogs using Visa.,"Y = Yes
+U = Unknown",Drop U,BPVISA_U
+BUYER,0.000144272,0.008501331,categorical,Not Applicable,No,Buyer Catalog Data Present,Indicates the presence of online or offline catalog purchases within the household.,"Y = Yes
+U = Unknown",Drop U,BUYER_U
+RORDERDT,-1.27E-05,0.488537509,date,Negative,No,Buyer - Retail - Last Order Date,Last date an individual within the household made a purchase from a retail store. Format is: YYMM.,YYMM,"Recode, Drop 0",
+RORDERS,-2.18E-05,0.743783728,numeric,Positive,No,Buyer - Retail - Orders,Number of times an individual within the household made a purchased from a retail store.,00-99,Drop 0,
+RDOLLARS,3.83E-05,0.10873535,numeric,Positive,No,Buyer - Retail - Dollars,Total dollars spent by an individual within the household at a retail store represented in thousands.,"$0 - $9,999",Drop 0,
+RAGEN,-5.96E-06,0.384762056,categorical,Not Applicable,No,Buyer - Retail - Apparel - General,An individual within the household purchased general apparel from a retail store.,"Y = Yes
+U = Unknown",Drop U,RAGEN_U
+RABIGTLL,-2.24E-05,0.777489188,categorical,Not Applicable,No,Buyer - Retail - Apparel - Mens Big And Tall,An individual within the household purchased Mens Big and Tall apparel from a retail store.,"Y = Yes
+U = Unknown",Drop U,RABIGTLL_U
+RACHILD,-1.23E-05,0.481070605,categorical,Not Applicable,No,Buyer - Retail - Apparel - Children,An individual within the household purchased childrens apparel from a retail store.,"Y = Yes
+U = Unknown",Drop U,RACHILD_U
+RATEEN,-1.09E-05,0.457226381,categorical,Not Applicable,No,Buyer - Retail - Apparel - Teenagers,An individual within the household purchased teenagers apparel from a retail store.,"Y = Yes
+U = Unknown",Drop U,RATEEN_U
+RAMEN,-1.02E-05,0.445200454,categorical,Not Applicable,No,Buyer - Retail - Apparel - Men,An individual within the household purchased mens apparel from a retail store.,"Y = Yes
+U = Unknown",Drop U,RAMEN_U
+RAPETITE,-2.40E-05,0.906947929,categorical,Not Applicable,No,Buyer - Retail - Apparel - Womens Petite Sizes,An individual within the household purchased Womens Petite apparel from a retail store.,"Y = Yes
+U = Unknown",Drop U,RAPETITE_U
+RAPLUS,-2.42E-05,0.937540418,categorical,Not Applicable,No,Buyer - Retail - Apparel - Womens Plus Sizes,An individual within the household purchased Women's Plus apparel from a retail store.,"Y = Yes
+U = Unknown",Drop U,RAPLUS_U
+RAWOMEN,4.62E-05,0.088662658,categorical,Not Applicable,No,Buyer - Retail - Apparel - Women,An individual within the household purchased womens apparel from a retail store.,"Y = Yes
+U = Unknown",Drop U,RAWOMEN_U
+RANOGEN,-2.42E-05,0.928222326,categorical,Not Applicable,No,Buyer - Retail - Apparel - Non-gender Specific,An individual within the household purchased non-gender specific apparel from a retail store.,"Y = Yes
+U = Unknown",Drop U,RANOGEN_U
+RARTS,-1.60E-05,0.557525122,categorical,Not Applicable,No,Buyer - Retail - Arts & Antiques,An individual within the household purchased arts and antiques from a retail store.,"Y = Yes
+U = Unknown",Drop U,RARTS_U
+RAUTO,-1.07E-05,0.45366364,categorical,Not Applicable,No,Buyer - Retail - Automotive,An individual within the household purchased automotive products from a retail store.,"Y = Yes
+U = Unknown",Drop U,RAUTO_U
+RBEAUTY,-7.76E-07,0.325153769,categorical,Not Applicable,No,Buyer - Retail - Beauty,An individual within the household purchased beauty products from a retail store.,"Y = Yes
+U = Unknown",Drop U,RBEAUTY_U
+RBOOKS,-2.31E-05,0.8182948,categorical,Not Applicable,No,Buyer - Retail - Books,An individual within the household purchased books from a retail store.,"Y = Yes
+U = Unknown",Drop U,RBOOKS_U
+RCHILDPR,2.08E-05,0.173229875,categorical,Not Applicable,No,Buyer - Retail - Childrens Products,An individual within the household purchased children's products from a retail store.,"Y = Yes
+U = Unknown",Drop U,RCHILDPR_U
+RCOLLECT,-1.80E-05,0.609760903,categorical,Not Applicable,No,Buyer - Retail - Collectibles,An individual within the household purchased collectibles from a retail store.,"Y = Yes
+U = Unknown",Drop U,RCOLLECT_U
+RCOMPHMO,-1.03E-05,0.447115105,categorical,Not Applicable,No,Buyer - Retail - Computing/Home Office,An individual within the household purchased computing/home office products from a retail store.,"Y = Yes
+U = Unknown",Drop U,RCOMPHMO_U
+RCRAFTS,-1.60E-05,0.557525122,categorical,Not Applicable,No,Buyer - Retail - Crafts/Hobbies,An individual within the household purchased craft/hobbie products from a retail store.,"Y = Yes
+U = Unknown",Drop U,RCRAFTS_U
+RELECTNC,-2.00E-05,0.673791214,categorical,Not Applicable,No,Buyer - Retail - Electronics,An individual within the household purchased electronics from a retail store.,"Y = Yes
+U = Unknown",Drop U,RELECTNC_U
+RFOOD,4.48E-05,0.091870499,categorical,Not Applicable,No,Buyer - Retail - Food/Beverages,An individual within the household purchased food/beverages from a retail store.,"Y = Yes
+U = Unknown",Drop U,RFOOD_U
+RFURNITR,-2.33E-05,0.831865089,categorical,Not Applicable,No,Buyer - Retail - Furniture,An individual within the household purchased furniture from a retail store.,"Y = Yes
+U = Unknown",Drop U,RFURNITR_U
+RGARDEN,-7.02E-06,0.398864979,categorical,Not Applicable,No,Buyer - Retail - Garden,An individual within the household purchased garden products from a retail store.,"Y = Yes
+U = Unknown",Drop U,RGARDEN_U
+RGEN,-2.37E-05,0.867225863,categorical,Not Applicable,No,Buyer - Retail - General Merchandise,An individual within the household purchased general merchandise from a retail store.,"Y = Yes
+U = Unknown",Drop U,RGEN_U
+RGIFT,-2.39E-05,0.888516074,categorical,Not Applicable,No,Buyer - Retail - Gift,An individual within the household purchased gifts from a retail store.,"Y = Yes
+U = Unknown",Drop U,RGIFT_U
+RHEALTH,-2.37E-05,0.865444546,categorical,Not Applicable,No,Buyer - Retail - Health,An individual within the household purchased health products from a retail store.,"Y = Yes
+U = Unknown",Drop U,RHEALTH_U
+RHOLIDAY,-2.44E-05,0.996118971,categorical,Not Applicable,No,Buyer - Retail - Holiday Items,An individual within the household purchased holiday items from a retail store.,"Y = Yes
+U = Unknown",Drop U,RHOLIDAY_U
+RHMCARE,-1.89E-05,0.637557684,categorical,Not Applicable,No,Buyer - Retail - Home Care,An individual within the household purchased home care products from a retail store.,"Y = Yes
+U = Unknown",Drop U,RHMCARE_U
+RHMFURN,4.54E-05,0.090453113,categorical,Not Applicable,No,Buyer - Retail - Home Furnishings,An individual within the household purchased home furnishings products from a retail store.,"Y = Yes
+U = Unknown",Drop U,RHMFURN_U
+RHSWARE,-1.20E-05,0.475915331,categorical,Not Applicable,No,Buyer - Retail - Housewares,An individual within the household purchased housewares from a retail store.,"Y = Yes
+U = Unknown",Drop U,RHSWARE_U
+RJEWELRY,-2.43E-05,0.964894624,categorical,Not Applicable,No,Buyer - Retail - Jewelry,An individual within the household purchased jewelry from a retail store.,"Y = Yes
+U = Unknown",Drop U,RJEWELRY_U
+RLINENS,-1.44E-05,0.523498902,categorical,Not Applicable,No,Buyer - Retail - Linens,An individual within the household purchased linens from a retail store.,"Y = Yes
+U = Unknown",Drop U,RLINENS_U
+RMUSIC,NA,NA,categorical,NA,No,Buyer - Retail - Music,An individual within the household purchased music from a retail store.,"Y = Yes
+U = Unknown",Drop U,RMUSIC_U
+RNOVEL,-2.18E-05,0.747334581,categorical,Not Applicable,No,Buyer - Retail - Novelty,An individual within the household purchased novelty products from a retail store.,"Y = Yes
+U = Unknown",Drop U,RNOVEL_U
+ROTHER,4.22E-05,0.09822735,categorical,Not Applicable,No,Buyer - Retail - Other Merch/Services,An individual within the household purchased other merchandise/services from a retail store.,"Y = Yes
+U = Unknown",Drop U,ROTHER_U
+RPERCARE,-2.20E-05,0.757978907,categorical,Not Applicable,No,Buyer - Retail - Personal Care,An individual within the household purchased personal care products from a retail store.,"Y = Yes
+U = Unknown",Drop U,RPERCARE_U
+RPETS,-2.40E-05,0.905760512,categorical,Not Applicable,No,Buyer - Retail - Pets,An individual within the household purchased pets from a retail store.,"Y = Yes
+U = Unknown",Drop U,RPETS_U
+RPHOTO,NA,NA,categorical,NA,No,Buyer - Retail - Photo & Video Equipment,An individual within the household purchased photo and video equipment from a retail store.,"Y = Yes
+U = Unknown",Drop U,RPHOTO_U
+RSPECFD,-2.29E-05,0.804546237,categorical,Not Applicable,No,Buyer - Retail - Specialty Food,An individual within the household purchased speciality food from a retail store.,"Y = Yes
+U = Unknown",Drop U,RSPECFD_U
+RSPECGFT,-2.17E-05,0.740251564,categorical,Not Applicable,No,Buyer - Retail - Specialty Gifts,An individual within the household purchased speciality gifts from a retail store.,"Y = Yes
+U = Unknown",Drop U,RSPECGFT_U
+RSPORTS,6.70E-06,0.258821327,categorical,Not Applicable,No,Buyer - Retail - Sports & Leisure,An individual within the household purchased sports and leisure products from a retail store.,"Y = Yes
+U = Unknown",Drop U,RSPORTS_U
+RSTATION,-7.64E-06,0.407443881,categorical,Not Applicable,No,Buyer - Retail - Stationery,An individual within the household purchased stationary from a retail store.,"Y = Yes
+U = Unknown",Drop U,RSTATION_U
+RTRAVEL,-1.30E-05,0.4955793,categorical,Not Applicable,No,Buyer - Retail - Travel,An individual within the household purchased travel from a retail store.,"Y = Yes
+U = Unknown",Drop U,RTRAVEL_U
+RVIDDVD,NA,NA,categorical,NA,No,Buyer - Retail - Videos/DVDs,An individual within the household purchased videos/DVD's from a retail store.,"Y = Yes
+U = Unknown",Drop U,RVIDDVD_U
+RETAIL,-1.28E-05,0.491715774,categorical,Not Applicable,No,Buyer Retail Data Present,Indicates the presence of retail store purchases within the household.,"Y = Yes
+U = Unknown",Drop U,RETAIL_U
+SPENDPAT,-1.69E-05,0.580541414,categorical,Positive,No,Buyer - Catalog - Spending Patterns,The purchasing behavior of an individual in the household based upon items bought through online or offline catalogs.,"00 - No Buyer Data 
+01 - Occasional Frugality 
+02 - Occasional Moderation 
+03 - Occasional Spending 
+04 - Occasional Indulgence 
+05 - Sporadic Frugality 
+06 - Sporadic Moderation 
+07 - Sporadic Spending 
+08 - Sporadic Indulgence 
+09 - Frequent Frugality 
+10 - Frequent Moderation 
+11 - Frequent Spending 
+12 - Frequent Indulgence 
+13 - Habitual Frugality 
+14 - Habitual Moderation 
+15 - Habitual Spending 
+16 - Habitual Indulgence",Categorical,
+SHAPPL,0.000235887,0.001078629,numeric,Positive,No,Smart Households - Appliances,"A demographic based analytical model which predicts the likelihood of a household to have a thermostat, appliances, TV or sound system controlled through an internet connection.","0 - Most Likely to Have
+1 
+2 
+3 
+4 
+5 
+6 
+7 
+8 
+9 - Least Likely to Have",,
+SHSEC,0.000333834,0.000125337,numeric,Negative,No,Smart Households - Security,"A demographic based analytical model which predicts the likelihood of a household to have an alarm, lighting, door locks or security cameras controlled through an internet connection.","0 - Most Likely to Have
+1 
+2 
+3 
+4 
+5 
+6 
+7 
+8 
+9 - Least Likely to Have",,
+STLNINDX,0.002240575,4.95E-22,numeric,Positive,No,Student Loan Index,A statistical model predicting an individual is likely to have a student loan.,"0 - Most Likely
+1 
+2 
+3 
+4 
+5 
+6 
+7 
+8 
+9 - Least Likely",,
+TSCONS,0.000617525,2.83E-07,numeric,Positive,No,Travel Segment - Consolidator,"Predicts the likelihood of an individual to schedule travel and accommodations on an online site which consolidates the travel, hotel and car rental.",0-9,,
+TSCOST,0.00091016,5.79E-10,numeric,Positive,No,Travel Segment - Cost Conscience,Predicts the likelihood of an individual to search for low cost flights and cost comparisons along with low cost accommodations with extras like free breakfast and Wi-Fi.,0-9,,
+TSDBOOK,0.001314764,1.19E-13,numeric,Positive,No,Travel Segment - Direct Booker,Predicts the likelihood of an individual to schedule travel and accommodations through single transactions either via the internet or over the phone.,0-9,,
+TSLOYAL,0.001667003,7.60E-17,numeric,Positive,No,Travel Segment - Loyalists,"Predicts the likelihood of an individual to select travel options which include loyalty programs for airlines, hotels or car rentals.",0-9,,
+TSLUX,0.000652608,1.34E-07,numeric,Positive,No,Travel Segment - Luxury Lovers,Predicts the likelihood of an individual to schedule travel based on their schedule and preferred seating. They also are likely to select higher priced accommodations which may be big brand or boutique hotels.,0-9,,
+TSAFFN,0.003119066,5.89E-30,numeric,Positive,No,Travel Segment - Travel Affinity,"Predicts the likelihood of an individual to use a credit card to book travel that is affiliated with an airline, hotel or rental car company.",0-9,,
+INVEXPL,0.003575502,4.23E-33,categorical,Not Applicable,No,Investor Experience Level,Predicts an individual's level of experiance with making decisions about their investments.  ,"B - Beginner
+M - Moderate
+E - Experienced",,
+INVRISKT,0.000105313,0.042327161,categorical,Not Applicable,No,Investment Risk Tolerance,"Predicts the likelihood an individual's risk tolerance for investments ranked into high (aggressive), moderate (moderately aggressive), and low (conservative)","H - High
+M - Moderate
+L - Low ",,
+INVRETIR,0.010146575,2.72E-93,numeric,Negative,No,Investment Products - Retirement,"Predicts the likelihood an individual will utilize various investment products (401K, IRA, etc) for retirement income","0 - Most likely preference 
+1 
+2 
+3 
+4 
+5 
+6 
+7 
+8 
+9 - Least likely preference",,
+INVEQ,0.011168507,1.60E-102,numeric,Negative,No,Investment Products - Equities,Predicts the likelihood of an individual to invest in investment products like stocks and bonds to build equity,"0 - Most likely preference 
+1 
+2 
+3 
+4 
+5 
+6 
+7 
+8 
+9 - Least likely preference",,
+INVCASH,0.010614122,1.63E-97,numeric,Negative,No,Investment Products - Cash,Predicts the likelihood of an individual to utilize investment products for cash accumulation,"0 - Most likely preference 
+1 
+2 
+3 
+4 
+5 
+6 
+7 
+8 
+9 - Least likely preference ",,
+INVINSUR,0.009508402,1.57E-87,numeric,Negative,No,Investment Products - Insurance,Predicts the likelihood an individual will invest in different annuities and whole life insurance products,"0 - Most likely preference 
+1 
+2 
+3 
+4 
+5 
+6 
+7 
+8 
+9 - Least likely preference ",,
+INVRECOM,0.013327671,4.72E-122,numeric,Negative,No,Investment Products - Real Estate/Commodities,"Predicts the likelihood an individual will invest in real estate, precious metals or collectibles","0 - Most likely preference 
+1 
+2 
+3 
+4 
+5 
+6 
+7 
+8 
+9 - Least likely preference ",,
+INVPROF,0.009410281,1.21E-86,numeric,Negative,No,Investor Channel - Professional,Predicts an individual to use a professional investment advisor for all aspects of financial planning," 0 - Most Likely 
+ 1 
+ 2 
+ 3 
+ 4 
+ 5 
+ 6 
+ 7 
+ 8 
+ 9 - Least Likely",,
+INVSELFD,0.009210204,7.71E-85,numeric,Negative,No,Investor Channel - Self Directed,"Predicts an individual directing their own investments through online trading sites, recommendations and researching company websites"," 0 - Most Likely 
+ 1 
+ 2 
+ 3 
+ 4 
+ 5 
+ 6 
+ 7 
+ 8 
+ 9 - Least Likely",,
+SAVERSST,0.000190294,0.002987843,numeric,Negative,No,Savers - Short Term,Predicts individuals likely to save for the time period up to three years," 0 - Most Likely 
+ 1 
+ 2 
+ 3 
+ 4 
+ 5 
+ 6 
+ 7 
+ 8 
+ 9 - Least Likely",,
+SAVERSLT,0.000513636,2.59E-06,numeric,Negative,No,Savers - Long Term,Predicts individuals likely to save for time periods longer than three years," 0 - Most Likely 
+ 1 
+ 2 
+ 3 
+ 4 
+ 5 
+ 6 
+ 7 
+ 8 
+ 9 - Least Likely",,
+GENERS20,0.02111604,1.33E-168,categorical,Not Applicable,No,Generations 2.0,"A segmentation system comprised of five generational groups and 36 unique clusters based on common purchasing power and behavior, lifestyle choices, demographic attributes, socioeconomic status and attitudes.",See Generations 2.0 Tab,,
+MEDA,0.001216283,9.35E-13,numeric,Negative,No,Medicare Advantage Percentage,The percentage of beneficiaries enrolled in a Medicare Advantage plan within a county calculated by dividing the number of enrollees by the number of beneficiaries.,00-99,Drop 0,
+PDPE,0.004900449,5.31E-46,numeric,Positive,No,Prescription Drug Plan Enrollment Percentage,The percentage of Medicare beneficiaries enrolled in a standalone Prescription Drug Plan (PDP) within a county. Penetration is calculated by dividing the number of PDP enrollees by the number of Medicare beneficiaries.,00-99,Drop 0,
+FILLER.2,NA,NA,Other,NA,Yes,#N/A,,#N/A,,
+MEDSUP,0.000153638,0.013802093,numeric,Negative,No,Medicare Supplement Insurance Responder Index,Indicates the propensity of an individual aged 65 or older to respond to a Medicare Supplement insurance offer.,"BLANK
+0 - Most likely to respond
+1
+2
+3
+4
+5
+6
+7
+8
+9 - Least likely to respond",,
+LTCINDX,0.001257719,2.90E-10,numeric,Negative,No,Long Term Care Insurance Index,Indicates the propensity of an individual age 45+ to respond to a long term care insurance offer. The value of 0 indicates individual is most likely to respond and 9 being the least likely to respond.,0-9,,
+HINSUB,0.009627629,1.95E-86,categorical,Not Applicable,No,Health Insurance Subsidy Indicator, Indicates if the household may be eligible for a government subsidy to assist with healthcare insurance costs.,"A - Households that may qualify for Medicaid based on the number of persons present and their estimated household income. 
+B - Households that may qualify for reduced cost sharing & premium tax credits based on the number of persons present and their estimated household income. 
+C - Households that may qualify for premium tax credits only based on the number of person present and their estimated household income. 
+U - Unknown",Drop U,HINSUB_U
+HLTHUNIN,-1.67E-05,0.576074199,numeric,Negative,No,Percent Healthcare Uninsured Estimate,The estimated percentage of individuals within a county without healthcare insurance under the age of 65.,00-99,,
+IRIHLTH,6.02E-05,0.233820176,numeric,Positive,No,Insurance Responder Index - Health,A statistical model predicting an individual aged 18-64 likely to respond to health insurance offers. Includes both offline and online responders.,0-9,,
+IRILIFE,0.00091541,5.18E-10,numeric,Positive,No,Insurance Responder Index - Life,A statistical model predicting an individual's likelihood of responding to life insurance offers. Includes both offline and online responders. ,0-9,,
+IRISNR,0.001236327,7.50E-11,numeric,Positive,No,Insurance Responder Index - Seniors,A statistical model predicting an individual aged 64+ likely to respond to Medicare Supplement or Medicare Advantage insurance offers. Includes both offline and online responders.,0-9,,
+IRIAUTO,0.007433397,8.12E-69,numeric,Positive,No,Insurance Responder Index - Auto,A statistical model predicting an individual's likelihood of responding to automotive insurance offers. Includes both offline and online responders.,0-9,,
+ENGAGE,0.000637313,1.85E-07,numeric,Negative,No,Health Insurance Engagement Index,A statistical model predicting the likelihood of an individual to engage with a brand. The value of 0 indicates individual is most likely to respond and 9 being the least likely to respond.,0-9,,
+INFLUENC,0.003000036,6.97E-29,numeric,Positive,No,Health Insurance Influence Index,A statistical model predicting the likelihood of an individual to be influenced by a brand. The value of 0 indicates individual is most likely to respond and 9 being the least likely to respond.,0-9,,
+CHANPR1,0.003489132,2.76E-30,categorical,Not Applicable,No,Channel Preference - First Preference,"A demographic based analytical model which predicts the primary preference of how an individual wants to be contacted.
+","P = Phone 
+C = Cell 
+T = Text 
+E = Email 
+M = Mail 
+W = Web
+",,
+CHANPR2,0.004633415,2.36E-40,categorical,Not Applicable,No,Channel Preference - Second Preference,"A demographic based analytical model which predicts the second preference of how an individual wants to be contacted.
+","P = Phone 
+C = Cell 
+T = Text 
+E = Email 
+M = Mail 
+W = Web",,
+CHANPRC,0.004260667,3.06E-40,numeric,Positive,No,Channel Preference Index - Cell,"A demographic based analytical model which predicts an individuals preference to be contacted via cell phone.
+","0 - Most likely preference 
+1 
+2 
+3 
+4 
+5 
+6 
+7 
+8 
+9 - Least likely preference",,
+CHANPRE,0.006745593,1.28E-62,numeric,Negative,No,Channel Preference Index - Email,"A demographic based analytical model which predicts an individuals preference to be contacted via electronic mail.
+","0 - Most likely preference 
+1 
+2 
+3 
+4 
+5 
+6 
+7 
+8 
+9 - Least likely preference",,
+CHANPRM,0.00093748,3.26E-10,numeric,Negative,No,Channel Preference Index - Mail,"A demographic based analytical model which predicts an individuals preference to be contacted  via postal mail.
+","0 - Most likely preference 
+1 
+2 
+3 
+4 
+5 
+6 
+7 
+8 
+9 - Least likely preference",,
+CHANPRP,0.004546945,8.10E-43,numeric,Negative,No,Channel Preference Index - Phone,A demographic based analytical model which predicts an individuals preference to be contacted via telephone.,"0 - Most likely preference 
+1 
+2 
+3 
+4 
+5 
+6 
+7 
+8 
+9 - Least likely preference",,
+CHANPRT,0.004138131,3.89E-39,numeric,Positive,No,Channel Preference Index - Text,"A demographic based analytical model which predicts an individuals preference to be contacted via text message.
+","0 - Most likely preference 
+1 
+2 
+3 
+4 
+5 
+6 
+7 
+8 
+9 - Least likely preference",,
+CHANPRW,0.000712602,3.75E-08,numeric,Positive,No,Channel Preference Index - Web,"A demographic based analytical model which predicts an individuals preference to be contacted via the providers website.
+","0 - Most likely preference 
+1 
+2 
+3 
+4 
+5 
+6 
+7 
+8 
+9 - Least likely preference",,
+UNININDX,0.001724205,2.31E-17,numeric,Positive,No,Uninsured Index,A statistical model predicting an individual between the ages of 18 and 64 does not have health insurance coverage.,"0 - MOST LIKELY
+1
+2
+3
+4
+5
+6
+7
+8
+9 - LEAST LIKELY",,
+DUALELIG,0.000508712,2.88E-06,numeric,Positive,No,Dual Eligible Index,A statistical model predicting an individual aged 64 + to be eligible both Medicare and Medicaid.,"0 - MOST LIKELY
+1
+2
+3
+4
+5
+6
+7
+8
+9 - LEAST LIKELY",,
+HIDIRPAY,0.000404654,2.70E-05,numeric,Positive,No,Health Insurance Direct Pay Index,A statistical model predicting an individual likely to purchase private health insurance directly from the insurance provider (not their employer).,"0 - MOST LIKELY
+1
+2
+3
+4
+5
+6
+7
+8
+9 - LEAST LIKELY",,
+SSPIDENT,0.000679929,7.51E-08,numeric,Negative,No,Single Service Plan - Dental,A statistical model predicting an individual likely to respond to dental insurance offers.,"0 - Most Likely
+1 
+2 
+3 
+4 
+5 
+6 
+7 
+8 
+9 - Least Likely",,
+SSPIVISN,-2.42E-05,0.940911124,numeric,Positive,No,Single Service Plan - Vision,A statistical model predicting an individual likely to respond to vision insurance offers.,"0 - Most Likely
+1 
+2 
+3 
+4 
+5 
+6 
+7 
+8 
+9 - Least Likely",,
+SSPIDISA,0.000293757,0.000300954,numeric,Positive,No,Single Service Plan - Disability,A statistical model predicting an individual likely to respond to disability insurance offers.,"0 - Most Likely
+1 
+2 
+3 
+4 
+5 
+6 
+7 
+8 
+9 - Least Likely",,
+INSJUVE,0.006417868,1.15E-59,numeric,Positive,No,Insurance Index - Juvenile Life,A demographic based analytical model which predicts the likelihood the household purchased life insurance for their children.,"0 - Most Likely
+1 
+2 
+3 
+4 
+5 
+6 
+7 
+8 
+9 - Least Likely",,
+INSFINEX,0.004275573,2.25E-40,numeric,Positive,No,Insurance Index - Final Expense,A demographic based analytical model which predicts the likelihood the household may respond to a marketing offer for final expense insurance.,"0 - Most Likely
+1 
+2 
+3 
+4 
+5 
+6 
+7 
+8 
+9 - Least Likely",,
+INSPAFUN,0.001423101,1.24E-14,numeric,Negative,No,Insurance Index - Prearranged Funeral,A demographic based analytical model which predicts the likelihood the household may respond to an offer of prearranged/prepaid funeral planning.,"0 - Most Likely
+1 
+2 
+3 
+4 
+5 
+6 
+7 
+8 
+9 - Least Likely",,
+INSTERM,0.003322088,8.72E-32,numeric,Negative,No,Insurance Index - Term Life,A demographic based analytical model which predicts the likelihood the household may respond to an offer of term life insurance.,"0 - Most Likely
+1 
+2 
+3 
+4 
+5 
+6 
+7 
+8 
+9 - Least Likely",,
+INSTERMA,0.002069096,2.10E-18,categorical,Not Applicable,No,Insurance Amount - Term Life,A demographic based analytical model which predicts the amount of term life insurance the household may need.,"A - Less than $100,000 
+B - $100,000 to less than $250,000 
+C - $250,000 to less than $500,000 
+D - $500,000 to less than $1,000,000 
+E - $1,000,000 +",scale,
+INSWHOLE,0.002189473,1.43E-21,numeric,Negative,No,Insurance Index - Whole Life,A demographic based analytical model which predicts the likelihood the household may respond to an offer of whole life insurance.,"0 - Most Likely
+1 
+2 
+3 
+4 
+5 
+6 
+7 
+8 
+9 - Least Likely",,
+INSWHOLA,0.004348088,1.75E-38,categorical,Not Applicable,No,Insurance Amount - Whole Life,A demographic based analytical model which predicts the amount of whole life insurance the household may need.,"A - Less than $100,000 
+B - $100,000 to less than $250,000 
+C - $250,000 to less than $500,000 
+D - $500,000 to less than $1,000,000 
+E - $1,000,000 +",scale,
+CHAPAHIP,0.00026561,0.001574098,categorical,Not Applicable,No,Auto/Home Insurance Purchase Distribution Channel,A demographic based analytical model which predicts the primary preference of how an individual wants to purchase automobile or homeowner insurance.,"A - Agent 
+D - Direct Response 
+O - Online",,
+CHAPAHIQ,0.002865369,9.54E-27,categorical,Not Applicable,No,Auto/Home Insurance Quote Distribution Channel,A demographic based analytical model which predicts the primary preference of how an individual wants to get a quote for automobile or homeowner insurance.,"A - Agent 
+D - Direct Response 
+O - Online",,
+CHAPLIP,0.002677288,4.58E-25,categorical,Not Applicable,No,Life Insurance Purchase Distribution Channel,A demographic based analytical model which predicts the primary preference of how an individual wants to purchase life insurance.,"A - Agent 
+D - Direct Response 
+O - Online",,
+CHAPLIQ,0.000102653,0.04470356,categorical,Not Applicable,No,Life Insurance Quote Distribution Channel,A demographic based analytical model which predicts the primary preference of how an individual wants to get a quote for life insurance.,"A - Agent 
+D - Direct Response 
+O - Online",,
+ALTRUIST,0.000878479,1.13E-09,numeric,Positive,No,Altruist Index,A demographic based analytical model which predicts the likelihood of an individual to have a moral obligation to help others.,"0 - Most Likely 
+1 
+2 
+3 
+4 
+5 
+6 
+7 
+8 
+9 - Least Likely",,
+ANNUITRI,0.002482355,3.25E-24,numeric,Positive,No,Annuity Responder Index,A demographic based analytical model which predicts the likelihood of individuals between the ages of 60 and 75 to respond to an annuity insurance marketing offer.,"0 - Most Likely 
+1 
+2 
+3 
+4 
+5 
+6 
+7 
+8 
+9 - Least Likely",,
+HXMBOH,-2.33E-05,0.832280101,numeric,Negative,No,Health Index - Manage Business of Health,"Predicts the likelihood of an individual to manage the business side of healthcare. They are likely to review their health claims, use a healthcare cost estimating tool, search for a physician and look at quality ratings or review for a physician or hospital.","0 - Most Likely 
+1 
+2 
+3 
+4 
+5 
+6 
+7 
+8 
+9 - Least Likely",,
+HXMH,0.000973069,1.54E-10,numeric,Negative,No,Health Index - Manage Health,"Predicts the likelihood of an individual to proactively manage their health. They are likely to pursue health and wellness goals plus track exercise, vital signs, nutrition, calories or weight.","0 - Most Likely 
+1 
+2 
+3 
+4 
+5 
+6 
+7 
+8 
+9 - Least Likely",,
+HXMIOC,0.001854712,1.52E-18,numeric,Positive,No,Health Index - Manage Illness or Condition,"Predicts the likelihood of an individual to self-monitor an illness or health condition. They are likely to manage medication, look up health or nutritional information, post a question online or share personal health history, use an online application that stores personal health history, communicate with a health professional through online options (email chat, app, webcam).","0 - Most Likely 
+1 
+2 
+3 
+4 
+5 
+6 
+7 
+8 
+9 - Least Likely",,
+HXWEARBL,0.000164312,0.005377924,numeric,Positive,No,Health Index - Use Wearable Device to Manage Health,"Predicts an individual likely uses a wearable device (Fitbit, Jawbone, Fuelband, Apple Watch) to measure and manage their health.","0 - Most Likely 
+1 
+2 
+3 
+4 
+5 
+6 
+7 
+8 
+9 - Least Likely",,
+HIPAYTOL,0.004822015,1.07E-09,numeric,Positive,No,Health Insurance Premium Tolerance Index,Predicts the likelihood of an individual between ages 27-64 to tolerant paying for health insurance premiums out of pocket.,"0 - Most Likely 
+1 
+2 
+3 
+4 
+5 
+6 
+7 
+8 
+9 - Least Likely",,
+HCACCPRF,0.000475856,5.02E-05,categorical,Not Applicable,No,Healthcare Treatment Preference,Predicts the type of facility an individual is likely to go to for their healthcare needs.,"P - Personal doctor or personal care physician
+C - Community health clinic or health clinic in retail setting
+H - Hospital or standalone emergency room or urgent care center
+O - Other or None Above",,
+MEDSUPBI,0.002734793,1.72E-26,numeric,Negative,No,Medicare Supplement Insurance Buyer Index,A demographic based analytical model which predicts the likelihood of individuals aged 64 or older to purchase Medicare Supplement insurance.,"0 - Most Likely to Buy
+1 
+2 
+3 
+4 
+5 
+6 
+7 
+8 
+9 - Least Likely to Buy",,
+HBMULTI,0.002839004,1.97E-27,numeric,Positive,No,Multiple Healthy Behavior Change Index,A demographic based analytical model which predicts an individuals likelihood to make multiple health and wellness changes.,"0 - Most Likely
+1 
+2 
+3 
+4 
+5 
+6 
+7 
+8 
+9 - Least Likely",,
+HBSUST,0.000456491,8.83E-06,numeric,Positive,No,Sustained Healthy Behavior Change Index,A demographic based analytical model which predicts an individuals likelihood to sustain health and wellness changes.,"0 - Most Likely
+1 
+2 
+3 
+4 
+5 
+6 
+7 
+8 
+9 - Least Likely",,
+HIEMPINS,0.000235421,0.139409641,numeric,Negative,No,Employer Sponsored Health Insurance Index," Indicates the propensity of an individual in the household with an age 18 to 64 to have private insurance through their employer or union. The value of 0 indicates a high likelihood and 9 indicating a low likelihood. Households with individuals outside the age group will be coded with a blank.
+","0 - Most likely 
+1 
+2 
+3 
+4 
+5 
+6 
+7 
+8 
+9 - Least likely  ",,
+LTMEDICR,0.010389609,4.79E-77,numeric,Negative,No,Late to Medicare Index," Indicates the propensity of an individual aged 65 or older to have healthcare coverage through private insurance as opposed to Medicare insurance. The value of 0 indicates an individual is most likely and 9 being the least likely. Records outside the age group are coded with a blank.
+","0 - Most likely 
+1 
+2 
+3 
+4 
+5 
+6 
+7 
+8 
+9 - Least likely  ",,
+EIPHARMS,0.005326659,7.72E-50,numeric,Positive,No,Engagement Index - Pharmacists,A statistical model predicting the likelihood of an individual to engage with pharmacists.,"0 - Most likely to engage 
+1 
+2 
+3 
+4 
+5 
+6 
+7 
+8 
+9 - Least likely to engage",,
+CAREGIVE,-2.32E-05,0.827597899,categorical,Not Applicable,No,Caregiver,"Indicates an individual may be caring for an older adult.
+"," BLANK
+Y Yes
+U Unknown",Drop U,CAREGIVE_U
+MOTORCYL,-1.49E-05,0.533245148,categorical,Not Applicable,No,Presence of Motorcycle,Indicates someone in the household owns or has owned a motorcycle.,"Y  YES
+U  UNKNOWN",Drop U,MOTORCYL_U
+FTOTVLCL,0.00641583,8.20E-50,categorical,Not Applicable,No,Assessed Total Value,The total value (i.e. land and improvement) assessed by county and/or local taxing authorities.,"A - $1-$19,999 
+B - $20,000-$39,999 
+C - $40,000-$59,999 
+D - $60,000-$79,999 
+E - $80,000-$99,999 
+F - $100,000-$119,999 
+G - $120,000-$149,999 
+H - $150,000-$169,999 
+I - $170,000-$199,999 
+J - $200,000-$249,999 
+K - $250,000-$299,999 
+L - $300,000-$349,999 
+M - $350,000-$399,999 
+N - $400,000-$499,999 
+O - $500,000-$699,999 
+P - $700,000-$999,999 
+Q - $1,000,000+ 
+U - $0 or Blank",scale,
+FLNDVALC,0.008566867,7.19E-67,categorical,Not Applicable,No,Assessed Land Value,The land value assessed by county and/or local taxing authorities.,"A - $1-$9,999 
+B - $10,000-$19,999 
+C - $20,000-$29,999 
+D - $30,000-$39,999 
+E - $40,000-$49,999 
+F - $50,000-$59,999 
+G - $60,000-$79,999 
+H - $80,000-$99,999 
+I - $100,000-$119,999 
+J - $120,000-$149,999 
+K - $150,000-$169,999 
+L - $170,000-$199,999 
+M - $200,000-$249,999 
+N - $250,000-$299,999 
+O - $300,000-$349,999 
+P - $350,000-$399,999 
+Q - $400,000-$499,999 
+R - $500,000-$699,999 
+S - $700,000-$999,999 
+T - $1,000,000+ 
+U - $0 or blank",scale,
+FSALDATE,0.000615656,2.94E-07,date,Negative,No,Property Sale Date,The date the property contract was signed or recorded.,CCYYMM,"Recode, Drop 0",
+FSALPRIC,0.00212708,1.34E-14,categorical,Not Applicable,No,Property Sale Price,The price paid for the property.,"A - $1-$19,999 
+B - $20,000-$39,999 
+C - $40,000-$59,999 
+D - $60,000-$79,999 
+E - $80,000-$99,999 
+F - $100,000-$119,999 
+G - $120,000-$149,999 
+H - $150,000-$169,999 
+I - $170,000-$199,999 
+J - $200,000-$249,999 
+K - $250,000-$299,999 
+L - $300,000-$349,999 
+M - $350,000-$399,999 
+N - $400,000-$499,999 
+O - $500,000-$699,999 
+P - $700,000-$999,999 
+Q - $1,000,000+ 
+U - $0 or blank",scale,
+FMORT1,0.000908587,2.63E-06,categorical,Not Applicable,No,Mortgage Amount - 1st,The amount of the first mortgage as recorded on the deed.,"A - $1-$19,999 
+B - $20,000-$39,999 
+C - $40,000-$59,999 
+D - $60,000-$79,999 
+E - $80,000-$99,999 
+F - $100,000-$119,999 
+G - $120,000-$149,999 
+H - $150,000-$199,999 
+I - $200,000-$249,999 
+J - $250,000-$499,999 
+K - $500,000-$999,999 
+L - $1,000,000-$1,499,999 
+M - $1,500,000+ 
+U - $0 or blank",scale,
+FMORTTYP,0.000744294,5.68E-07,categorical,Not Applicable,No,Mortgage Loan Type Code,Type of loan for the first mortgage as recorded on the deed.,"C - Conventional 
+F - FHA 
+P - Private Party 
+U - Unknown or blank
+V - VA",,
+FMORTTRM,0.001009803,7.12E-11,numeric,Negative,No,Mortgage Term,Time the loan matures for the first mortgage as recorded on the deed.,"00 - Unknown
+01 - Year 
+02 - Years
+03 - Years
+04 - Years
+05 - Years
+06 - Years
+07 - Years
+08 - Years
+09 - Years
+10 - Years
+15 - Years
+20 - Years
+25 - Years
+30 - Years
+40 - Years",Drop 0,
+FMORT2,-1.33E-05,0.487113506,categorical,Not Applicable,No,Mortgage Amount - 2nd,The amount of the second mortgage as recorded on the deed.,"A - $1-$19,999 
+B - $20,000-$39,999 
+C - $40,000-$59,999 
+D - $60,000-$99,999 
+E - $100,000-$199,000 
+F - $200,000+ 
+U - $0 or blank",scale,
+FLIVSQFT,0.000534607,0.000860202,categorical,Not Applicable,No,Living Square Feet,"General living area that is heated or air conditioned and does not include garage, porch or basement square footage.","A - 1-499 
+B - 500-999 
+C - 1,000-1,199 
+D - 1,200-1,399 
+E - 1,400-1,599 
+F - 1,600-1,700 
+G - 1,800-1,999 
+H - 2,000-2,199 
+I - 2,200-2,599 
+J - 2,600-2,999 
+K - 3,000-3,999 
+L - 4,000-4,999 
+M - 5,000+ 
+U - 0 or blank",scale,
+FYEARBLT,-2.40E-05,0.904729926,date,Positive,No,Year Built,The year the primary residence was built.,CCYY,Drop 0,
+FEFFYRBL,0.000442327,1.20E-05,date,Positive,No,Effective Year Built,The year any living square footage was added to the primary residence.,CCYY,Drop 0,
+FPOOL,0.000664264,1.05E-07,categorical,Not Applicable,No,Pool,Indicates the presence of a swimming pool located on the property.,"Y = Yes
+U = Unknown",Drop U,FPOOL_U
+FROOFCVR,0.004231614,1.13E-34,categorical,Not Applicable,No,Roof Type,Indicates the type of materials used to cover the roof of the primary residence.,"A - Asphalt 
+B - Built Up 
+C - Composition 
+G - Gravel 
+M - Metal 
+O - Other 
+S - Shingle 
+T - Tile 
+W - Woodshake 
+U - Unknown",Drop U,FROOFCVR_U
+LNDSQFT,0.001472976,3.21E-09,categorical,Not Applicable,No,Land Square Footage,The total square footage for the entire property.,"A - 1-1,999 
+B - 2,000-2,999 
+C - 3,000-3,999 
+D - 4,000-4,999 
+E - 5,000-5,999 
+F - 6,000-6,499 
+G - 6,500-6,999 
+H - 7,000-7,999 
+I - 8,000-8,999 
+J - 9,000-9,999 
+K - 10,000-12,999 
+L - 13,000-14,999 
+M - 15,000-19,999 
+N - 20,000-24,999 
+O - 25,000-34,999 
+P - 35,000-44,999 
+Q - 45,000-59,999 
+R - 60,000-89,999 
+S - 90,000-149,999 
+T - 150,000+ 
+U - 0 or blank",scale,
+INVESTOR,6.64E-07,0.310809914,categorical,Not Applicable,No,Real Estate Investor,Identifies an individual that owns a property other than their primary residence.,"Y = Yes
+U = Unknown ",Drop U,INVESTOR_U
+REL,0.001297889,2.38E-09,categorical,Not Applicable,No,Religion ,"Indicates the individuals religious affiliation. This is based on their name (first, middle and last) and the geographic area where they reside.",See Ethnic Information tab,,
+COFO,-1.35E-05,0.503745269,numeric,Negative,No,Country of Origin,"Indicates the individuals Hispanic origin (Puerto Rico, Cuba, etc.).  This is based on name (first, middle and last) and the geographic area where they reside.  Assigned to individuals with the Ethnic value of 09, Hispanic.",See Ethnic Information tab,Drop 0,
+ETHGRPCD,0.006338808,5.12E-50,categorical,Not Applicable,No,Ethnic Group,Identifies groups of similar ethnicities based on their geographic location.,See Ethnic Information tab,,
+ETHEID,NA,NA,categorical,NA,No,Ethnicity,"Indicates the individuals ethnicity as assigned by Ethnic Technologies. This is based on name (first, middle and last) and the geographic area where the individual resides.",See Ethnic Information tab,,
+ETHLANG,0.005458634,9.20E-31,categorical,Not Applicable,No,Language,"Indicates the individuals preferred language as assigned by Ethnic Technologies. This is based on name (first, middle and last) and the geographic area where the individual resides.",See Ethnic Information tab,,
+FILLER.3,NA,NA,Other,NA,Yes,#N/A,,#N/A,,
+RXADHM,0.001654409,9.89E-17,numeric,Negative,No,RX - Adherence - Maintenance,A demographic based analytical model which predicts an individual is taking maintenance drugs as directed and on time.,"0 - Most likely 
+1 
+2 
+3 
+4 
+5 
+6 
+7 
+8 
+9 - Least likely 
+",,
+RXADHS,0.002345962,5.53E-23,numeric,Negative,No,RX - Adherence - Supplement,"A demographic based analytical model which predicts an individual is taking supplements (vitamins, multi-vitamins, minerals, supplements) regularly.","0 - Most likely 
+1 
+2 
+3 
+4 
+5 
+6 
+7 
+8 
+9 - Least likely 
+",,
+RXBRAND,0.000481623,5.15E-06,numeric,Positive,No,RX - Brand Preference,A demographic based analytical model which predicts the likelihood an individual prefers a brand name medication over a generic.,"0 - Most likely 
+1 
+2 
+3 
+4 
+5 
+6 
+7 
+8 
+9 - Least likely ",,
+RXMAINT,0.001343967,6.46E-14,numeric,Negative,No,RX - Maintenance Meds,A demographic based analytical model which predicts the likelihood an individual is using maintenance prescription drugs to treat common chronic conditions.,"0 - Most likely 
+1 
+2 
+3 
+4 
+5 
+6 
+7 
+8 
+9 - Least likely ",,
+RXNCDRUG,0.004600366,1.91E-41,categorical,Not Applicable,No,RX - Reason for Non-Compilance,A demographic based analytical model which predicts reasons why an individual may not be in compliance with the prescription medications.,"A - Prefer Alternative
+C - Cost of Prescription
+D - Dislike Prescription   
+N - Just Don't 
+U - Uncoded ",No U values,
+RXNUM,-1.09E-05,0.456900119,numeric,Positive,No,RX - Number of Drugs,A demographic based analytical model which predicts the number of medications an individual takes on a regular basis.,"0 - No Prescriptions 
+1 
+2 
+3 
+4 
+5 
+6 
+7 
+8 
+9 - 9 or More Prescriptions
+",,
+RXPURCHA,0.004536075,7.13E-41,categorical,Not Applicable,No,RX - Purchase Channel,A demographic based analytical model which predicts where an individual is purchasing prescription medications.,"D - Drug Store 
+G - Grocery Store 
+M - Mail Order 
+R - Retail Store 
+U - Uncoded ",No U values,
+RXSOWRX,0.002086346,1.22E-20,numeric,Negative,No,RX - Share of Wallet - Prescriptions,"A demographic based analytical model which predicts the likelihood an individual purchases their prescription medications at a single location. A value of 0 would indicate they are loyal to a particular location, with 9 being they shop at many locations.","0 - Most likely
+1 
+2 
+3 
+4 
+5 
+6 
+7 
+8 
+9 - Least likely",,
+RXSUPP,0.000149285,0.007577965,numeric,Positive,No,RX - Supplement Usage,"A demographic based analytical model which predicts the likelihood an individual is using supplements (vitamins, multi-vitamins, minerals, supplements) to treat medical conditions.","0 - Most likely 
+1 
+2 
+3 
+4 
+5 
+6 
+7 
+8 
+9 - Least likely ",,
+MEDIAIDD,0.000503935,3.19E-06,numeric,Positive,No,Media Influence - Digital Display,A demographic based analytical model which predicts the likelihood of an individual being open and willing to receive information via display advertising or display advertising influencing a choice in their decision about a health care company.  The value of 0 indicates individual is most likely to respond and 9 being the least likely to respond.,0-9,,
+MEDIAIOD,0.009443958,5.99E-87,numeric,Positive,No,Media Influence - Owned Digital,A demographic based analytical model which predicts likelihood of an individual being open and willing to receive information via owned digital (company website or blog) or owned digital influencing a choice in decision about a health care company.  he value of 0 indicates individual is most likely to respond and 9 being the least likely to respond.,0-9,,
+MEDIAIP,0.006071256,1.84E-55,categorical,Not Applicable,No,Media Influence Propensity,A demographic based analytical model which predicts the most likely media an individual is open and willing to receive information from or influencing a choice in decision about a health care company.,"D - Digital 
+O - Owned 
+S - Social",,
+MEDIAISM,0.000932609,3.61E-10,numeric,Negative,No,Media Influence - Social Media,"A demographic based analytical model which predicts likelihood of an individual being open and willing to receive information via social media sites (Facebook, Twitter, Instagram) or information on social media sites influencing a choice in decision about a health care company.  The value of 0 indicates individual is most likely to respond and 9 being the least likely to respond.",0-9,,
+AGBLOOD,0.000480288,5.30E-06,categorical,Not Applicable,No,Ailment Group - Cholesterol and Blood Pressure,An individual within the household completed a survey selecting at least one cholesterol and blood pressure ailment and/or treatment.,"Y = Yes
+U = Unknown",Drop U,AGBLOOD_U
+AGNOSE,0.000830374,3.11E-09,categorical,Not Applicable,No,Ailment Group - Allergies and Sinuses,An individual within the household completed a survey selecting at least one allergy and sinus ailment and/or treatment.,"Y = Yes
+U = Unknown",Drop U,AGNOSE_U
+AGJOINT,1.33E-06,0.304451326,categorical,Not Applicable,No,Ailment Group - Joint/Spine,An individual within the household completed a survey selecting at least one joint/spine ailment and/or treatment.,"Y = Yes
+U = Unknown",Drop U,AGJOINT_U
+AGRESP,5.42E-05,0.072494759,categorical,Not Applicable,No,Ailment Group - Respiratory,An individual within the household completed a survey selecting at least one respiratory ailment and/or treatment.,"Y = Yes
+U = Unknown",Drop U,AGRESP_U
+AGMOUTH,0.000426152,1.70E-05,categorical,Not Applicable,No,Ailment Group - Mouth and Teeth,An individual within the household completed a survey selecting at least one mouth and teeth ailment and/or treatment.,"Y = Yes
+U = Unknown",Drop U,AGMOUTH_U
+AGSKIN,0.000146424,0.008091552,categorical,Not Applicable,No,Ailment Group - Skin,An individual within the household completed a survey selecting at least one skin ailment and/or treatment.,"Y = Yes
+U = Unknown",Drop U,AGSKIN_U
+AGDIAB,0.000125575,0.013090456,categorical,Not Applicable,No,Ailment Group - Diabetes,An individual within the household completed a survey selecting at least one diabetes ailment and/or treatment.,"Y = Yes
+U = Unknown",Drop U,AGDIAB_U
+AGDIG,0.000474037,6.06E-06,categorical,Not Applicable,No,Ailment Group - Digestive,An individual within the household completed a survey selecting at least one digestive ailment and/or treatment survey code.,"Y = Yes
+U = Unknown",Drop U,AGDIG_U
+AGAST,2.04E-06,0.297869495,categorical,Not Applicable,No,Ailment Group - Mobility Problems and Assistance,An individual within the household completed a survey selecting at least one mobility problems and assistance ailment and/or treatment.,"Y = Yes
+U = Unknown",Drop U,AGAST_U
+AGPAIN,0.000440837,1.24E-05,categorical,Not Applicable,No,Ailment Group - Aches and Pain,An individual within the household completed a survey selecting at least one aches and pain ailment and/or treatment.,"Y = Yes
+U = Unknown",Drop U,AGPAIN_U
+AGFOOT,-2.42E-05,0.935780873,categorical,Not Applicable,No,Ailment Group - Foot,An individual within the household completed a survey selecting at least one foot ailment and/or treatment.,"Y = Yes
+U = Unknown",Drop U,AGFOOT_U
+AGVSN,7.18E-05,0.046883265,categorical,Not Applicable,No,Ailment Group - Vision,An individual within the household completed a survey selecting at least one vision specific ailment and/or treatment.,"Y = Yes
+U = Unknown",Drop U,AGVSN_U
+AGPROG,0.00025392,0.000723396,categorical,Not Applicable,No,Ailment Group - Progressive Conditions,An individual within the household completed a survey selecting at least one progressive conditions ailment and/or treatment.,"Y = Yes
+U = Unknown",Drop U,AGPROG_U
+AGWEIGHT,0.000807131,5.08E-09,categorical,Not Applicable,No,Ailment Group - Weight,An individual within the household completed a survey selecting at least one weight ailment and/or treatment.,"Y = Yes
+U = Unknown",Drop U,AGWEIGHT_U
+AGHEART,0.000132517,0.01114563,categorical,Not Applicable,No,Ailment Group - Heart Condition,An individual within the household completed a survey selecting at least one heart condition ailment and/or treatment.,"Y = Yes
+U = Unknown",Drop U,AGHEART_U
+AGFEM,0.000136995,0.010050941,categorical,Not Applicable,No,Ailment Group - Female Conditions,An individual within the household completed a survey selecting at least one female care ailment and/or treatment.,"Y = Yes
+U = Unknown",Drop U,AGFEM_U
+AGPSYCO,0.000560227,9.58E-07,categorical,Not Applicable,No,Ailment Group - Psychological/Behavioral,An individual within the household completed a survey selecting at least one psychological/behavior ailment and/or treatment.,"Y = Yes
+U = Unknown",Drop U,AGPSYCO_U
+HWFOSL,0.000427385,1.65E-05,numeric,Negative,No,Health & Wellness Shopping - Front of Store Loyalty,"A demographic based analytical model which predicts the likelihood an individual is purchasing front of store products (vitamins, minerals, supplements and personal care products) at the same location.","0 - Most Loyal
+1 
+2 
+3 
+4 
+5 
+6 
+7 
+8 
+9 - Least Loyal
+",,
+HWFOSS,0.00488407,7.46E-46,numeric,Negative,No,Health & Wellness Shopping - Front of Store Spenders,"A demographic based analytical model which predicts the likelihood individuals spending a lot of dollars on front of store products (vitamins, minerals, supplements and personal care products).","0 - Most Likely 
+2 
+3 
+4 
+5 
+6 
+7 
+8 
+9 - Least Likely",,
+HWRXLOYL,2.93E-05,0.137849369,numeric,Negative,No,Health & Wellness Shopping - RX Loyalty,A demographic based analytical model which predicts the likelihood an individual is purchasing prescriptions at the same location.,"0 - Most Loyal
+1 
+2 
+3 
+4 
+5 
+6 
+7 
+8 
+9 - Least Loyal
+",,
+HWHEALTHSCORE,0.003688657,3.28E-26,numeric,Positive,No,"Health Rank - Overall Health
+","Indicates the propensity of an individuals overall health score. The value of 0 indicates an individual health score is poor and a 9 indicates the likelihood of a good health score. Lowest rank for targeted select is 3.
+","0 - Most Likely
+1 
+2 
+3 
+4 
+5 
+6 
+7 
+8 
+9 - Least Likely",,
+HWPHYSICALHEALTH,0.003865963,2.21E-27,numeric,Positive,No,"Health Rank - Physical Health 
+","Indicates the propensity estimate for the number of days each month an individual is physically hampered in doing daily tasks. The value of 0 indicates an individual's physical health is poor and a 9 indicates the likelihood of better physical health. Lowest rank for targeted select is 3.
+","0 - Most Likely
+1 
+2 
+3 
+4 
+5 
+6 
+7 
+8 
+9 - Least Likely",,
+HWHEALTHWISE,0.004548071,8.51E-31,numeric,Positive,No,Health Rank - Health - Wealth Score,"Indicates the propensity of an individual's physical, emotional and financial wellbeing. The value of 0 indicates an individual's wellbeing is poor and a 9 indicates a more optimistic wellbeing. Lowest rank for targeted select is 3.
+","0 - Most Likely
+1 
+2 
+3 
+4 
+5 
+6 
+7 
+8 
+9 - Least Likely",,
+HWARTHRITIS,-1.79E-05,0.496369801,numeric,Positive,No,Health Rank - Arthritis,"Indicates the propensity of an individual to have arthritis. The value of 0 indicates a high likelihood and a 9 indicates a low likelihood. Lowest rank for targeted select is 4.
+
+
+","0 - Most Likely
+1 
+2 
+3 
+4 
+5 
+6 
+7 
+8 
+9 - Least Likely",,
+HWALLERGY,0.00127486,3.50E-10,numeric,Positive,No,Health Rank - Allergies,Indicates the propensity of an individual for allergies. The value of 0 indicates a high likelihood and a 9 indicates a low likelihood. Lowest rank for targeted select is 3.,"0 - Most Likely
+1 
+2 
+3 
+4 
+5 
+6 
+7 
+8 
+9 - Least Likely",,
+HWASTHMA,0.001237359,6.24E-10,numeric,Positive,No,Health Rank - Asthma,Indicates the propensity of an individuals to have a history of asthma. The value of 0 indicates a high likelihood and a 9 indicates a low likelihood. Lowest rank for targeted select is 3.,"0 - Most Likely
+1 
+2 
+3 
+4 
+5 
+6 
+7 
+8 
+9 - Least Likely",,
+HWCATARACT,0.001860877,4.29E-14,numeric,Positive,No,Health Rank - Cataracts,Indicates the propensity of an individuals to have cataracts. The value of 0 indicates a high likelihood and a 9 indicates a low likelihood. Lowest rank for targeted select is 2.,"0 - Most Likely
+1 
+2 
+3 
+4 
+5 
+6 
+7 
+8 
+9 - Least Likely",,
+HWGASTRO,0.000274487,0.002344247,numeric,Positive,No,Health Rank - Digestive Conditions,Indicates the propensity that an individual has digestive conditions. The value of 0 indicates a high likelihood and a 9 indicates a low likelihood.  Lowest rank for targeted select is 3.,"0 - Most Likely
+1 
+2 
+3 
+4 
+5 
+6 
+7 
+8 
+9 - Least Likely",,
+HWCHOLESTEROL,-1.32E-05,0.437959685,numeric,Positive,No,Health Rank - High Cholesterol,Indicates the propensity that an individual has high cholesterol. The value of 0 indicates a high likelihood and a 9 indicates a low likelihood. Lowest rank for targeted select is 3.,"0 - Most Likely
+1 
+2 
+3 
+4 
+5 
+6 
+7 
+8 
+9 - Least Likely",,
+HWHEARTDISEASE,2.84E-05,0.173218101,numeric,Negative,No,Health Rank - Heart Disease,Indicates the propensity that an individual has heart disease. The value of 0 indicates a high likelihood and a 9 indicates a low likelihood. Lowest rank for targeted select is 3.,"0 - Most Likely
+1 
+2 
+3 
+4 
+5 
+6 
+7 
+8 
+9 - Least Likely",,
+HWHEARTATTACK,0.000330259,0.000942815,numeric,Negative,No,Health Rank - Heart Attack,Indicates the propensity for an individual to have a heart attack. The value of 0 indicates a high likelihood and a 9 indicates a low likelihood.  Lowest rank for targeted select is 2.,"0 - Most Likely
+1 
+2 
+3 
+4 
+5 
+6 
+7 
+8 
+9 - Least Likely",,
+HWSTROKE,-9.69E-06,0.399916097,numeric,Positive,No,Health Rank - Stroke,Indicates the propensity for an individual to have a stroke. The value of 0 indicates a high likelihood and a 9 indicates a low likelihood. Lowest rank for targeted select is 3.,"0 - Most Likely
+1 
+2 
+3 
+4 
+5 
+6 
+7 
+8 
+9 - Least Likely",,
+HWRESPIRATORYCONDITION,0.010907287,6.06E-74,numeric,Positive,No,Health Rank - Lung Disease,"Indicates the propensity of an individual to have respiratory conditions due to emphysema, smoking complications, COPD and breathing difficulty. The value of 0 indicates a high likelihood and a 9 indicates a low likelihood. Lowest rank for targeted select is 4.","0 - Most Likely
+1 
+2 
+3 
+4 
+5 
+6 
+7 
+8 
+9 - Least Likely",,
+HWDIABETES,0.003219334,4.18E-23,numeric,Positive,No,Health Rank - Diabetes,Indicates the propensity of an individual to have diabetes. The value of 0 indicates a high likelihood and a 9 indicates a low likelihood. Lowest rank for targeted select is 3.,"0 - Most Likely
+1 
+2 
+3 
+4 
+5 
+6 
+7 
+8 
+9 - Least Likely",,
+HWPREDIABETES,0.002830753,1.56E-20,numeric,Positive,No,Health Rank - Borderline Diabetes,Indicates the propensity of an individual that is borderline for having diabetes. The value of 0 indicates a high likelihood and a 9 indicates a low likelihood. Lowest rank for targeted select is 3.,"0 - Most Likely
+1 
+2 
+3 
+4 
+5 
+6 
+7 
+8 
+9 - Least Likely",,
+HWKIDNEY,4.84E-05,0.117161804,numeric,Positive,No,Health Rank - Kidney Disease,Indicates the propensity for an individual having kidney disease. The value of 0 indicates a high likelihood and a 9 indicates a low likelihood.  Lowest rank for targeted select is 3.,"0 - Most Likely
+1 
+2 
+3 
+4 
+5 
+6 
+7 
+8 
+9 - Least Likely",,
+HWCANCER,0.002401762,1.09E-17,numeric,Negative,No,Health Rank - Cancer,Indicates the propensity of an individual getting cancer. The value of 0 indicates a high likelihood and a 9 indicates a low likelihood. Lowest rank for targeted select is 3.,"0 - Most Likely
+1 
+2 
+3 
+4 
+5 
+6 
+7 
+8 
+9 - Least Likely",,
+HWCANCERLUNG,0.003665216,4.69E-26,numeric,Positive,No,Health Rank - Lung Cancer,Indicates the propensity of an individual getting lung cancer. The value of 0 indicates a high likelihood and a 9 indicates a low likelihood.,"0 - Most Likely
+1 
+2 
+3 
+4 
+5 
+6 
+7 
+8 
+9 - Least Likely",,
+HWSKINCANCER,0.006490042,1.01E-44,numeric,Negative,No,Health Rank - Skin Cancer,Indicates the propensity of an individual getting skin cancer. The value of 0 indicates a high likelihood and a 9 indicates a low likelihood. Lowest rank for targeted select is 3.,"0 - Most Likely
+1 
+2 
+3 
+4 
+5 
+6 
+7 
+8 
+9 - Least Likely",,
+HWPAIN,0.001405919,4.64E-11,numeric,Positive,No,Health Rank - Pain,Indicates the propensity of an individual having pain. The value of 0 indicates a high likelihood and a 9 indicates a low likelihood. Lowest rank for targeted select is 3.,"0 - Most Likely
+1 
+2 
+3 
+4 
+5 
+6 
+7 
+8 
+9 - Least Likely",,
+HWGLAUCOMA,0.001860877,4.29E-14,numeric,Positive,No,Health Rank - Glaucoma,Indicates the propensity of an individual having glaucoma. The value of 0 indicates a high likelihood and a 9 indicates a low likelihood. Lowest rank for targeted select is 2.,"0 - Most Likely
+1 
+2 
+3 
+4 
+5 
+6 
+7 
+8 
+9 - Least Likely",,
+HWDEPRESSION,0.006644708,9.55E-46,numeric,Positive,No,Health Rank - Depression,Indicates the propensity of an individual having a recent episode of depression. The value of 0 indicates a high likelihood and a 9 indicates a low likelihood.  Lowest rank for targeted select is 3.,"0 - Most Likely
+1 
+2 
+3 
+4 
+5 
+6 
+7 
+8 
+9 - Least Likely",,
+HWANXIETY,0.003260782,2.22E-23,numeric,Positive,No,Health Rank - Anxiety,Indicates the propensity of an individual having a recent episode of anxiety. The value of 0 indicates a high likelihood and a 9 indicates a low likelihood. Lowest rank for targeted select is 4.,"0 - Most Likely
+1 
+2 
+3 
+4 
+5 
+6 
+7 
+8 
+9 - Least Likely",,
+HWDECISIONS,0.002851003,1.15E-20,numeric,Positive,No,Health Rank - Decisions,Indicates the propensity of an individual to have difficulty making decisions or has memory issues. The value of 0 indicates a high likelihood and a 9 indicates a low likelihood.  Lowest rank for targeted select is 3.,"0 - Most Likely
+1 
+2 
+3 
+4 
+5 
+6 
+7 
+8 
+9 - Least Likely",,
+HWPREGNANT,1.71E-05,0.256801553,numeric,Positive,No,Health Rank - Pregnancy,Indicates the propensity that an individual is currently pregnant. The value of 0 indicates a high likelihood and a 9 indicates a low likelihood. Lowest rank for targeted select is 1.,"0 - Most Likely
+1 
+2 
+3 
+4 
+5 
+6 
+7 
+8 
+9 - Least Likely",,
+HWDENTAL,0.003306885,1.10E-23,numeric,Positive,No,Health Rank - Dental Issues,Indicates the propensity of an individual having dental related issues. The value of 0 indicates a high likelihood and a 9 indicates a low likelihood.  Lowest rank for targeted select is 3.,"0 - Most Likely
+1 
+2 
+3 
+4 
+5 
+6 
+7 
+8 
+9 - Least Likely",,
+HWFLUSHOT,0.006596324,1.99E-45,numeric,Negative,No,Health Rank - Flu Shot,Indicates the propensity of an individual getting the flu shot in past year. The value of 0 indicates a high likelihood and a 9 indicates a low likelihood.  Lowest rank for targeted select is 4.,"0 - Most Likely
+1 
+2 
+3 
+4 
+5 
+6 
+7 
+8 
+9 - Least Likely",,
+HWPNEUMONIAVAC,0.002905793,4.98E-21,numeric,Negative,No,Health Rank - Pneumonia Vaccine,Indicates the propensity of an individual getting the pneumonia vaccine shot in past year. The value of 0 indicates a high likelihood and a 9 indicates a low likelihood. Lowest rank for targeted select is 4.,"0 - Most Likely
+1 
+2 
+3 
+4 
+5 
+6 
+7 
+8 
+9 - Least Likely",,
+HWTETANUS,0.001480458,1.47E-11,numeric,Positive,No,Health Rank - Tetanus Shot,Indicates the propensity of an individual getting a tetanus shot in past 10 years. The value of 0 indicates a high likelihood and a 9 indicates a low likelihood. Lowest rank for targeted select is 5.,"0 - Most Likely
+1 
+2 
+3 
+4 
+5 
+6 
+7 
+8 
+9 - Least Likely",,
+HWDOCVISITS10,0.000995984,2.61E-08,numeric,Positive,No,Health Rank - Doctor Visits,Indicates the propensity of an individual seeing a doctor 10 or more times each year. The value of 0 indicates a high likelihood and a 9 indicates a low likelihood.  Lowest rank for targeted select is 3.,"0 - Most Likely
+1 
+2 
+3 
+4 
+5 
+6 
+7 
+8 
+9 - Least Likely",,
+HWCHECKUPNO,0.002974325,1.75E-21,numeric,Positive,No,Health Rank - Check Up,Indicates the propensity of an individual NOT getting a check up in the past five years. The value of 0 indicates a high likelihood and a 9 indicates a low likelihood. Lowest rank for targeted select is 5.,"0 - Most Likely
+1 
+2 
+3 
+4 
+5 
+6 
+7 
+8 
+9 - Least Likely",,
+HWMAMMOGRAM,0.000155311,0.057737261,numeric,Positive,No,Health Rank - Mammogram,Indicates the propensity of a female over 50 getting a mammogram. The value of 0 indicates a high likelihood and a 9 indicates a low likelihood. Lowest rank for targeted select is 3.,"0 - Most Likely
+1 
+2 
+3 
+4 
+5 
+6 
+7 
+8 
+9 - Least Likely",,
+HWBREASTEXAM,0.001366406,1.01E-06,numeric,Positive,No,Health Rank - Breast Exam,Indicates the propensity of a female to have had a breast exam in the past five years. The value of 0 indicates a high likelihood and a 9 indicates a low likelihood. Lowest rank for targeted select is 2.,"0 - Most Likely
+1 
+2 
+3 
+4 
+5 
+6 
+7 
+8 
+9 - Least Likely",,
+HWPAPTEST,4.72E-05,0.180904226,numeric,Positive,No,Health Rank - PAP Test,Indicates the propensity of a female to have a PAP test in the past five years. The value of 0 indicates a high likelihood and a 9 indicates a low likelihood. Lowest rank for targeted select is 3.,"0 - Most Likely
+1 
+2 
+3 
+4 
+5 
+6 
+7 
+8 
+9 - Least Likely",,
+HWCOLONOSCOPY,1.84E-05,0.212794673,numeric,Positive,No,Health Rank - Colonoscopy,Indicates the propensity of adult individuals over 50 likely to get a colonoscopy. The value of 0 indicates a high likelihood and a 9 indicates a low likelihood. Lowest rank for targeted select is 3.,"0 - Most Likely
+1 
+2 
+3 
+4 
+5 
+6 
+7 
+8 
+9 - Least Likely",,
+HWPSATEST2,4.98E-05,0.197142183,numeric,Positive,No,Health Rank - PSA Test,Indicates the propensity of men over 50 likely to have a PSA test in the last two years. The value of 0 indicates a high likelihood and a 9 indicates a low likelihood. Lowest rank for targeted select is 2.,"0 - Most Likely
+1 
+2 
+3 
+4 
+5 
+6 
+7 
+8 
+9 - Least Likely",,
+HWBLOODSTOOLKIT,-1.74E-05,0.490583391,numeric,Negative,No,Health Rank - Stool Test,Indicates the propensity of an individual of having a blood stool test. The value of 0 indicates a high likelihood and a 9 indicates a low likelihood. Lowest rank for targeted select is 3.,"0 - Most Likely
+1 
+2 
+3 
+4 
+5 
+6 
+7 
+8 
+9 - Least Likely",,
+FILLER.4,NA,NA,Other,NA,Yes,#N/A,#N/A,#N/A,,
+HWEXERCISE,0.001492794,1.22E-11,numeric,Positive,No,Health Rank - Not Exercise,Indicates the propensity of an individuals likelihood to not exercise. The value of 0 indicates a high likelihood to not exercise and a 9 indicates a low likelihood.  Lowest rank for targeted select is 5.,"0 - Most Likely
+1 
+2 
+3 
+4 
+5 
+6 
+7 
+8 
+9 - Least Likely",,
+HWSMOKER,0.014401722,4.00E-97,numeric,Positive,No,Health Rank - Smoker,Indicates the propensity of an individual's likelihood to be a current smoker. The value of 0 indicates a high likelihood and a 9 indicates a low likelihood.  Lowest rank for targeted select is 2.,"0 - Most Likely
+1 
+2 
+3 
+4 
+5 
+6 
+7 
+8 
+9 - Least Likely",,
+HWBMI,0.006567184,3.11E-45,numeric,Positive,No,Health Rank - BMI,Indicates the individual's estimated body mass index (BMI). The value of 0 indicates a high BMI and a 9 indicates a low BMI. Lowest rank for targeted select is 4.,"0 - Most Likely
+1 
+2 
+3 
+4 
+5 
+6 
+7 
+8 
+9 - Least Likely",,
+HWALCOHOL,0.000606396,1.15E-05,numeric,Positive,No,Health Rank - Alcohol,Indicates the estimated alcohol consumption for an individual. The value of 0 indicates a high consumption and a 9 indicates a low consumption. Lowest rank for targeted select is 5.,"0 - Most Likely
+1 
+2 
+3 
+4 
+5 
+6 
+7 
+8 
+9 - Least Likely",,
+HWBINGE,0.002867631,8.91E-21,numeric,Positive,No,Health Rank - Binge Drinker,Indicates the propensity of an individual to be a binge drinker. The value of 0 indicates an individual is likely to be a binge drinker and a 9 indicates a low likelihood. Lowest rank for targeted select is 5.,"0 - Most Likely
+1 
+2 
+3 
+4 
+5 
+6 
+7 
+8 
+9 - Least Likely",,
+HWALCHODRIVE,0.002463614,4.25E-18,numeric,Positive,No,Health Rank - Drink And Drive,Indicates the propensity of an individual to drink and drive. The value of 0 indicates an individual is likely to drink and drive and a 9 indicates a low likelihood. Lowest rank for targeted select is 3.,"0 - Most Likely
+1 
+2 
+3 
+4 
+5 
+6 
+7 
+8 
+9 - Least Likely",,
+HWDIET,0.006567184,3.11E-45,numeric,Positive,No,Health Rank - Diet Behaviors,Indicates the propensity of an individual to have diet interests. The value of 0 indicates a high likelihood and a 9 indicates a low likelihood.  Lowest rank for targeted select is 6.,"0 - Most Likely
+1 
+2 
+3 
+4 
+5 
+6 
+7 
+8 
+9 - Least Likely",,
+HWSLEEP,0.003199714,5.64E-23,numeric,Positive,No,Health Rank - Sleep,Indicates the propensity of an individual to have sleep issues. The value of 0 indicates a high likelihood and a 9 indicates a low likelihood. Lowest rank for targeted select is 3.,"0 - Most Likely
+1 
+2 
+3 
+4 
+5 
+6 
+7 
+8 
+9 - Least Likely",,
+HWRISKYHEALTH,0.005293221,8.13E-37,numeric,Positive,No,Health Rank - Risky Health Behaviors,Indicates the propensity of an individual to engage in risky health behaviors. The value of 0 indicates a high likelihood and a 9 indicates a low likelihood. Lowest rank for targeted select is 3.,"0 - Most Likely
+1 
+2 
+3 
+4 
+5 
+6 
+7 
+8 
+9 - Least Likely",,
+HWSEATBELT,0.003579858,1.72E-25,numeric,Positive,No,Health Rank - Seatbelts,Indicates the propensity of an individual to not wear a seatbelt. The value of 0 indicates a high likelihood and a 9 indicates a low likelihood.,"0 - Most Likely
+1 
+2 
+3 
+4 
+5 
+6 
+7 
+8 
+9 - Least Likely",,
+HWSMOKEQUIT,0.013473554,5.83E-91,numeric,Positive,No,Health Rank - Quit Smoking,Indicates the propensity of an individual to attempt to quit smoking. The value of 0 indicates an a high likelihood and a 9 indicates a low likelihood. Lowest rank for targeted select is 2.,"0 - Most Likely
+1 
+2 
+3 
+4 
+5 
+6 
+7 
+8 
+9 - Least Likely",,
+HWHEALTHINSNO,0.008069021,3.68E-55,numeric,Positive,No,Health Rank - No Health Insurance,Indicates the propensity of an individual to not have health insurance. The value of 0 indicates  a high likelihood and a 9 indicates a low likelihood.  Lowest rank for targeted select is 4.,"0 - Most Likely
+1 
+2 
+3 
+4 
+5 
+6 
+7 
+8 
+9 - Least Likely",,
+HWATPHEALTH,0.010192278,3.29E-69,numeric,Positive,No,Health Rank - Medical Payments,Indicates the propensity of an individual having difficulty paying for medical treatment. The value of 0 indicates a high likelihood and a 9 indicates a low likelihood. Lowest rank for targeted select is 4.,"0 - Most Likely
+1 
+2 
+3 
+4 
+5 
+6 
+7 
+8 
+9 - Least Likely",,
+HWCAREGIVER,0.001766691,1.82E-13,numeric,Positive,No,Health Rank - Caregiver In Home,Indicates the propensity of an individual likely to have a caregiver in the home. The value of 0 indicates a high likelihood and a 9 indicates a low likelihood. Lowest rank for targeted select is 1.,"0 - Most Likely
+1 
+2 
+3 
+4 
+5 
+6 
+7 
+8 
+9 - Least Likely",,
+HWMULTIPCP,0.000361988,0.000563923,numeric,Negative,No,Health Rank - Multiple Physicians,Indicates the propensity of an individual to have multiple primary care physicians. The value of 0 indicates a high likelihood and a 9 indicates a low likelihood. Lowest rank for targeted select is 4.,"0 - Most Likely
+1 
+2 
+3 
+4 
+5 
+6 
+7 
+8 
+9 - Least Likely",,
+HWPERSDOCNO,0.00402081,2.09E-28,numeric,Positive,No,Health Rank - No Physician,Indicates the propensity of an individual to not have a personal physician. The value of 0 indicates a high likelihood and a 9 indicates a low likelihood. Lowest rank for targeted select is 5.,"0 - Most Likely
+1 
+2 
+3 
+4 
+5 
+6 
+7 
+8 
+9 - Least Likely",,
+HWMEDADVANTAGE,0.015751488,4.64E-86,numeric,Positive,No,Health Rank - Medicare Advantage,Indicates the propensity of an individual aged 64 or older to respond to a Medicare Advantage plan offer. The value of 0 indicates a high likelihood and a 9 indicates a low likelihood. Lowest rank for targeted select is 5.,"0 - Most Likely
+1 
+2 
+3 
+4 
+5 
+6 
+7 
+8 
+9 - Least Likely",,
+HWMEDSUPP,0.00089801,1.78E-06,numeric,Negative,No,Health Rank - Medicare Supplement,Indicates the propensity of an individual aged 64 or older to respond to a Medicare supplement insurance offer. The value of 0 indicates a high likelihood and a 9 indicates a low likelihood. Lowest rank for targeted select is 5.,"0 - Most Likely
+1 
+2 
+3 
+4 
+5 
+6 
+7 
+8 
+9 - Least Likely",,
+HWCOPD,0.005229458,2.15E-36,numeric,Positive,No,Health Rank - COPD,"Indicates the propensity of an individual getting COPD, Chronic Obstruction Pulmonary Disease. The value of 0 indicates a high likelihood and a 9 indicates a low likelihood.","0 - Most Likely
+1 
+2 
+3 
+4 
+5 
+6 
+7 
+8 
+9 - Least Likely",,
+HWFOODDESERT,0.000723013,1.31E-07,categorical,Not Applicable,No,Health Rank - Food Desert, Indicates if the individual lives in census tract with limited access to affordable and nutritious food. Values are Y and N. ,"Yes = Y
+No = N",,
+DIMINF,0.004722862,2.26E-43,categorical,Not Applicable,No,MotiveMix - Influence,"Groups individuals into a low/medium/high scale of influence. High Influence is defined as being among the first to try new things, being regularly asked for one's opinion on new brands and products, and using social-media for self-expression.","H - High
+M - Medium 
+L - Low",,
+DIMFINO,0.008908031,6.02E-81,categorical,Not Applicable,No,MotiveMix - Financial Optimism,Groups individuals into a low/medium/high scale of financial optimism. High financial optimism is defined as feeling in control of ones financial future and feeling able to spend their money in the marketplace.,"H - High
+M - Medium 
+L - Low",,
+DIMTECH,0.001600726,1.91E-15,categorical,Not Applicable,No,MotiveMix - Tech Disposition,"Groups individuals into a low/medium/high scale of wanting digital and technology solutions to replace analog approaches. High tech disposition is defined as wanting to use mobile devices to run/manage life, regularly upgrading technology and preferring text communication to live communication.","H - High
+M - Medium 
+L - Low",,
+DIMSOCCN,0.000665703,4.24E-07,categorical,Not Applicable,No,MotiveMix - Social Consciousness,Groups individuals into a low/medium/high scale of desire and awareness to do good in their local community. High Social Consciousness is defined as being involved in your community and volunteering time or money to charities.," H - High 
+ M - Medium 
+ L - Low",,
+DIMSUCAS,0.000406732,8.67E-05,categorical,Not Applicable,No,MotiveMix - Success Aspirations,Groups individuals into a low/medium/high scale of ambition for success. High Success Aspirations is defined as always striving for excellence and being motivated to reach your full potential.," H - High 
+ M - Medium 
+ L - Low",,
+DIMCEXP,0.000813019,2.06E-08,categorical,Not Applicable,No,MotiveMix - Cultural Exploration,Groups individuals into a low/medium/high scale of openness to diverse cultural influences. High cultural exploration is defined as seeking out different cultural experiences and acknowledging the influence of other cultures on one's lifestyle choices.,"H - High
+M - Medium 
+L - Low",,
+DIMLEARN,0.000530412,6.84E-06,categorical,Not Applicable,No,MotiveMix - Continuous Learning,Groups individuals into a low/medium/high scale of desire to learn new skills and knowledge. High continuous learning is defined as seeking out classes and workshops in one's free time and an interest in additional educational opportunities.,"H - High
+M - Medium 
+L - Low ",,
+DIMCUL,0.002125181,3.94E-20,categorical,Not Applicable,No,MotiveMix - Cultural Identity Connection,Groups individuals into a low/medium/high scale of connection with and prioritization of one's culture and heritage. High cultural connection is defined as considering one's cultural background a critical component of personal identity and wanting more ways to show pride in-and engage with-one's cultural heritage. ,"H - High
+M - Medium 
+L - Low ",,
+DIMFAM,0.000374155,0.000169377,categorical,Not Applicable,No,MotiveMix - Family Orientation,"Groups individuals into a low/medium/high scale of connection with and prioritization of one's family. High family orientation is defined as being willing to make sacrifices for the betterment of family and seeing family members (children, spouses) as components of personal identity.","H - High
+M - Medium 
+L - Low ",,
+DIMNOV,0.003040079,2.61E-28,categorical,Not Applicable,No,MotiveMix - Novelty Aspirations,"Groups individuals into a low/medium/high scale of desire for novelty and excitement. High novelty aspiration is defined as seeking out new experiences and sensations, and being willing to take chances in life.","H - High
+M - Medium 
+L - Low ",,
+DIMREL,0.001875409,6.72E-18,categorical,Not Applicable,No,MotiveMix - Religiosity,Groups individuals into a low/medium/high scale of connection with and prioritization of religious beliefs. High religiosity is defined as seeing religion as an important part of one's identity and placing faith in God or a higher power.,"H - High
+M - Medium 
+L - Low ",,
+DIMNAT,0.000684552,2.88E-07,categorical,Not Applicable,No,MotiveMix - Natural Preferences,Groups individuals into a low/medium/high scale of preference of using natural materials,"H - High
+M - Medium 
+L - Low ",,
+DIMENV,0.00176711,6.24E-17,categorical,Not Applicable,No,MotiveMix - Environmentalism,Groups individuals into a low/medium/high scale of concern with and prioritization on environmental issues. High environmentalism is defined as believing the planet should be prioritized over the economy and being aware of how one's actions impact the environment," H - High 
+ M - Medium 
+ L - Low",,
+DIMHCOMM,0.0009752,7.34E-10,categorical,Not Applicable,No,MotiveMix - Health Commitment,Groups individuals into a low/medium/high scale of how an individual is committed to maintaining their health," H - High 
+ M - Medium 
+ L - Low",,
+DIMAA,0.000303731,0.000719482,categorical,Not Applicable,No,MotiveMix - Appearance Aspirations,"Groups individuals into a low/medium/high scale of valuing one's external appearance and maintaining it through style, fitness, and overall lifestyle"," H - High 
+ M - Medium 
+ L - Low",,
+MB4G,0.008123901,4.84E-75,categorical,Positive,No,Mindbase 4.0 Group,Mindbase 4.0 identifies 11 major consumer groups according to their attitudes and motivation.,"See MindBase tab
+
+
+",,
+MTCHLVL,6.87E-05,0.050579165,categorical,Negative,No,Enhancement Match Level,Match Level as Returned by Enhancement,"0 - Non Match
+1 - Includes street address, zip, full  name matching - including first name, middle initial, and surname
+2 - Includes street address, zip, first name and surname match
+3 - Includes street address, zip, first name initial, middle initial, and surname match
+4 - Includes street address, zip, first name initial and surname match                           
+5 - Includes street name, zip, first/last name matching
+6 -Includes street numerics, zip, first/last name matching                                                                                                                                                                                                                                                                        7 - Uses street address, zip and surname matching",,
+Client_First_Name,NA,NA,Other,NA,Yes,Client - First.Name,Client Provided Data,,,
+Client_Middle,NA,NA,Other,NA,Yes,Client - Middle,Client Provided Data,,,
+Client_Last_Name,NA,NA,Other,NA,Yes,Client - Last.Name,Client Provided Data,,,
+Client_Suffix,-0.000114878,0.942521548,categorical,Not Applicable,Yes,Client - Suffix,Client Provided Data,,,
+Client_Member_Name,NA,NA,Other,NA,Yes,Client - Member.Name,Client Provided Data,,,
+Client_Address_Line_1,NA,NA,Other,NA,Yes,Client - Address.Line.1 ,Client Provided Data,,,
+Client_Address_Line_2,NA,NA,Other,NA,Yes,Client - Address.Line.2,Client Provided Data,,,
+Client_City_Name,NA,NA,Other,NA,Yes,Client - City.Name,Client Provided Data,,,
+Client_State_Postal_Code,0.025394806,3.37E-200,categorical,Not Applicable,Yes,Client - State.Postal.Code,Client Provided Data,,,
+Client_Zip_Code,0.005917764,3.67E-55,numeric,Negative,Yes,Client - Zip.Code,Client Provided Data,,,
+Client_Phone_Number,0.01330038,1.57E-119,numeric,Positive,Yes,Client - Phone.Number,Client Provided Data,,,
+Client_Birth_Date,NA,NA,Other,NA,Yes,Client - Birth.Date,Client Provided Data,,,
+NPID,NA,NA,Other,NA,Yes,,,,,
+Contract,0.014641964,1.32E-131,categorical,Not Applicable,No,,,,,
+PBP.ID,0.006481779,3.05E-60,categorical,Negative,Yes,,,,,
+Member.Id,0.016091946,4.13E-147,numeric,Positive,Yes,,,,,
+Src.Member.Id,NA,NA,Other,NA,Yes,,,,,
+Member.Name,NA,NA,Other,NA,Yes,,,,,
+Address.Line.1,NA,NA,Other,NA,Yes,,,,,
+Address.Line.2,NA,NA,Other,NA,Yes,,,,,
+City.Nm,NA,NA,Other,NA,Yes,,,,,
+State.Postal.Cd,0.025400433,3.01E-200,categorical,Not Applicable,Yes,,,,,
+Zip.Cd,0.005925258,3.14E-55,numeric,Negative,Yes,,,,,
+Mbr.Phone.Nbr,0.01330038,1.57E-119,numeric,Positive,Yes,,,,,
+Birth.Dt,NA,NA,Other,NA,No,,,,Verify age??,
+Eff.Dt,NA,NA,Other,NA,Yes,,,,,
+Term.Dt,0.057949314,0,categorical,Not Applicable,Yes,,,,,
+Sales.Channel.Nm,0.624326314,0,categorical,Not Applicable,No,,,,,
+Writing.Agent.Id,0.094293676,0,numeric,Negative,Yes,,,,,
+Writing.Agent.Nm,NA,NA,Other,NA,Yes,,,,,
+Count.of.Calls,0.038497558,0,numeric,Positive,No,,,,,
+Type.of.Customer.Service,NA,NA,categorical,NA,No,,,,,
+effISO,NA,NA,Other,NA,Yes,,,,,
+termISO,NA,NA,Other,NA,Yes,,,,,
+elapsedDays,1,0,numeric,Positive,No,,,,,
